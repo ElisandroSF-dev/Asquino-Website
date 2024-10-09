@@ -20,6 +20,12 @@ img {
 
 /* Resto do css */
 
-.logo img {
+.logo {
+    width: 150px;
+    height: auto;
+}
 
+.logo img {
+    width: 100%;
+    height: 100%;
 }
