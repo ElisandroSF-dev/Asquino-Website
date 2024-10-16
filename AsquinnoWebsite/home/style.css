@@ -67,10 +67,10 @@ img {
 /* Resto do css local */
 
 
-/* Header global */
+
 @media only screen and (max-width: 500px) {
 
-
+/* Header global */
     .banner-header {
         background-color: rgba(0, 0, 0, .6);
         background-image: url(../assets/imgs/bgHeader.jpeg);
@@ -220,5 +220,6 @@ img {
     .contact-header *{
         color: #313131 !important;
     }
+
     
 }
