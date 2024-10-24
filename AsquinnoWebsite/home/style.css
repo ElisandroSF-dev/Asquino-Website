@@ -3,16 +3,6 @@
 
 /* Pré definições globais */
 
-@property --ww {
-    syntax: '<length>';
-    inherits: true;
-    initial-value: 100vw;
-}
-
-:root {
-    --w: tan(atan2(var(--ww), 1px))
-}
-
 body {
     margin: 0px;
     padding: 0px;
@@ -22,6 +12,7 @@ body {
     row-gap: 10px;
     width: 100vw;
     max-width: 100vw;
+    overflow-x: hidden;
 }
 
 th,
@@ -29,6 +20,7 @@ tr,
 td {
     font-size: 9px;
     font-family: Inter;
+    text-align: center;
 }
 p {
     font-size: 10px;
@@ -55,13 +47,75 @@ h5 {
 
 * {
     max-width: 100vw;
-    margin: 0px;
-    padding: 0px;
 }
 
 img {
     width: 100%;
+    height: auto;
 }
 
 
 /* Resto do css local */
+
+.logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 140px;
+}
+.banner-header {
+    background-image: url("../assets/imgs/bgHeader.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+    background-color: #0000003a;
+    background-blend-mode:multiply;
+    position: relative;
+    top: 0;
+}
+.call-to-action-header {
+    color: #fff;
+    padding-bottom: 5px !important;
+}
+.high-2 {
+    color: #e251f8;
+    font-family: 'Archivo Black' !important;
+}
+
+.whatsapp-icon-onheader {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.whatsapp-icon-onheader svg {
+    background-color: hsl(147, 50%, 47%) !important;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+}
+
+/* Css mobile */
+
+@media only screen and (max-width: 600px) {
+    
+    .call-to-action-header h3 {
+        text-align: center;
+        font-size: 13px !important;
+        margin: 0 !important;
+    }
+    .call-to-action-header h3 a:nth-child(1) {
+       background-color: #fff;
+       font-family: 'Archivo Black' !important;
+       mix-blend-mode: screen;
+       color: #000;
+       padding-left: 3px !important;
+       padding-right: 3px !important;
+       border-radius: 2px;
+    }
+}
