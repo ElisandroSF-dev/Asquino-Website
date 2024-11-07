@@ -1,0 +1,12 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script type="text/javascript">
+    
+    const campoLabel = document.querySelector(".campo-label"),
+        
+        textInput = document.querySelector("input[type='text']");
+                
+        textInput.addEventListener("keyup", event => {
+          campoLabel.setAttribute("data-text", event.target.value);
+        });
+
+</script>
