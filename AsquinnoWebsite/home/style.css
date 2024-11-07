@@ -13,8 +13,14 @@ body {
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
+    grid-template-areas: 
+    ''
+    ;
 }
-
+ul, li, ol {
+    text-decoration: none;
+    list-style: none;
+}
 th,
 tr,
 td {
@@ -57,6 +63,76 @@ img {
 
 /* Resto do css local */
 
+/* Definição de areas do grid */
+.footer {
+    display: grid;
+    grid-template-areas: 
+    
+    'logof none none none none'
+    'logof cont cont ender poli'
+    'logof cont cont ender poli'
+    'logof cont cont tel paym'
+    'ff ff ff ff ff'
+    
+    ;
+    background-color: #222;
+    color: #fff !important;
+}
+.logo-footer {
+    grid-area: logof;
+    width: 200px;
+    height: auto;
+    margin: 15px;
+}
+.cont-f {
+    grid-area: cont;
+}
+.endereco-f {
+    grid-area: ender;
+}
+.poli-f {
+    grid-area: poli;
+}
+
+.tel-f {
+    grid-area: tel;
+}
+.paym-f {
+    grid-area: paym;
+}
+.bottom-footer {
+    grid-area: ff;
+}
+
+.ead {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.icons-social {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.authoral-rights {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer ul {
+    margin: 10px;
+}
+
+
+
+
 .logo-header {
     display: flex;
     justify-content: space-between;
@@ -67,7 +143,7 @@ img {
     width: 140px;
 }
 .banner-header {
-    background-image: url("../assets/imgs/bgHeader.jpeg");
+    background-image: url("../assets/imgs/headerbg.jpg");
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: center top;
@@ -117,5 +193,17 @@ img {
        padding-left: 3px !important;
        padding-right: 3px !important;
        border-radius: 2px;
+    }
+    .footer {
+        grid-template-areas: 
+        'logof logof'
+        'cont ender'
+        'cont paym'
+        'cont tel'
+        'cont poli'
+        'ff ff'
+        !important
+        ;
+        gap: 5px;
     }
 }
