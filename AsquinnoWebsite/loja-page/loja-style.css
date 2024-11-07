@@ -1,9 +1,10 @@
 /*BARRA DE PESQUISA*/
 .campo-label {
   
-    display: block;
-    width: 360px;
-    background-color: #fff;
+    display: flex;
+    width: justify-content:center;
+    order: 1px;
+    background-color: #fefefe;
     position: relative;
     margin: auto;
     border-radius: 16px;
@@ -19,7 +20,7 @@
     height: 0;
     max-width: 100%;
     font-family: Roboto, Arial, sans-serif;
-    border-bottom: 3px solid #007cff;
+    border-bottom: 3px solid #0d77e7;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -32,7 +33,7 @@
   
   .campo-input {
   
-    color: #555;
+    color: #6d2aeb;
     border: none;
     padding: 0 10px;
     outline: none;
@@ -40,12 +41,12 @@
     font-size: 1.5rem;
     line-height: 2em;
     font-family: system-ui;
-    border-bottom: 3px solid #e2e2e2;
+    border-bottom: 3px solid #6d2aeb;
     background-color: transparent;
   
   }
   
-  .campo-input:focus { color:#202020; }
+  .campo-input:focus { color:#7700ff; }
   
   .btn-busca { 
   
@@ -64,4 +65,4 @@
   
   }
   
-  .btn-busca:hover { color:#555; } 
+  .btn-busca:hover { color:#d61b1b; } 
