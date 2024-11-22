@@ -1,69 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Asquino E-Commerc</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Instrumentos</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <header>
-    <!-- Barra de Pesquisa -->
-    <div class="search-bar">
-      <input type="text" placeholder="Pesquisar...">
-      <button>🔍</button>
+
+  <div class="search-container">
+    <img src="images/search-icon.png" alt="Lupa" class="search-icon">
+    <input type="text" placeholder="PESQUISAR..." id="search-input"> 
+    <button type="button" id="clear-button">X</button> 
+  </div>
+
+  <nav class="category-nav">
+    <ul>
+      <li><a href="#">TODOS</a></li>
+      <li><a href="#">PALHETAS</a></li>
+      <li><a href="#">CORDA</a></li>
+      <li><a href="#">VIOLÃO</a></li>
+      <li><a href="#">BAIXO</a></li>
+      <li><a href="#">GUITARRA</a></li>
+    </ul>
+  </nav>
+
+  <hr class="divisor">
+
+  <main class="product-grid">
+    <div class="product-card">
+      <div class="card-content">
+        </div>
     </div>
-    
-
-  </header>
-
-  <main>
-        <!-- Navegação -->
-        <nav>
-          <ul>
-            <li><a href="#">Todos</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">Palhetas</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">Cordas</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">Violão</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">Baixo</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">Guitarra</a></li>
-          </ul>
-        </nav>
-
-    <section class="products">
-      <div class="product">
-        <!-- Bolinha de Seleção -->
-        <div class="select-circle">
-          <input type="checkbox">
+    <div class="product-card">
+      <div class="card-content">
         </div>
-        <img src="img/encordoamento-basico-4-cordas-xl.jpg" alt="Encordoamento Básico 4 Cordas XL">
-        <h3>ITEM 1</h3>
-        <button>Comprar</button>
-      </div>
-      <div class="product">
-        <div class="select-circle">
-          <input type="checkbox">
+    </div>
+    <div class="product-card">
+      <div class="card-content">
         </div>
-        <img src="img/encordoamento-basico-4-cordas-xl.jpg" alt="Encordoamento Básico 4 Cordas XL">
-        <h3>Item 2L</h3>
-        <button>Comprar</button>
-      </div>
-      <div class="product">
-        <div class="select-circle">
-          <input type="checkbox">
-        </div>
-        <img src="img/encordoamento-viola-daddario-aco-011-048.jpg" alt="Encordoamento Violão D'Addario Aço 011-048">
-        <h3>Item 3</h3>
-        <button>Comprar</button>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <p>AGUARDANDO ZANDRO.</p>
-  </footer>
 </body>
 </html>
