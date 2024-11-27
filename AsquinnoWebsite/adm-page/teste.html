@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 6px 10px;
+    border: 0;
+}
+
+.popup-wrapper {
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+}
+
+.popup {
+    text-align: center;
+    position: relative;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    margin: 15% auto;
+    border-radius: 1%;
+    padding: 20px;
+    border: 1px solid orange;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Dentro do Pop-UP */
+
+.popup a {
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.emoticon {
+    font-size: 50px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: orange;
+}
+
+.link_de_popup {
+    color: #ffffff;
+    font-size: medium;
+    text-decoration: none;
+}
+
+button{
+    border-radius: 10%;
+}
+    </style>
+</head>
+<body>
+    <section class="produtos">
+        <button id="button">Historico</button>
+        <div class="popup-wrapper">
+          <div class="popup">
+            <div class="popup-close">&times;</div>
+            <div class="popup-content">
+              <p>Não é possível !!</p>
+              <p class="emoticon"><b>＼(º □ º l|l)/</b></p>
+              <p style="padding: 2% 0 2% 0;">Parece que não há nenhuma compra!</p>
+              <p><b>⤷</b><a class="link_de_popup" href="Slide_9.html"><b>Ir para o Catálogo!</b></a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script>
+      const button = document.getElementById('button')
+      const popupWrapper = document.querySelector('.popup-wrapper')
+  
+      button.addEventListener('click', () => {
+        popupWrapper.style.display = 'block'
+      })
+  
+      popupWrapper.addEventListener('click', event => {
+        const classNameOfClickedElement = event.target.classList[0];
+        console.log(classNameOfClickedElement)
+        const classNames = ['popup-close', 'popup-wrapper']
+        const closePopup = classNames.some(className => className === classNameOfClickedElement)
+  
+        if (closePopup) {
+          popupWrapper.style.display = 'none'
+        }
+      })
+      </script>
+</body>
+</html>

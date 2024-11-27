@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="historicoADM_style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Histórico de Conteúdo</title>
+    </head>
+<body>
+    <header>
+        <a href="gerenciamentoADM.html" class="return"><b>➜</b> RETORNAR</a>
+        <a href="" class="exit">SAIR ︱<i class='bx bx-x bx-sm'></i></a>
+    </header>
+    <main>
+        <div class="title">
+            <h1><i class='bx bx-history'></i> ︱ HISTÓRICO</h1>
+        </div>
+        <div class="content">
+            <!-- AULAS -->
+            <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
+                <div class="divColapse">
+                    <p>︱ AULAS</p>
+                    <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
+                </div>
+            </button>
+            <div id="conteudo1" class="conteudo-colapsado">
+                <section>
+                    <div class="box">
+                        <div class="name">
+                            <p>Guitarra</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt' id="aulaEdit_1"></i></p>
+                            <p><i class='bx bx-show' id="aulaHidn_1"></i></p>
+                            <p><i class='bx bxs-trash' id="aulaDel_1"></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Bateria</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt' id="aulaEdit_2"></i></p>
+                            <p><i class='bx bx-show' id="aulaHidn_2"></i></p>
+                            <p><i class='bx bxs-trash' id="aulaDel_2"></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Saxofone</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt' id="aulaEdit_3"></i></p>
+                            <p><i class='bx bx-show' id="aulaHidn_3"></i></p>
+                            <p><i class='bx bxs-trash' id="aulaDel_3"></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Vocal</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt' id="aulaEdit_4"></i></p>
+                            <p><i class='bx bx-show' id="aulaHidn_4"></i></p>
+                            <p><i class='bx bxs-trash' id="aulaDel_4"></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Desenho em Grupo</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt' id="aulaEdit_5"></i></p>
+                            <p><i class='bx bx-show' id="aulaHidn_5"></i></p>
+                            <p><i class='bx bxs-trash' id="aulaDel_5"></i></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr>
+
+            <!-- EVENTO -->
+            <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
+                <div class="divColapse">
+                    <p>︱ EVENTOS</p>
+                    <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
+                </div>
+            </button>
+            <div id="conteudo2" class="conteudo-colapsado">
+                <section>
+                    <div class="box">
+                        <div class="name">
+                            <p>Guitarra</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt'></i></p>
+                            <p><i class='bx bx-show'></i></p>
+                            <p><i class='bx bxs-trash'></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Baixo</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt'></i></p>
+                            <p><i class='bx bx-show'></i></p>
+                            <p><i class='bx bxs-trash'></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Violão</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt'></i></p>
+                            <p><i class='bx bx-show'></i></p>
+                            <p><i class='bx bxs-trash'></i></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr>
+
+            <!-- LOJA -->
+            <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
+                <div class="divColapse">
+                    <p>︱ LOJA</p>
+                    <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
+                </div>
+            </button>
+            <div id="conteudo3" class="conteudo-colapsado">
+                <section>
+                    <div class="box">
+                        <div class="name">
+                            <p>Guitarra</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt'></i></p>
+                            <p><i class='bx bx-show'></i></p>
+                            <p><i class='bx bxs-trash'></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Baixo</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt'></i></p>
+                            <p><i class='bx bx-show'></i></p>
+                            <p><i class='bx bxs-trash'></i></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <p>Violão</p>
+                        </div>
+                        <div class="options">
+                            <p><i class='bx bxs-edit-alt'></i></p>
+                            <p><i class='bx bx-show'></i></p>
+                            <p><i class='bx bxs-trash'></i></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Pop-Up -->
+        <section class="overlay" id="overlay">
+            <div class="popup" id="popupAulaEdit_1">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <h4>Guitarra</h4>
+                    <form action="">
+                        <label>
+                            <input type="text" placeholder="Adicione..." class="boxs" required>
+                        </label>
+                        <button>Finalizar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="popup" id="popupAulaHidn_1">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <strong>AVISO</strong>
+                    <p>Todo o conteúdo relacionado a <b>AULAS - GUITARRA</b> será ocultado, até que você altere essa configuração.</p>
+                </div>
+            </div>
+
+            <div class="popup" id="popupAulaDel_1">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <div class="titlePopup">ALERTA !!</div>
+                    <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <br><b>EXCLUÍDO PERMANENTEMENTE.</b></div>
+                    <div><b>Você tem certeza dessa ação??</b></div>
+                    <form action="">
+                        <label>
+                            <input type="password" placeholder="Digite sua senha" class="boxs" required>
+                        </label>
+                        <div><b>Depois não haverá volta</b></div>
+                        <button>CONFIRMAR</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="btnVis" alt="Visualizar Alterações">VISUALIZAR <b>➟</b></button>
+    </footer>
+    <script src="historicoADM_JS.js"></script>
+</body>
+</html>
