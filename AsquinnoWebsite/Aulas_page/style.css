@@ -110,37 +110,17 @@ header .menu ul li a.active {
 	justify-content: end;
 }
 
-.container .video{
-	width: 800px;
-	height: 400px;
-	background-color: #eeeeee;
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0px 0px 5px 3px #b5b5b5;
-}
-
-.video .playVideo{
-	width: 56px;
-	height: 56px;
-	background-color: #525252ce;
-	border-radius: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} 
-
-.video .playVideo i{
-	font-size: 45px;
-	color: rgba(255, 255, 255, 0.937);
-}
-
 .containerForm{
 	width: 46%;
 	max-width: 1000px;
 	margin: 0 auto;
 	z-index: 1;
+}
+
+.container video{
+	width: 80%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 5px #00000018;
 }
 
 .hero {
