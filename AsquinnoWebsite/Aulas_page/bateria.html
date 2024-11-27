@@ -8,6 +8,26 @@
 	<link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<style>
+	#cordasNav{
+	display: none;
+	}
+	#percussaoNav{
+		display: flex;
+	}
+	#soproNav{
+		display: none;
+	}
+	#vocalNav{
+		display: none;
+	}
+	#teclasNav{
+		display: none;
+	}
+	#emGrupoNav{
+		display: none;
+	}
+</style>
 <body>
 	<header>
 		<div class="containerPrincipal">
@@ -37,18 +57,32 @@
 			<div>
 				<h2>AULAS</h2>
 				<ul class="navegacao">
-					<li><p>Cordas</p></li>
-					<li><p class="active">Percussão</p></li>
-					<li><p>Sopro</p></li>
-					<li><p>Vocal</p></li>
-					<li><p>Teclas</p></li>
-					<li><p>Em Grupo</p></li>
+					<li><p id="cordas">Cordas</p></li>
+					<li><p id="percussao" class="active">Percussão</p></li>
+					<li><p id="sopro">Sopro</p></li>
+					<li><p id="vocal">Vocal</p></li>
+					<li><p id="teclas">Teclas</p></li>
+					<li><p id="emGrupo">Em Grupo</p></li>
 				</ul>
 			</div>
 			<div class="navBox">
-				<ul class="subnav">
+				<ul class="subnav" id="cordasNav">
+					<li><a href="guitarra.html">Guitarra</a></li>
+				</ul>
+				<ul class="subnav" id="percussaoNav">
 					<li><a href="bateria.html" class="active">Bateria</a></li>
-					<li><a href="#">Percussão</a></li>
+				</ul>
+				<ul class="subnav" id="soproNav">
+					<li><a href="saxofone.html">Saxofone</a></li>
+				</ul>
+				<ul class="subnav" id="vocalNav">
+					<li><a href="tecnica_vocal.html">Técnica Vocal</a></li>
+				</ul>
+				<ul class="subnav" id="teclasNav">
+					<li><a href="teclado.html">Teclado</a></li>
+				</ul>
+				<ul class="subnav" id="emGrupoNav">
+					<li><a href="desenho_artistico.html">Desenho Artístico</a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,17 +97,40 @@
 		<div class="container">
 			<div class="tabs">
 				<ul>
-					<li class="active">SOBRE A AULA</li>
-					<li>O QUE OFERECEMOS</li>
-					<li>DIFERENCIAIS</li>
-					<li>GALERIA</li>
+					<li id="topic1" class="active">SOBRE A AULA</li>
+					<li id="topic2">O QUE OFERECEMOS</li>
+					<li id="topic3">DIFERENCIAIS</li>
+					<li id="topic4">GALERIA</li>
 				</ul>
-				<div class="content">
+				<div id="content1">
+					<h2>Sobre a Aula</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibuismod id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non nunc a justo hendrerit venenatis. In accumsan ipsum magna, nec.</p>		
+				</div>
+				<div id="content2">
+					<h2>O que Oferecemos</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
 					<br>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibuismod id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
 					<br>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non nunc a justo hendrerit venenatis. In accumsan ipsum magna, nec.</p>
+				</div>
+				<div id="content3">
+					<h2>Diferenciais</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibuismod id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non nunc a justo hendrerit venenatis. In accumsan ipsum magna, nec.</p>
+				</div>
+				<div id="content4">
+					<h2>Galeria</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibuismod id. Fusce quis placerat magna. Vestibulum et pulvinar felis. Integer sed ultricies ex, quis viverra felis.</p>
 					<br>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum tortor sit amet vehicula commodo. Nullam faucibus pretium vehicula. Aliquam ac neque ipsum. In non nunc a justo hendrerit venenatis. In accumsan ipsum magna, nec.</p>
 				</div>
@@ -246,5 +303,6 @@
 	<a href="#" class="whatsapp">
 		<div class="circle"><i class='bx bxl-whatsapp' ></i></div>
 	</a>
+	<script src="AulasJS.js"></script>
 </body>
 </html>

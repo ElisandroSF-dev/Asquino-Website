@@ -194,7 +194,7 @@ section {
 }
 
 .containerNav{
-	margin: 0 180px;
+	margin: 0 220px;
 }
 
 section h2 {
@@ -232,6 +232,7 @@ section .navegacao li p {
     color: #969696;
     text-decoration: none;
     padding: 12px;
+	cursor: pointer;
 }
 
 section .navegacao li p.active {
@@ -519,6 +520,7 @@ footer .navegacao .col ul li a {
 	padding: 30px 0;
 	border-right: 6px solid #D9D9D9;
 	border-bottom: 1px solid #E3E3E3;
+	cursor: pointer;
 }
 
 .tabs ul li.active {
@@ -641,4 +643,11 @@ footer > p {
 	footer .foot {
 		padding: 20px 0;
 	}
+}
+
+#content1{
+	display: block;
+}
+#content2, #content3, #content4{
+	display: none;
 }
