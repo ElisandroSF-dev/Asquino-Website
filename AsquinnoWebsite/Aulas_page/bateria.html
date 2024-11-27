@@ -6,10 +6,11 @@
 	<title>Bateria - Asquino</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="containerPrincipal">
 			<div class="logo">
 				<a href="#">
 					<img src="img/image.png">
@@ -27,21 +28,29 @@
 		</div>
 	</header>
 	<div class="hero" style="background-image: url('img/bateria.png');">
-		<div class="container">
+		<div class="aulaTitle">
 			<h1>BA<n>TER</n>IA</h1>
 		</div>
 	</div>
 	<section>
-		<div class="container">
-			<h2>AULAS</h2>
-			<ul class="navegacao">
-				<li><a href="#">GUITARRA</a></li>
-				<li><a href="#" class="active">BATERIA</a></li>
-				<li><a href="#">SAXOFONE</a></li>
-				<li><a href="#">VOCAL</a></li>
-				<li><a href="#">TECLADO</a></li>
-				<li><a href="#">DESENHO</a></li>
-			</ul>
+		<div class="containerNav">
+			<div>
+				<h2>AULAS</h2>
+				<ul class="navegacao">
+					<li><p>Cordas</p></li>
+					<li><p class="active">Percussão</p></li>
+					<li><p>Sopro</p></li>
+					<li><p>Vocal</p></li>
+					<li><p>Teclas</p></li>
+					<li><p>Em Grupo</p></li>
+				</ul>
+			</div>
+			<div class="navBox">
+				<ul class="subnav">
+					<li><a href="bateria.html" class="active">Bateria</a></li>
+					<li><a href="#">Percussão</a></li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<section>
@@ -73,16 +82,20 @@
 	</section>
 	<section>
 		<div class="container">
-			<img src="img/video.png" width="100%">
+			<div class="video">
+				<div class="playVideo">
+					<i class='bx bx-play'></i>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section>
-		<div class="container">
+		<div class="containerAviso">
 			<h6>A primeira aula é gratuita!!</h6>
 		</div>
 	</section>
 	<section class="form">
-		<div class="container">
+		<div class="containerForm">
 			<h3>SE INTERESSOU??</h3>
 			<h5>PREENCHA O FORMULÁRIO ABAIXO, E FAÇA SUA MATRÍCULA</h5>
 			<form>
@@ -96,14 +109,20 @@
 				<div class="mb-10">
 					<select>
 						<option selected disabled value>Curso de Interesse *</option>
+						<option value="Cordas"></option>
+						<option value="Percussão"></option>
+						<option value="Sopro"></option>
+						<option value="Vocal"></option>
+						<option value="Teclas"></option>
+						<option value="Em Grupo"></option>
 					</select>
 				</div>
 				<div class="mb-10">
-					<input type="text" placeholder="Seu Nome *">
+					<input type="text" placeholder="Seu Nome">
 				</div>
 				<hr>
 				<div class="mb-10">
-					<textarea placeholder="Mensagem"></textarea>
+					<textarea placeholder="Mensagem..."></textarea>
 				</div>
 				<button>AGENDAR <img src="img/agendar.png"></button>
 				<span>Agendamento via WhatsApp</span>
@@ -206,26 +225,28 @@
 				<p>...</p>
 			</div>
 		</div>
-		<div class="foot">
+		<div class="footLink">
 			<a href="#">CURSO EAD</a>
 			<a href="#">TRABALHE CONOSCO</a>
 		</div>
 		<div class="sociais">
 			<a href="#">
-				<img src="img/instagram.png">
+				<i class='bx bxl-instagram'></i>
 			</a>
 			<a href="#">
-				<img src="img/facebook.png">
+				<i class='bx bxl-facebook-circle'></i>
 			</a>
 			<a href="#">
-				<img src="img/whatsapp2.png">
+				<i class='bx bxl-whatsapp' ></i>
 			</a>
 			<a href="#">
-				<img src="img/email.png">
+				<i class='bx bx-envelope'></i>
 			</a>
 		</div>
 		<p>© 2024 Asquino Conservatório Musical. Todos os direitos reservados.</p>
 	</footer>
-	<a href="#" class="whatsapp"><img src="img/whatsapp.png"></a>
+	<a href="#" class="whatsapp">
+		<div class="circle"><i class='bx bxl-whatsapp' ></i></div>
+	</a>
 </body>
 </html>
