@@ -1,0 +1,286 @@
+body{
+    font-family: system-ui;
+}
+
+header{
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header a{
+    text-decoration: none;
+    color: #A60000;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header a:hover{
+    color: #c00000;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    color: #969696;
+    text-transform: uppercase;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divColapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divColapse p{
+    padding: 0px 15px;
+    font-weight: bold;
+}
+
+.conteudo-colapsado{
+    display: none;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.conteudo-colapsado form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-colapsado button{
+    margin: 80px 0 50px 0;
+    background: linear-gradient(to top, #A60000, #ff0000);
+    height: 35px;
+    width: 50%;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.conteudo-colapsado button:hover{
+    font-size: 17px;
+    box-shadow: 0px 0px 5px 5px #ffcaca;
+}
+
+.btnColapse{
+    width: 60%;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btnColapse1{
+    background: linear-gradient(to right, #232323, #434343);
+}
+
+#btnColapse2{
+    background: linear-gradient(to right, #232323, #434343);
+}
+
+#btnColapse3{
+    background: linear-gradient(to right, #232323, #434343);
+}
+
+hr{
+    height: 2px;
+    width: 55%;
+    margin: 25px 0px;
+    background-color: #E3E3E3;
+    border: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer button{
+    height: 35px;
+    width: 135;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.btnHis{
+    background: linear-gradient(to top, #121B3A, #1F3379);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btnHis i{
+    font-size: 18px;
+}
+
+.btnHis:hover{
+    background: linear-gradient(to top, #1a2855, #2d4fc8)
+}
+
+.btnVis{
+    background: linear-gradient(to top, #121B3A, #1F3379);
+}
+
+.btnVis:hover{
+    background: linear-gradient(to top, #1a2855, #2d4fc8)
+}
+
+.btnVis b{
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+form .box{
+    margin-top: 30px;
+    width: 350px;
+    height: 150px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .imgFile {
+    padding: 10px 10px;
+    width: 150px;
+    background-color: #DFDFDF;
+    color: #969696;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.boxs{
+    width: 250px;
+    height: 35px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+}
+
+.conteudo-colapsado textarea{
+    width: 250px;
+    height: 135px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+}
+
+.conteudo-colapsado h4{
+    text-transform: uppercase;
+}
+
+.containerTitle{
+    width: 250px;
+}
+
+.containerTitle strong{
+    color: #5a5a5a;
+    font-size: 14px;
+}
+
+#button {
+    display: block;
+    width: 30%;
+    height: 25px;
+    margin-bottom: 15px;
+    /* border-color:#dfdfdf;
+    border-style: solid;
+    border-radius: 10px;
+    background: white;
+    color: gray;
+    box-shadow: 0px 0px 5px 3px #dfdfdf; */
+    cursor: pointer;
+}
+
+.popup-wrapper {
+    display: none;
+     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);   
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.popup {
+    width: 80%;
+    max-width: 500px;
+    margin: 15% auto;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid #555;
+    
+}
+
+/* Dentro do Pop-UP */
+.popup-close {
+    color: #A60000;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.popup-close:hover {
+    color: #c00000;
+}
+
+.popUp_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    margin: 12px 0px;
+}
