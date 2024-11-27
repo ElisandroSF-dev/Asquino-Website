@@ -1,0 +1,136 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Barra de pesquisa */
+.search-container {
+  background-color: #B500D3;
+  width: 100%; 
+  height: 60px; 
+  padding: 10px 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #f3f2f2; 
+  margin: 0; 
+}
+
+.search-icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+}
+
+.search-container input[type="text"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 35px;
+  border-radius: 12px;
+  width: 380px;
+  height: 14.42px;
+  background-color: #fff; 
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.search-container input[type="text"]::placeholder {
+  color: #969696;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-align: left; 
+}
+
+.search-container button {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff; 
+  position: absolute; /* Posicionamento absoluto dentro da barra */
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+/* Navbar de categorias */
+.category-nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* Espaçamento entre as categorias */
+  width: auto;
+}
+
+.category-nav li {
+  margin-bottom: 0;
+}
+
+.category-nav a {
+  text-decoration: none;
+  color: #969696; 
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.category-nav a.active {
+  background-color: #B500D3;
+  color: #fff; 
+  border-bottom: none;
+  padding: 8px 16px; 
+  border-radius: 5px; 
+}
+
+/* Grade de produtos */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Largura dos cards */
+  grid-gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+ 
+}
+
+.product-card {
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 400px; /* Largura dos cards */
+  height: 300px; /* Altura dos cards */
+}
+
+.card-content {
+  padding: 30px;
+}
+
+/* Círculo no canto superior direito */
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
