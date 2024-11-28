@@ -3,21 +3,28 @@
 
 /* Pré definições globais */
 
+@font-face {
+    font-family: Inter;
+    src: url("../fontes/Inter/static/Inter_18pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Archivo Black';
+    src: url("../fontes/Archivo_Black/ArchivoBlack-Regular.ttf");
+}
+
 body {
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    row-gap: 10px;
+    row-gap: 0px;
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
-    grid-template-areas: 
-    ''
-    ;
 }
-ul, li, ol {
+* {
     text-decoration: none;
     list-style: none;
 }
@@ -43,6 +50,7 @@ h3 {
 a {
     text-decoration: none;
     font-family: Inter;
+    color: unset;
 }
 
 h6,
@@ -63,45 +71,102 @@ img {
 
 /* Resto do css local */
 
-/* Definição de areas do grid */
+/* Todo footer CSS Abaixo */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+
+/* Definição de areas do grid footer */
 .footer {
     display: grid;
     grid-template-areas: 
     
-    'logof none none none none'
+    'logof blank blank blank blank'
     'logof cont cont ender poli'
-    'logof cont cont ender poli'
+    'logof cont cont tel paym'
     'logof cont cont tel paym'
     'ff ff ff ff ff'
     
     ;
-    background-color: #222;
+    background-image: linear-gradient(180deg, #323232 1%, #181818 90%);
     color: #fff !important;
+    height: auto;
+    gap: 0px;
+    vertical-align: bottom;
+}
+.footer ul li {
+    font-size: 11.5px;
+    font-family: Inter;
+    color: #ffffff66 !important;
+}
+.footer label {
+    font-size: 11.5px;
+    font-family: 'Archivo Black';
+    color: #ffffffbd !important;
 }
 .logo-footer {
     grid-area: logof;
     width: 200px;
     height: auto;
+    margin: 15px 0px 0px 10px;
+}
+.blank-space{
+    grid-area: blank;
+    width: 200px;
+    height: 60px;
     margin: 15px;
+    display: block;
 }
 .cont-f {
     grid-area: cont;
+    width: 250px;
+    max-height: 400px;
+    display: grid;
+    grid-template-areas:
+        'lab lab'
+        'a b'
+    ;
+    justify-content: space-between;
+    padding-inline-start: 0 !important;
 }
+.cont-f label {
+    grid-area: lab;
+    padding-inline-start: 0 !important;
+}
+.cont-f a {
+    grid-area: a;
+    padding-inline-start: 0 !important;
+}
+.cont-f b {
+    grid-area: b;
+    padding-inline-start: 0 !important;
+}
+
+
 .endereco-f {
     grid-area: ender;
+    padding-inline-start: 0 !important;
 }
 .poli-f {
     grid-area: poli;
+    padding-inline-start: 0 !important;
 }
 
 .tel-f {
     grid-area: tel;
+    padding-inline-start: 0 !important;
 }
 .paym-f {
     grid-area: paym;
+    padding-inline-start: 0 !important;
 }
 .bottom-footer {
     grid-area: ff;
+    padding-inline-start: 0 !important;
+    margin-top: 60px;
+}
+
+.bottom-footer hr {
+    border-color: rgba(255,255,255,.4);
+    width: 85vw;
 }
 
 .ead {
@@ -109,6 +174,13 @@ img {
     flex-direction: row;
     flex-flow: row;
     justify-content: space-around;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+.ead div p a {
+    font-size: 12px !important;
+    text-decoration: underline;
 }
 .icons-social {
     display: flex !important;
@@ -116,22 +188,30 @@ img {
     flex-flow: row;
     justify-content: space-evenly;
     text-align: center;
+    width: 30vw;
+    transform: translateX(115%);
 }
 
 .authoral-rights {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-flow: row;
-    justify-content: space-evenly;
     text-align: center;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+.authoral-rights p {
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 .footer ul {
     margin: 10px;
 }
 
-
-
+/* /\ /\ /\ /\ /\ /\ /\ /\ */
+/* Todo footer CSS Acima */
+/*-----------------------------------------------*/
+/* Css da Header: */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
 
 .logo-header {
     display: flex;
