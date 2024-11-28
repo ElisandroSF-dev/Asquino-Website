@@ -185,7 +185,7 @@ footer button{
 
 .overlay {
     display: none;
-     width: 100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);   
     top: 0;
@@ -201,29 +201,48 @@ footer button{
     display: none;
 }
 
-#popupAulaHidn_1 strong{
+.popUpContent h2{
     color: #c00000;
-    font-size: 22px;
 }
 
-#popupAulaDel_1{
-    display: none;
-}
-
-#popupAulaDel_1 p:first-child{
-    color: #c00000;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-#popupAulaDel_1 strong{
+.popUpContent strong{
     text-transform: uppercase;
+    color: black;
 }
 
 #popupAulaDel_1 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#popupAulaDel_1 form div{
+    font-size: 12px;
+}
+
+#popupAulaDel_1 form label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#popupAulaDel_1 form label input{
+    width: 100%;
+}
+
+#popupAulaDel_1 button{
+    background: linear-gradient(to top, #A60000, #ff0000);
+    height: 30px;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#popupAulaDel_1 button:hover{
+    font-size: 12px;
 }
 
 
@@ -234,7 +253,7 @@ footer button{
     padding: 25px 20px;
     position: relative;
     background-color: white;
-    color: black;
+    color: #555;
     border-radius: 10px;
     border: 1px solid #555;
 }
@@ -248,6 +267,15 @@ footer button{
     font-size: 28px;
 }
 
+.iconAlert {
+    color: #555;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
 .popupClose:hover {
     color: #c00000;
 }
@@ -256,4 +284,5 @@ footer button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 30px;
 }

@@ -57,18 +57,26 @@ const closePopupBtn = document.querySelector(".popupClose");
 const popupAulaEdit_1 = document.getElementById("popupAulaEdit_1");
 const popupAulaHidn_1 = document.getElementById("popupAulaHidn_1");
 const popupAulaDel_1 = document.getElementById("popupAulaDel_1");
-const overlay = document.querySelector(".overlay");
+const overlay = document.getElementById("overlay");
 
 // Abrir o popup
 aulaEdit_1.addEventListener("click", () => {
     popupAulaEdit_1.style.display = "block";
+    popupAulaHidn_1.style.display = "none";
+    popupAulaDel_1.style.display = "none";
     overlay.style.display = "block";
 });
+
 aulaHidn_1.addEventListener("click", () => {
+    popupAulaEdit_1.style.display = "none";
     popupAulaHidn_1.style.display = "block";
+    popupAulaDel_1.style.display = "none";
     overlay.style.display = "block";
 });
+
 aulaDel_1.addEventListener("click", () => {
+    popupAulaHidn_1.style.display = "none";
+    popupAulaEdit_1.style.display = "none";
     popupAulaDel_1.style.display = "block";
     overlay.style.display = "block";
 });
