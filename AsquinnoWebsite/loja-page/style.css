@@ -1,6 +1,289 @@
+* {
+	margin: unset;
+	padding: unset;
+	box-sizing: border-box;
+}
+
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+  padding-bottom: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #fff;
+}
+
+header .logo img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -80px;
+}
+
+header .logo button {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    border-radius: 48px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: unset;
+}
+
+header .menu {
+	display: flex;
+	justify-content: end;
+}
+
+header .menu ul {
+	list-style: none;
+	display: flex;
+	gap: 40px;
+}
+
+header .menu ul li {
+    position: relative;
+}
+
+header .menu ul li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    color: #fff;
+}
+
+header .menu ul li a {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+}
+
+header .menu ul li a.active {
+    background: rgb(209 0 243 / 41%);
+}
+
+.containerPrincipal{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	z-index: 1;
+	padding: 0 20px;
+}
+
+footer {
+	padding: 50px;
+	background: linear-gradient(to bottom, #323232 0%, #181818 100%);
+}
+
+footer .logo {
+	margin-bottom: 50px;
+}
+
+footer .logo img {
+	width: 100%;
+	max-width: 300px;
+}
+
+footer .navegacao {
+	display: flex;
+	gap: 20px;
+}
+
+footer .navegacao .col {
+	flex: 1;
+}
+
+footer .navegacao .col.wide {
+	flex: 2;
+}
+
+footer .navegacao .col > b {
+	display: block;
+	color: #D9D9D9;
+	margin-bottom: 20px;
+}
+
+footer .navegacao .col ul {
+	list-style: none;
+}
+
+footer .navegacao .col ul li a {
+	color: #969696;
+	text-decoration: none;
+}
+
+.dgrid2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.tabs {
+	display: flex;
+	gap: 40px;
+}
+
+.tabs ul {
+	list-style: none;
+}
+
+.tabs ul li {
+	width: 100%;
+	min-width: 230px;
+	font-size: 18px;
+	color: #AE00BA;
+	font-weight: bold;
+	padding: 30px 0;
+	border-right: 6px solid #D9D9D9;
+	border-bottom: 1px solid #E3E3E3;
+	cursor: pointer;
+}
+
+.tabs ul li.active {
+	border-right-color: #AE00BA;
+}
+
+.tabs ul li:last-child {
+	border-bottom: unset;
+}
+
+.tabs .content {
+	color: #000;
+	flex-grow: 1;
+}
+
+footer .navegacao .col p, footer .navegacao .col p a {
+	color: #969696;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+footer .footLink {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px;
+	border-bottom: 4px solid #3A3A3A;
+}
+
+footer .footLink a {
+	color: #3A3A3A;
+	font-weight: bold;
+}
+
+footer .footLink a:hover {
+	color: #E39600;
+	font-size: 15px;
+}
+
+footer .sociais {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin: 30px 0;
+}
+
+footer .sociais i {
+	font-size: 30px;
+	height: 40px;
+	color: #3A3A3A;
+}
+
+footer .sociais i:hover {
+	color: #E39600;
+	font-size: 32px;
+}
+
+footer > p {
+	color: #3A3A3A;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	header .logo img {
+		margin-left: -40px;
+	}
+
+	header .menu {
+		display: none;
+	}
+
+	header .menu ul {
+		width: 100%;
+		flex-direction: column;
+    	gap: 15px;
+	}
+
+	header .logo button {
+		display: flex;
+	}
+
+	.hero h1 {
+	    font-size: 60px;
+	    line-height: 60px;
+	}
+
+	section .navegacao {
+	    flex-direction: column;
+	    gap: 20px;
+	}
+
+	section .sub_navegacao {
+		text-align: left;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	section.contacts .infos {
+	    flex-direction: column;
+	}
+
+	section.contacts .infos hr {
+		width: 100px;
+		height: auto;
+	}
+
+	.tabs {
+	    flex-direction: column;
+	}
+
+	footer .navegacao {
+		flex-direction: column;
+	}
+
+	.dgrid2 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	footer .foot {
+		padding: 20px 0;
+	}
+}
+
+#content1{
+	display: block;
+}
+#content2, #content3, #content4{
+	display: none;
+}
+
+
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   margin: 0;
   text-align: center;
@@ -9,19 +292,19 @@ body {
 /* Barra de pesquisa */
 .search-container {
   background-color: #B500D3;
-  width: 100%; 
-  height: 60px; 
-  padding: 10px 0; 
+  width: 100vw; 
+  height: 60vh; 
+  padding: 10% 0%; 
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0; 
+  margin: 0%; 
 }
 
 .search-icon {
-  position: absolute;
-  left: 30px;
+  position: relative;
+  left: 30%;
   top: 50%;
   transform: translateY(-50%);
   width: 16px;
@@ -33,8 +316,8 @@ body {
   align-items: center;
   padding: 5px 5px 5px 35px;
   border-radius: 12px;
-  width: 380px;
-  height: 14.42px;
+  width: 65%;
+  height: 14.42;
   background-color: #fff; 
   font-size: 12px;
   font-family: Arial, sans-serif;
@@ -50,7 +333,7 @@ body {
 .search-container button {
   background-color: transparent;
   border: none;
-  padding: 8px;
+  padding: 10%;
   cursor: pointer;
   font-weight: bold;
   color: #fff; 
@@ -102,34 +385,39 @@ body {
 .product-grid {
   display: flex;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Largura dos cards */
-  grid-gap: 20px; /* Espaçamento entre os cards */
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150%, 1fr)); /* Largura dos cards */
+  grid-gap: 2px; /* Espaçamento entre os cards */
+  padding: 2px;
+  margin: 2px;
  
 }
 
 .product-card {
-  border: 1.5px solid #ccc;
-  border-radius: 10px;
+  border: 1.5px solid #000000;
+  border-radius: 12px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
-  width: 400px; /* Largura dos cards */
-  height: 300px; /* Altura dos cards */
+  min-width: 450px; /* Largura dos cards */
+  min-height: 150px; /* Altura dos cards */
+  width: 450px; /* Largura dos cards */
+  height: 150px;
+  margin: 2%;
 }
 
 .card-content {
-  padding: 30px;
+  padding: 75%;
 }
 
 /* Círculo no canto superior direito */
 .product-card::before {
   content: "";
+  border: 1.5px solid #000000;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 10%;
+  right: 10%;
   width: 20px;
   height: 20px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 50%;
 }
