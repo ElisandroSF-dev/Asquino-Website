@@ -71,6 +71,183 @@ img {
 
 /* Resto do css local */
 
+/* Css da Header: */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+.menu-burguer {
+    display: none;
+}
+
+.header-fixed {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 24;
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    left: -60px;
+    top: 4px;
+    background: url("../assets/imgs/logo.png") no-repeat;
+    background-size: 310px 100%;
+    background-position: left center;
+}
+.lineH {
+    height: 3px;
+    background-color: #fff;
+}
+
+nav div p {
+    font-family: Arial, Helvetica, sans-serif
+}
+.navH div p {
+    font-size: 15px;
+    font-weight: 550;
+    color: #fff;
+    margin: 0px !important;
+    align-content: center;
+    height: 100%;
+} 
+
+.navH div {
+    justify-content: center;
+    width: 80px;
+    height: auto;
+    text-align: center;
+    z-index: 10;
+    margin-top: -4px;
+    border-top: 4px solid #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navH div:hover{
+    border-top: 4px solid #D100F3 !important;
+    background-color: rgba(209,0,243,25%);
+}
+.navH {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    height: 40px;
+    width: 85vw;
+    justify-content: end;
+    border-top: 4px solid #fff;
+    z-index: 9;
+}
+.navH .detail {
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 16px;
+    margin: 0px 5px 0px 5px;
+}
+.banner-header {
+    background-image: url("../assets/imgs/bgHeader.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+    background-color: #0000009d;
+    background-blend-mode: multiply;
+    min-height: 750px;
+    top: 0;
+    position: relative;
+}
+.call-to-action-header {
+    color: #fff;
+    padding-bottom: 5px !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.call-to-action-header h3,a {
+    font-size: 20px;
+}
+.high-2 {
+    color: #e251f8;
+    font-family: 'Archivo Black' !important;
+}
+
+.whatsapp-icon-onheader {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    transform: translateY(50%);
+    margin: 0px 30px 5px 0px;
+    z-index: 900;
+}
+.whatsapp-icon-onheader svg {
+    background-color: hsl(147, 50%, 47%) !important;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+/* Fim do css da header */
+
+.parent-section-info {
+    height: auto;
+    background-image: url('../assets/imgs/detail_subheader.png');
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+    background-color: #000000ee;
+    background-blend-mode:luminosity;
+    filter: brightness(150%);
+    width: 100vw;
+    position: relative;
+    padding-top: 130px;
+}
+.text-items-info div h2, p {
+    margin: 0px !important;
+    color: #ffffff23;
+    font-size: 16px;
+}
+.text-items-info div h2 {
+    font-size: 42px;
+}
+.info-section span {
+    width: 3px;
+    display: block;
+    height: 75%;
+    background-color: #ffffff23;
+    position: relative;
+    top: 100px;
+}
+.icons-info {
+    margin: 35px 0px 10px 0px;
+}
+.info-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+}
+.info-section div {
+    text-align: center;
+}
+.items-info p  {
+    color: #ffffff98;
+    font-size: 16px;
+}
+.text-items-info {
+    width: 200px;
+    height: auto;
+}
+
 /* Todo footer CSS Abaixo */
 /* \/ \/ \/ \/ \/ \/ \/ \/ */
 
@@ -213,53 +390,13 @@ img {
 /* /\ /\ /\ /\ /\ /\ /\ /\ */
 /* Todo footer CSS Acima */
 /*-----------------------------------------------*/
-/* Css da Header: */
-/* \/ \/ \/ \/ \/ \/ \/ \/ */
-
-.logo-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-.logo {
-    width: 140px;
-}
-.banner-header {
-    background-image: url("../assets/imgs/headerbg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
-    background-position: center top;
-    background-color: #0000003a;
-    background-blend-mode:multiply;
-    position: relative;
-    top: 0;
-}
-.call-to-action-header {
-    color: #fff;
-    padding-bottom: 5px !important;
-}
-.high-2 {
-    color: #e251f8;
-    font-family: 'Archivo Black' !important;
-}
-
-.whatsapp-icon-onheader {
-    position: absolute;
-    right: 5px;
-    bottom: 0;
-    transform: translateY(50%);
-}
-.whatsapp-icon-onheader svg {
-    background-color: hsl(147, 50%, 47%) !important;
-    border-radius: 100px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 3px;
-}
 
 /* Css mobile */
+@media only screen and (max-width: 809px) {
+    .info-section span:nth-child(1)  {
+        display: none !important;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     
