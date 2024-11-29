@@ -117,15 +117,16 @@ img {
 }
 .cont-f {
     grid-area: cont;
-    width: 250px;
-    max-height: 400px;
+    width: auto;
+    height: auto;
+    min-width: 235px;
     display: grid;
     grid-template-areas:
         'lab lab'
         'a b'
     ;
-    justify-content: space-between;
-    padding-inline-start: 0 !important;
+    column-gap: 5px;
+	padding-inline-start: 0 !important;
 }
 .cont-f label {
     grid-area: lab;
@@ -133,11 +134,13 @@ img {
 }
 .cont-f a {
     grid-area: a;
-    padding-inline-start: 0 !important;
+	padding-inline-start: 0 !important;
+
 }
 .cont-f b {
     grid-area: b;
-    padding-inline-start: 0 !important;
+	padding-inline-start: 0 !important;
+
 }
 
 
@@ -274,6 +277,8 @@ img {
        padding-right: 3px !important;
        border-radius: 2px;
     }
+
+    /* Footer css mobile completo */
     .footer {
         grid-template-areas: 
         'logof logof'
@@ -286,4 +291,14 @@ img {
         ;
         gap: 5px;
     }
+    .blank-space {
+        display: none !important;
+    }
+    .cont-f {
+        min-width: auto !important;
+        display: block !important;
+        padding-inline-start: 30px !important;
+
+    }
+    /* Fim footer css mobile completo */
 }
