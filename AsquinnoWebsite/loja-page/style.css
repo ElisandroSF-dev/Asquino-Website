@@ -3,62 +3,59 @@ body {
   font-family: Arial, sans-serif;
   font-size: 12px;
   margin: 0;
-  text-align: center;
+  text-align: left;
+  background-color: #fff;
 }
 
 /* Barra de pesquisa */
 .search-container {
   background-color: #B500D3;
-  width: 100%; 
-  height: 60px; 
-  padding: 10px 0; 
+  width: 100%;
+  height: 70px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border: 1px solid #f3f2f2; 
-  margin: 0; 
+  margin: 0;
 }
 
-.search-icon {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-}
-
-.search-container input[type="text"] {
+.search-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 5px 5px 35px;
-  border-radius: 12px;
+  padding: 5px 25px 5px 5px;
+  border-radius: 15px;
   width: 380px;
   height: 14.42px;
-  background-color: #fff; 
+  color: #969696;
+  background-color: #fff;
   font-size: 12px;
   font-family: Arial, sans-serif;
+  text-align: left;
+  border: none;
+  position: relative;
 }
 
 .search-container input[type="text"]::placeholder {
   color: #969696;
   font-size: 12px;
   font-family: Arial, sans-serif;
-  text-align: left; 
+  text-align: left;
 }
 
-.search-container button {
+.clear-button {
   background-color: transparent;
+  color: black;
   border: none;
-  padding: 8px;
   cursor: pointer;
   font-weight: bold;
-  color: #fff; 
-  position: absolute; /* Posicionamento absoluto dentro da barra */
+  position: absolute;
   top: 50%;
-  right: 10px;
-  transform: translateY(-50%); /* Centraliza verticalmente */
+  right: 5px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  z-index: 1;
 }
 
 /* Navbar de categorias */
@@ -67,6 +64,7 @@ body {
   padding: 10px 20px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .category-nav ul {
@@ -74,48 +72,70 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
-  gap: 20px; /* Espaçamento entre as categorias */
+  justify-content: space-around;
+  gap: 20px;
   width: auto;
+  flex-wrap: wrap;
 }
 
 .category-nav li {
-  margin-bottom: 0;
+  display: flex;        /* Torna o item um flex container */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  border-right: 1px solid #ccc;
+  padding: 0; /* Remove o padding do <li> */
+  height: 40px; /* Define a altura do item do menu */
+  text-align: center;
 }
 
-.category-nav a {
+.category-nav li:last-child {
+  border-right: none;
+}
+
+.category-nav li a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 16px; /* Adiciona padding ao <a> */
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
   text-decoration: none;
-  color: #969696; 
+  color: #969696;
   font-weight: bold;
   font-size: 12px;
+  text-transform: uppercase;
   font-family: Arial, sans-serif;
+  line-height: 40px;
 }
 
-.category-nav a.active {
+.category-nav li.active a {
   background-color: #B500D3;
-  color: #fff; 
-  border-bottom: none;
-  padding: 8px 16px; 
-  border-radius: 5px; 
+  color: #fff;
+  border-bottom-color: #B500D3;
+  border-bottom: 4px solid #B500D3;
+}
+
+/* Linha abaixo do menu */
+.divisor {
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
 }
 
 /* Grade de produtos */
 .product-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Largura dos cards */
-  grid-gap: 20px; /* Espaçamento entre os cards */
+  gap: 20px;
   padding: 20px;
- 
 }
 
 .product-card {
-  border: 1.5px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1  none;
   position: relative;
-  width: 400px; /* Largura dos cards */
-  height: 300px; /* Altura dos cards */
+  width: 400px;
+  height: 300px;
 }
 
 .card-content {
@@ -133,4 +153,19 @@ body {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
+}
+
+/* Media Query para responsividade */
+@media (max-width: 768px) {
+  .search-input {
+    width: 90%;
+  }
+
+  .category-nav ul {
+    justify-content: center;
+  }
+
+  .category-nav li {
+    margin: 5px 0;
+  }
 }

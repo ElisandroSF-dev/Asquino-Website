@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja de Instrumentos</title>
-  <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Instrumentos</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
-  <div class="search-container">
-    <img src="images/search-icon.png" alt="Lupa" class="search-icon">
-    <input type="text" placeholder="PESQUISAR..." id="search-input"> 
-    <button type="button" id="clear-button">X</button> 
-  </div>
+  <div class="search-container">
+    🔍 
+    <input type="text" placeholder="PESQUISAR..." id="search-input" class="search-input"> 
+    <button type="button" id="clear-button" class="clear-button">X</button>
+  </div>
 
-  <nav class="category-nav">
-    <ul>
-      <li><a href="#">TODOS</a></li>
-      <li><a href="#">PALHETAS</a></li>
-      <li><a href="#">CORDA</a></li>
-      <li><a href="#">VIOLÃO</a></li>
-      <li><a href="#">BAIXO</a></li>
-      <li><a href="#">GUITARRA</a></li>
-    </ul>
-  </nav>
+  <nav class="category-nav">
+      <ul>
+        <li class="active"><a href="#">TODOS</a></li> 
+        <li><a href="#">VIOLÃO</a></li>
+        <li><a href="#">BAIXO</a></li>
+        <li><a href="#">GUITARRA</a></li>
+      </ul>
+    </nav>
 
-  <hr class="divisor">
+  <hr class="divisor">
 
-  <main class="product-grid">
-    <div class="product-card">
-      <div class="card-content">
-        </div>
-    </div>
-    <div class="product-card">
-      <div class="card-content">
-        </div>
-    </div>
-    <div class="product-card">
-      <div class="card-content">
-        </div>
-    </div>
-  </main>
+  <main class="product-grid">
+    <div class="product-card">
+      <div class="card-content">
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="card-content">
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="card-content">
+        </div>
+    </div>
+  </main>
 
+  <script>
+    // JavaScript para o menu
+    const menuItems = document.querySelectorAll('.category-nav li');
+
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // Remove a classe 'active' de todos os itens
+        menuItems.forEach(item => item.classList.remove('active'));
+
+        // Adiciona a classe 'active' ao item clicado
+        item.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
