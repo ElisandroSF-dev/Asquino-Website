@@ -34,17 +34,18 @@
 
   <main>
     <div class="search-container">
-      <img src="img/lupa.png" alt="Lupa" class="search-icon"> 
-      <input type="text" placeholder="PESQUISAR..." id="search-input">
+      <img src="img/lupa.png" alt="Lupa" class="search-icon" id="search-icon"> 
+      <input type="text" placeholder="PESQUISAR..." id="search-input" onkeypress="handleKeyPress(event)">
       <button type="button" id="clear-button">X</button>
     </div>
 
+
     <nav class="category-nav">
       <ul>
-        <li class="active"><a href="todos.html">TODOS</a></li>
+        <li><a href="todos.html">TODOS</a></li>
         <li><a href="violao.html">VIOLÃO</a></li>
-        <li><a href="bateria.html">BATERIA</a></li>
-        <li><a href="guitarra.html">GUITARRA</a></li>
+        <li><a href="Baixo.html">CONTRABAIXO</a></li>
+        <li class="active"><a href="guitarra.html">GUITARRA</a></li>
       </ul>
       <div class="active-bar"></div> 
     </nav>
@@ -62,9 +63,9 @@
       <div class="product-card">
         <div class="card-content">
           <div class="selection-circle"></div>
-          <img src="img/violao1.png" alt="Violão 1"> 
-          <h3>Violão meteoro da paixão.</h3>
-          <p class="price">R$ 100,00</p>
+          <img src="img/guitarra1.png" alt="guitarra 1"> 
+          <h3>Guitarra Trovão.</h3>
+          <p class="price">R$ 800,00</p>
           <a href="#" class="whatsapp-button">
             <i class="fab fa-whatsapp"></i> COMPRAR
           </a>
@@ -74,9 +75,9 @@
       <div class="product-card">
         <div class="card-content">
           <div class="selection-circle"></div>
-          <img src="img/violao2.png" alt="Violão 2"> 
-          <h3>Violão Dormi na praça.</h3>
-          <p class="price">R$ 200,00</p>
+          <img src="img/guitarra2.png" alt="guitarra 2"> 
+          <h3>Guitarra Meteoro.</h3>
+          <p class="price">R$ 700,00</p>
           <a href="#" class="whatsapp-button">
             <i class="fab fa-whatsapp"></i> COMPRAR
           </a>
@@ -86,9 +87,9 @@
       <div class="product-card">
         <div class="card-content">
           <div class="selection-circle"></div>
-          <img src="img/violao3.png" alt="Violão 3"> 
-          <h3>Violão manhã de sol.</h3>
-          <p class="price">R$ 300,00</p>
+          <img src="img/guitarra3.png" alt="guitarra 3"> 
+          <h3>Guitarra Tornado.</h3>
+          <p class="price">R$ 900,00</p>
           <a href="#" class="whatsapp-button">
             <i class="fab fa-whatsapp"></i> COMPRAR
           </a>

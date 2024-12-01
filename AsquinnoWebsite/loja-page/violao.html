@@ -34,16 +34,17 @@
 
   <main>
     <div class="search-container">
-      <img src="img/lupa.png" alt="Lupa" class="search-icon"> 
-      <input type="text" placeholder="PESQUISAR..." id="search-input">
+      <img src="img/lupa.png" alt="Lupa" class="search-icon" id="search-icon"> 
+      <input type="text" placeholder="PESQUISAR..." id="search-input" onkeypress="handleKeyPress(event)">
       <button type="button" id="clear-button">X</button>
     </div>
 
+
     <nav class="category-nav">
       <ul>
-        <li class="active"><a href="todos.html">TODOS</a></li>
-        <li><a href="violao.html">VIOLÃO</a></li>
-        <li><a href="bateria.html">BATERIA</a></li>
+        <li><a href="todos.html">TODOS</a></li>
+        <li class="active"><a href="violao.html">VIOLÃO</a></li>
+        <li><a href="Baixo.html">CONTRABAIXO</a></li>
         <li><a href="guitarra.html">GUITARRA</a></li>
       </ul>
       <div class="active-bar"></div> 
