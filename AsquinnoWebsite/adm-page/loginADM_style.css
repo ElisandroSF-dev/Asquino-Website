@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url('../imagens/Asquino_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: system-ui;
+}
+
+.container{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000b7, #0000002d);
+    background-position: center;
+}
+
+header p{
+    margin-left: 30px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header .exit{
+    padding: 10px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+}
+
+header .exit a{
+    color: #A60000;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .exit a:hover{
+    color: #c00000;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.columnLeft{
+    width: 50%;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnLeft p{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.columnRight{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box label{
+    margin-bottom: 50px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dadosUser{
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #D100F3, #8900A0);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: #969696 2px solid;
+    width: 150%;
+}
+
+button{
+    width: 100px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #D100F3, #8900A0);
+    color: white;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.center{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #D100F3, #8900A0);
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}

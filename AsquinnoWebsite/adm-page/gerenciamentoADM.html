@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="gerenciamentoADM_style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Adiministração</title>
+    </head>
+<body>
+    <header>
+        <a href="../home/index.html">SAIR ︱<i class='bx bx-x bx-sm'></i></a>
+    </header>
+    <main>
+        <div class="title">
+            <h1>ADMINISTRAÇÃO</h1>
+        </div>
+        <div class="content">
+            <!-- AULAS -->
+            <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
+                <div class="divColapse">
+                    <p>︱ AULAS</p>
+                    <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
+                </div>
+            </button>
+            <div id="conteudo1" class="conteudo-colapsado">
+                <form action="">
+                    <div class="box">
+                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                            <input type="file" id="arquivo1" required>
+                        </label>
+                        <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
+                    </div>
+                    <hr>
+
+                    <label>
+                        <input type="text" placeholder="Nome do Curso" class="boxs" required>
+                    </label>
+
+                    <label for="opcoes">
+                        <div class="containerTitle">
+                            <strong>| Tipo de Curso:</strong>
+                        </div>
+                        <select id="opcoes" name="opcoes" class="boxs">
+                            <option value="opcao1">Cordas</option>
+                            <option value="opcao2">Percussão</option>
+                            <option value="opcao3">Sopro</option>
+                            <option value="opcao4">Vocal</option>
+                            <option value="opcao5">Teclas</option>
+                            <option value="opcao6">Em Grupo</option>
+                        </select>
+                    </label>
+
+                    <input type="button" id="button" value="Adicionar um novo tipo curso">
+                    
+                    <label for="opcoes">
+                        <div class="containerTitle">
+                            <strong>| Classificação de Idade:</strong>
+                        </div>
+                        <select id="opcoes" name="opcoes" class="boxs">
+                            <option value="opcao1">Regular</option>
+                            <option value="opcao2">Infantil</option>
+                        </select>
+                    </label>
+                    <hr>
+
+
+                    <h4>Descrição da Aula</h4>
+                    <label>
+                        <div class="containerTitle">
+                            <strong>| Sobre a Aula:</strong>
+                        </div>
+                        <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                    </label>
+                    <label>
+                        <div class="containerTitle">
+                            <strong>| O que Oferecemos:</strong>
+                        </div>
+                        <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                    </label>
+                    <label>
+                        <div class="containerTitle">
+                            <strong>| Diferenciais:</strong>
+                        </div>
+                        <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                    </label>
+
+                    <h4>Galeria de Fotos</h4>
+                    <div class="box">
+                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                            <input type="file" id="galery1" required>
+                        </label>
+                        <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                    </div>
+                    <p>Adicionar mais</p>
+                    <hr>
+                    
+                    <label>
+                        <input type="checkbox">Com primeira aula <b>gratuita</b>
+                    </label>
+
+                    <button>REGISTRAR</button>
+                </form>
+            </div>
+            <hr>
+
+            <!-- EVENTO -->
+            <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
+                <div class="divColapse">
+                    <p>︱ EVENTOS</p>
+                    <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
+                </div>
+            </button>
+            <div id="conteudo2" class="conteudo-colapsado">
+                <form action="">
+                    <div class="box">
+                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                            <input type="file" id="arquivo2" required>
+                        </label>
+                        <span class="file-name" id="file-name2">Nenhum arquivo escolhido</span>
+                    </div>
+                    <hr>
+                    <label>
+                        <input type="text" placeholder="Título do Evento" class="boxs" required>
+                    </label>
+
+                    <label>
+                        <input type="text" placeholder="Subtítulo do Evento" class="boxs" required>
+                    </label>
+
+                    
+                    <label>
+                        <div class="containerTitle">
+                            <strong>| Data:</strong>
+                        </div>
+                        <input type="date" class="boxs" required>
+                    </label>
+                    <label>
+                        <div class="containerTitle">
+                            <strong>| Descrição do Evento:</strong>
+                        </div>
+                        <textarea name="mensagem" placeholder="..." required></textarea>
+                    </label>
+                    <button>REGISTRAR</button>
+                </form>
+            </div>
+            <hr>
+
+            <!-- LOJA -->
+            <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
+                <div class="divColapse">
+                    <p>︱ LOJA</p>
+                    <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
+                </div> 
+            </button>
+            <div id="conteudo3" class="conteudo-colapsado">
+                <form action="">
+                    <div class="box">
+                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                            <input type="file" id="arquivo3" required>
+                        </label>
+                        <span class="file-name" id="file-name3">Nenhum arquivo escolhido</span>
+                    </div>
+                    <hr>
+                    <label>
+                        <input type="text" placeholder="Nome do Produto" class="boxs" required>
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Marca do Produto" class="boxs" required>
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Código do Produto" class="boxs" required>
+                    </label>
+                    <label>
+                        <div class="containerTitle">
+                            <strong>| Descrição do Produto:</strong>
+                        </div>
+                        <textarea name="mensagem" placeholder="..." required></textarea>
+                    </label>
+                    <button>REGISTRAR</button>
+                </form>
+            </div>
+        </div>
+        <!-- Pop-Up -->
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup-close">&times;</div>
+                <div class="popUp_content">
+                    <h4>Adicionar uma nova Classe:</h4>
+                    <form action="">
+                        <label>
+                            <input type="text" placeholder="Adicione..." class="boxs" required>
+                        </label>
+                        <button>Finalizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="historicoADM.html"><button class="btnHis" alt="Acessar Histórico"><i class='bx bx-history'></i> ︱ HISTÓRICO</button></a>
+        <button class="btnVis" alt="Visualizar Alterações">VISUALIZAR <b>➟</b></button>
+    </footer>
+    <script src="gerenciamentoJS.js"></script>
+</body>
+</html>
