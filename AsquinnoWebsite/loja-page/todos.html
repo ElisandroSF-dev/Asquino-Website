@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOJA ASQUINO</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Logo Asquino"> 
+        </a>
+      </div>
+
+      <nav class="menu"> 
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aulas.html">AULAS</a></li>
+          <li><a href="eventos.html">EVENTOS</a></li>
+          <li><a href="loja.html">LOJA</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="loja-titulo">
+      <span class="lo">LO</span><span class="ja">JA</span>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="search-container">
+      <img src="img/lupa.png" alt="Lupa" class="search-icon"> <input type="text" placeholder="PESQUISAR..." id="search-input">
+      <button type="button" id="clear-button">X</button>
+    </div>
+
+    <nav class="category-nav">
+      <ul>
+        <li class="active"><a href="todos.html">TODOS</a></li>
+        <li><a href="violao.html">VIOLÃO</a></li>
+        <li><a href="bateria.html">BATERIA</a></li>
+        <li><a href="guitarra.html">GUITARRA</a></li>
+      </ul>
+      <div class="active-bar"></div> 
+    </nav>
+    <hr>
+
+    <main class="product-grid">
+      <div class="product-card">
+        <div class="card-content">
+          <img src="img/produto1.jpg" alt="Produto 1"> 
+          <h3>Nome do Produto 1</h3>
+          <p class="price">R$ 100,00</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="card-content">
+          <img src="img/produto2.jpg" alt="Produto 2"> 
+          <h3>Nome do Produto 2</h3>
+          <p class="price">R$ 200,00</p>
+        </div>
+      </div>
+      </main>
+  </main>
+
+  <footer>
+    <div class="container"> 
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Asquino">
+      </div>
+
+      <div class="footer-content"> 
+        <div class="coluna">
+          <h3>Conteúdo</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Aulas</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna">
+          <h3>Endereço</h3>
+          <p>Av Bernardo de Aguiar, n 424</p>
+          <p>Barra Velha, SC, Brasil</p>
+          <p>88390000</p>
+        </div>
+
+        <div class="coluna">
+          <h3>Políticas do Site</h3>
+          <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termo de Uso</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna">
+          <h3>Formas de Pagamento</h3>
+          <p>...</p> 
+        </div>
+      </div>
+
+      <div class="footer-bottom"> 
+        <hr>
+        <div class="links">
+          <a href="#">CURSO EAD</a>
+          <a href="#">TRABALHE CONOSCO</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="#"><i class='bx bxl-whatsapp'></i></a>
+          <a href="#"><i class='bx bx-envelope'></i></a>
+        </div>
+        <p>&copy; 2024 Asquino Conservatório Musical. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-icon"> 
+    <div class="circle"><i class='bx bxl-whatsapp' ></i></div>
+  </a>
+
+  <script>
+    // Script para o menu de categorias
+    const links = document.querySelectorAll('.category-nav a');
+    const activeBar = document.querySelector('.category-nav .active-bar');
+
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault(); 
+
+        // Remove a classe "active" de todos os links
+        links.forEach(l => l.parentNode.classList.remove('active'));
+
+        // Adiciona a classe "active" ao link clicado
+        link.parentNode.classList.add('active');
+
+        // Calcula a posição e largura da categoria clicada
+        const rect = link.getBoundingClientRect();
+        const left = rect.left + window.scrollX;
+        const width = rect.width;
+
+        // Move e redimensiona a barra
+        activeBar.style.left = `${left}px`;
+        activeBar.style.width = `${width}px`;
+
+        // Muda a cor da barra (mantendo a cor original do CSS)
+        activeBar.style.backgroundColor = window.getComputedStyle(link).color; 
+      });
+    });
+  </script>
+</body>
+</html>
