@@ -61,36 +61,41 @@ whatsappButtons.forEach(button => {
 
 
 // menu de categorias
+// menu de categorias
 const links = document.querySelectorAll('.category-nav a');
-const activeBar = document.querySelector('.category-nav .active-bar'); 
+const activeBar = document.querySelector('.category-nav .active-bar');
 
 links.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault(); // Impede o comportamento padrão do link
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
 
-    // Remove a classe "active" de todos os links
-    links.forEach(l => l.parentNode.classList.remove('active'));
+    // Remove a classe "active" de todos os links
+    links.forEach(l => l.parentNode.classList.remove('active'));
 
-    // Adiciona a classe "active" ao link clicado
-    link.parentNode.classList.add('active');
+    // Adiciona a classe "active" ao link clicado
+    const item = link.parentNode; // Seleciona o item da lista (<li>)
+    item.classList.add('active');
 
-    // Calcula a posição e largura da categoria clicada
-    const rect = link.getBoundingClientRect();
-    const left = rect.left + window.scrollX;
-    const width = rect.width;
+    // Calcula a posição e largura do item clicado
+    const itemRect = item.getBoundingClientRect();
+    const itemLeft = itemRect.left + window.scrollX;
+    const itemWidth = item.offsetWidth;
 
-    // Move e redimensiona a barra
-    activeBar.style.left = `${left}px`;
-    activeBar.style.width = `${width}px`;
+    // Calcula a posição left da barra para centralizá-la
+    const barLeft = itemLeft + (itemWidth / 2) - (activeBar.offsetWidth / 2);
 
-    // Muda a cor da barra (mantendo a cor original do CSS)
-    activeBar.style.backgroundColor = window.getComputedStyle(link).color; 
+    // Move a barra
+    activeBar.style.left = `${barLeft}px`;
 
-    // Redireciona para a página do link após a animação da barra (opcional)
-    setTimeout(() => {
-      window.location.href = link.href;
-    }, 300); // 300ms é o tempo da animação da barra (ajuste se necessário)
-  });
+    // Define a cor da barra com base na cor do link ativo no CSS
+    const activeLinkColor = getComputedStyle(link).color;
+    activeBar.style.backgroundColor = activeLinkColor;
+
+    // Redireciona para a página do link após a animação da barra (opcional)
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 300);
+  });
 });
 
 // Seleciona as bolinhas e o botão

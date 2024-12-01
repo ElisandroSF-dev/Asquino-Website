@@ -178,12 +178,11 @@ header .menu ul li a:hover {
 .category-nav .active-bar {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4.5rem; /* Largura em rem */
+  left: 0; /* Inicialmente à esquerda */
+  width: 100px; /* Largura fixa em pixels */
   height: 2px;
   background-color: #B500D3;
-  transition: all 0.3s ease;
+  transition: left 0.3s ease; /* Transição suave para a propriedade left */
   border: 1.5px solid #fff;
   border-radius: 20px;
 }
