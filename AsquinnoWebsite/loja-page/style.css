@@ -124,6 +124,7 @@ header .menu ul li a:hover {
 /* Navegação por categorias */
 .category-nav {
   display: flex;
+  height: 32px;
   justify-content: center;
   background-color: #ffffff;
   padding: 5px 20px;
@@ -271,6 +272,7 @@ header .menu ul li a:hover {
 
 /* Botão "Finalizar Compra" */
 #finalize-purchase {
+ 
   height: 40px;
   display: inline-block;
   padding: 10px 20px;
@@ -394,6 +396,7 @@ footer .sociais {
 
 /* Contador de itens, botão "Finalizar Compra" e botão "X" */
 .selected-products-info { 
+  margin-top: 40px;
   background-color: #EFEFEF;
   display: flex;
   align-items: center;
