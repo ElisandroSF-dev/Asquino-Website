@@ -173,7 +173,7 @@ header .menu ul li a:hover {
 .category-nav .active-bar {
   position: absolute;
   bottom: 0;
-  left: 3%;
+  left: 0; /* Alinha a barra à esquerda */
   width: 65px;
   height: 2px;
   background-color: #B500D3;
@@ -189,6 +189,25 @@ header .menu ul li a:hover {
 }
 
 /* Grade de produtos */
+
+/* Botão "Comprar" */
+.whatsapp-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #006400; /* Cor verde escuro */
+  color: white;
+  text-decoration: none;
+  border: none; /* Sem borda */
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.whatsapp-button i {
+  margin-right: 5px;
+}
+
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -197,24 +216,24 @@ header .menu ul li a:hover {
 }
 
 .product-card {
-  border: 1px solid #000;
+  border: 1px solid #484848;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px #484848;
   position: relative;
-  
 }
 
 .product-card img {
-justify-content: center;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  max-width: 100%; /* Imagem responsiva */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço em branco abaixo da imagem */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
 }
 
 .card-content {
-  text-align: center;
   padding: 15px;
+  text-align: center; /* Centraliza o texto do card */
 }
 
 .product-card h3 {
@@ -227,16 +246,64 @@ justify-content: center;
   font-size: 16px;
 }
 
-.product-card::before {
-  content: "";
-  border: 1px solid #000;
+/* Bolinha de seleção */
+.selection-circle {
+  background-color: transparent;
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  border: 2px solid #484848; /* Borda azul */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex; /* Centraliza o contador verticalmente */
+  align-items: center; /* Centraliza o contador verticalmente */
+  justify-content: center; /* Centraliza o contador horizontalmente */
+}
+
+.selection-circle.selected {
+  background-color: #484848; /* Cor de fundo preta */
+  border: 2px solid #fff; /* Borda branca */
+  box-shadow: 0 0 0 1px #484848; /* Contorno preto */
+}
+
+/* Botão "Finalizar Compra" */
+#finalize-purchase {
+  height: 40px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #299427;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left:auto;
+}
+
+#finalize-purchase i {
+  margin-right: 5px;
+}
+
+/* Contador de itens */
+#item-count {
+  
+  align-items: center; /* Centraliza verticalmente o contador e o X */
+  gap: 10px; /* Adicione esta linha */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Botão "X" */
+#close-selection {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* Rodapé */
@@ -250,6 +317,7 @@ footer .logo {
   margin-bottom: 50px;
   text-align: center;
 }
+
 
 footer .logo img {
   width: 100%;
@@ -322,4 +390,14 @@ footer .sociais {
   justify-content: center;
   gap: 40px;
   margin: 30px;
+}
+
+/* Contador de itens, botão "Finalizar Compra" e botão "X" */
+.selected-products-info { 
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  
 }

@@ -4,10 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LOJA ASQUINO</title>
-
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
 </head>
 <body>
 
@@ -33,7 +32,6 @@
     </div>
   </header>
 
-
   <main>
     <div class="search-container">
       <img src="img/lupa.png" alt="Lupa" class="search-icon"> 
@@ -50,120 +48,61 @@
       </ul>
       <div class="active-bar"></div> 
     </nav>
+
     <hr>
+
+    <div class="selected-products-info"> 
+      
+      <div id="item-count">0 ITEM SELECIONADO</div>
+      <button id="close-selection">X</button>
+      <button id="finalize-purchase">
+        <i class="fab fa-whatsapp"></i> FINALIZAR COMPRA
+      </button>
+    </div>
 
     <main class="product-grid"> 
       <div class="product-card">
         <div class="card-content">
-          <img src="img/violao1.png" alt="Produto 1"> 
+          <div class="selection-circle"></div>
+          <img src="img/violao1.png" alt="Violão 1"> 
           <h3>Violão meteoro da paixão.</h3>
           <p class="price">R$ 100,00</p>
+          <a href="#" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> COMPRAR
+          </a>
         </div>
       </div>
 
       <div class="product-card">
         <div class="card-content">
-          <img src="img/violao2.png" alt="Produto 2"> 
+          <div class="selection-circle"></div>
+          <img src="img/violao2.png" alt="Violão 2"> 
           <h3>Violão Dormi na praça.</h3>
           <p class="price">R$ 200,00</p>
+          <a href="#" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> COMPRAR
+          </a>
         </div>
       </div>
 
       <div class="product-card">
         <div class="card-content">
-          <img src="img/violao3.png" alt="Produto 3"> 
+          <div class="selection-circle"></div>
+          <img src="img/violao3.png" alt="Violão 3"> 
           <h3>Violão manhã de sol.</h3>
           <p class="price">R$ 300,00</p>
+          <a href="#" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> COMPRAR
+          </a>
         </div>
       </div>
+
     </main> 
   </main>
 
   <footer>
-    <div class="container"> 
-      <div class="logo">
-        <img src="img/logo.png" alt="Logo Asquino">
-      </div>
-
-      <div class="footer-content"> 
-        <div class="coluna">
-          <h3>Conteúdo</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Aulas</a></li>
-            </ul>
-        </div>
-
-        <div class="coluna">
-          <h3>Endereço</h3>
-          <p>Av Bernardo de Aguiar, n 424</p>
-          <p>Barra Velha, SC, Brasil</p>
-          <p>88390000</p>
-        </div>
-
-        <div class="coluna">
-          <h3>Políticas do Site</h3>
-          <ul>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Termo de Uso</a></li>
-            </ul>
-        </div>
-
-        <div class="coluna">
-          <h3>Formas de Pagamento</h3>
-          <p>...</p> 
-        </div>
-      </div>
-
-      <div class="footer-bottom"> 
-        <hr>
-        <div class="links">
-          <a href="#">CURSO EAD</a>
-          <a href="#">TRABALHE CONOSCO</a>
-        </div>
-        <div class="social-icons">
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-          <a href="#"><i class='bx bxl-whatsapp'></i></a>
-          <a href="#"><i class='bx bx-envelope'></i></a>
-        </div>
-        <p>&copy; 2024 Asquino Conservatório Musical. Todos os direitos reservados.</p>
-      </div>
-    </div>
   </footer>
 
-  <a href="#" class="whatsapp-icon"> 
-    <div class="circle"><i class='bx bxl-whatsapp' ></i></div>
-  </a>
-
-  <script>
-    // Script para o menu de categorias
-    const links = document.querySelectorAll('.category-nav a');
-    const activeBar = document.querySelector('.category-nav .active-bar');
-
-    links.forEach(link => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault(); 
-
-        // Remove a classe "active" de todos os links
-        links.forEach(l => l.parentNode.classList.remove('active'));
-
-        // Adiciona a classe "active" ao link clicado
-        link.parentNode.classList.add('active');
-
-        // Calcula a posição e largura da categoria clicada
-        const rect = link.getBoundingClientRect();
-        const left = rect.left + window.scrollX;
-        const width = rect.width;
-
-        // Move e redimensiona a barra
-        activeBar.style.left = `${left}px`;
-        activeBar.style.width = `${width}px`;
-
-        // Muda a cor da barra (mantendo a cor original do CSS)
-        activeBar.style.backgroundColor = window.getComputedStyle(link).color; 
-      });
-    });
-  </script>
+  <script src="loja.js"></script> 
 </body>
 </html>
