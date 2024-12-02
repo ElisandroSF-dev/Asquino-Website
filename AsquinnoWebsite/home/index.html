@@ -7,6 +7,25 @@
      Utilizar todo o conteudo desta head como referencia para
     reutilizar os codigos da footer e header 
       -->
+
+    <!--
+
+        Instruções para implementação de codigo reutilizavel:
+
+        - Seguir referencia de codigo pela pagina home;
+        - Copiar as configurações CSS globais desta página para a pagina a
+        receber a implementação;
+        - Copiar todo o conteudo adicional que estiver dentro da tag <head>
+        (menos a <title> e a sua própria tag <link> com seu próprio CSS);
+        - Copiar o codigo CSS que se refere ao estilo de determinada sessão
+        identificada pelo seu respectivo nome de identificação ID (Antecedido
+        no CSS pelo caractere '#' e sucedido pelo seu respectivo nome de sessão);
+        - Copiar o codigo HTML do elemento/sessão a ser reutilizado, também
+        identificado pelo atributo 'id' dentro de sua tag pai.;
+        - Fazer as diretivas apropriadas para cada local de arquivo de imagem ou
+        fonte em relação ao local da sua implementação.
+
+    -->
     <meta charset="UTF-8">5
     <meta id="Viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -473,7 +492,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="footer-principal">
         <div class="footer">
             <div class="logo-footer">
                 <img src="../assets/imgs/logo.png">
@@ -662,5 +681,4 @@
         </div>
     </footer>
 </body>
-
 </html>
