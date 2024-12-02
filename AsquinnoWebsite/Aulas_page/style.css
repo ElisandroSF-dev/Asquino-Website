@@ -526,7 +526,7 @@ section.contacts .infos hr {
 /* \/ \/ \/ \/ \/ \/ \/ \/ */
 
 /* Definição de areas do grid footer */
-.footer {
+#footer-principal .footer {
     display: grid;
     grid-template-areas: 
     
@@ -543,86 +543,87 @@ section.contacts .infos hr {
     gap: 0px;
     vertical-align: bottom;
 }
-.footer ul li {
-    font-size: 11.5px;
+#footer-principal a, #footer-principal li {
+    font-size: 13px;
     font-family: Inter;
     color: #ffffff66 !important;
 }
-.footer label {
+#footer-principal .footer label {
     font-size: 11.5px;
     font-family: 'Archivo Black';
     color: #ffffffbd !important;
 }
-.logo-footer {
+#footer-principal .logo-footer {
     grid-area: logof;
     width: 200px;
     height: auto;
     margin: 15px 0px 0px 10px;
 }
-.blank-space{
+#footer-principal .blank-space{
     grid-area: blank;
     width: 200px;
     height: 60px;
     margin: 15px;
     display: block;
 }
-.cont-f {
+#footer-principal .cont-f {
     grid-area: cont;
     width: auto;
-    max-height: 400px;
+    height: auto;
+    min-width: 235px;
     display: grid;
     grid-template-areas:
         'lab lab'
         'a b'
     ;
-    justify-content: space-around;
+    column-gap: 5px;
 	padding-inline-start: 0 !important;
 }
-.cont-f label {
+#footer-principal .cont-f label {
     grid-area: lab;
     padding-inline-start: 0 !important;
 }
-.cont-f a {
+#footer-principal .cont-f a {
     grid-area: a;
 	padding-inline-start: 0 !important;
 
 }
-.cont-f b {
+#footer-principal .cont-f b {
     grid-area: b;
 	padding-inline-start: 0 !important;
 
 }
 
 
-.endereco-f {
+#footer-principal .endereco-f {
     grid-area: ender;
     padding-inline-start: 0 !important;
 }
-.poli-f {
+#footer-principal .poli-f {
     grid-area: poli;
     padding-inline-start: 0 !important;
 }
 
-.tel-f {
+#footer-principal .tel-f {
     grid-area: tel;
     padding-inline-start: 0 !important;
 }
-.paym-f {
+#footer-principal .paym-f {
     grid-area: paym;
     padding-inline-start: 0 !important;
 }
-.bottom-footer {
+#footer-principal .bottom-footer {
     grid-area: ff;
     padding-inline-start: 0 !important;
     margin-top: 60px;
 }
 
-.bottom-footer hr {
+#footer-principal .bottom-footer hr {
     border-color: rgba(255,255,255,.4);
     width: 85vw;
 }
 
-.ead {
+#footer-principal .ead {
     display: flex;
     flex-direction: row;
     flex-flow: row;
@@ -631,11 +632,11 @@ section.contacts .infos hr {
     font-weight: 800;
     color: #ffffff66;
 }
-.ead div p a {
+#footer-principal .ead div p a {
     font-size: 12px !important;
     text-decoration: underline;
 }
-.icons-social {
+#footer-principal .icons-social {
     display: flex !important;
     flex-direction: row !important;
     flex-flow: row;
@@ -645,18 +646,19 @@ section.contacts .infos hr {
     transform: translateX(115%);
 }
 
-.authoral-rights {
+#footer-principal .authoral-rights {
     text-align: center;
     font-family: 'Archivo Black';
     font-weight: 800;
     color: #ffffff66;
+    margin-bottom: 5px;
 }
-.authoral-rights p {
+#footer-principal .authoral-rights p {
     font-size: 12px;
     text-decoration: underline;
 }
 
-.footer ul {
+#footer-principal .footer ul {
     margin: 10px;
 }
 

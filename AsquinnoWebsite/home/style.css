@@ -196,28 +196,27 @@ nav div p {
 }
 /* Fim do css da header */
 
-.parent-section-info {
+#info-subheader {
     height: auto;
     background-image: url('../assets/imgs/detail_subheader.png');
     background-repeat: no-repeat;
-    background-size: 100vw auto;
-    background-position: center top;
+    background-size: 100% 100%;
+    background-position: left top;
     background-color: #000000ee;
     background-blend-mode:luminosity;
     filter: brightness(150%);
     width: 100vw;
-    position: relative;
     padding-top: 130px;
 }
-.text-items-info div h2, p {
+#info-subheader .text-items-info div h2, p {
     margin: 0px !important;
     color: #ffffff23;
     font-size: 16px;
 }
-.text-items-info div h2 {
+#info-subheader .text-items-info div h2 {
     font-size: 42px;
 }
-.info-section span {
+#info-subheader .info-section span {
     width: 3px;
     display: block;
     height: 75%;
@@ -225,29 +224,99 @@ nav div p {
     position: relative;
     top: 100px;
 }
-.icons-info {
+#info-subheader .icons-info {
     margin: 35px 0px 10px 0px;
 }
-.info-section {
+#info-subheader .info-section {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 250px;
+    height: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-flow: wrap;
+    row-gap: 75px;
 }
-.info-section div {
+#info-subheader .info-section div {
     text-align: center;
 }
-.items-info p  {
+#info-subheader .items-info p  {
     color: #ffffff98;
     font-size: 16px;
 }
-.text-items-info {
+#info-subheader .text-items-info {
     width: 200px;
     height: auto;
 }
+#info-subheader h5, #info-subheader h4,
+#info-subheader h1, #info-subheader h2,
+#info-subheader h6, #info-subheader h3 {
+    color: #fff;
+}
+
+#info-subheader h1 {
+    font-size: 28px;
+    margin: 0px !important;
+}
+
+#info-subheader h5 {
+    font-size: 15px;
+    margin: 0px !important;
+}
+
+#info-subheader .contact-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 100px 0px 0px 0px
+}
+#info-subheader .contact-number div,
+#info-subheader .contact-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#info-subheader .contact-number div p {
+    color: #ffffff98 !important;
+}
+#info-subheader .contact-number {
+    margin: 15px 0px 25px 0px
+}
+#info-subheader .contact-number span {
+    display: block;
+    border: 1px solid #fff;
+    height: 40px;
+    margin: 0px 5px 0px 5px;
+}
+
+#info-subheader .contact-number div svg {
+    margin: 15px;
+}
+
+#info-subheader .call-to-action {
+    margin: 25px;
+}
+
+#info-subheader .call-to-action button {
+    background-color: #A60000;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    border: none !important;
+    box-shadow: 0px 3px 4px #000;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+#info-subheader .call-to-action button:hover {
+    background-color: #880000;
+}
+
+#info-subheader .call-to-action button p {
+    color: #fff !important;
+}
+
 
 /* Todo footer CSS Abaixo */
 /* \/ \/ \/ \/ \/ \/ \/ \/ */
