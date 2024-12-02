@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOJA ASQUINO</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Logo Asquino"> 
+        </a>
+      </div>
+
+      <nav class="menu"> 
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aulas.html">AULAS</a></li>
+          <li><a href="eventos.html">EVENTOS</a></li>
+          <li><a href="loja.html">LOJA</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="loja-titulo">
+      <span class="lo">LO</span><span class="ja">JA</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <img src="img/lupa.png" alt="Lupa" class="search-icon" id="search-icon"> 
+      <input type="text" placeholder="PESQUISAR..." id="search-input" onkeypress="handleKeyPress(event)">
+      <button type="button" id="clear-button">X</button>
+    </div>
+
+
+    <nav class="category-nav">
+      <ul>
+        <li><a href="todos.html">TODOS</a></li>
+        <li class="active"><a href="violao.html">VIOLÃO</a></li>
+        <li><a href="Baixo.html">CONTRABAIXO</a></li>
+        <li><a href="guitarra.html">GUITARRA</a></li>
+      </ul>
+      <div class="active-bar"></div> 
+    </nav>
+
+    <hr>
+
+    <div class="selected-products-info"> 
+      <div id="item-count">0 ITEM SELECIONADO</div>
+      <button id="close-selection">X</button> <button id="finalize-purchase">
+        <i class="fab fa-whatsapp"></i> FINALIZAR COMPRA
+      </button>
+    </div>
+
+    <main class="product-grid"> 
+      <div class="product-card">
+        <div class="card-content">
+          <div class="selection-circle"></div>
+          <img src="img/violao1.png" alt="Violão 1"> 
+          <h3>Violão meteoro da paixão.</h3>
+          <p class="price">R$ 100,00</p>
+          <a href="#" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> COMPRAR
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-content">
+          <div class="selection-circle"></div>
+          <img src="img/violao2.png" alt="Violão 2"> 
+          <h3>Violão Dormi na praça.</h3>
+          <p class="price">R$ 200,00</p>
+          <a href="#" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> COMPRAR
+          </a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-content">
+          <div class="selection-circle"></div>
+          <img src="img/violao3.png" alt="Violão 3"> 
+          <h3>Violão manhã de sol.</h3>
+          <p class="price">R$ 300,00</p>
+          <a href="#" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> COMPRAR
+          </a>
+        </div>
+      </div>
+
+    </main> 
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="loja.js"></script> 
+</body>
+</html>

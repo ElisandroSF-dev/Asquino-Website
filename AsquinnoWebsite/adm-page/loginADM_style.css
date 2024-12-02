@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background-image: url('../imagens/Asquino_Background.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,13 +15,13 @@ body{
     background-position: center;
 }
 
-header p{
-    margin-left: 30px;
+header img{
     color: white;
-    font-size: 30px;
+    width: 100%;
+    max-width: 200px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 10;
     z-index: 1;
 }
 
@@ -44,7 +44,7 @@ header .exit a{
 }
 
 header .exit a:hover{
-    color: #c00000;
+    color: #de0000;
 }
 
 main{
@@ -71,25 +71,23 @@ main{
 .columnRight{
     width: 50%;
     background-color: white;
-    display: flex;
-    justify-content: center;
     border: none;
 }
 
 .box{
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.box, form{
+    width: 100%;
 }
 
 .box label{
     margin-bottom: 50px;
-}
-
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #dadosUser{
@@ -101,15 +99,27 @@ main{
     margin-bottom: 10px;
 }
 
+.login, label, .divButton{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label div, input{
+    width: 60%;
+    min-width: 160px;
+}
+
 input{
     background: none;
     border: none;
     border-bottom: #969696 2px solid;
-    width: 150%;
 }
 
 button{
-    width: 100px;
+    width: 50%;
     height: 32px;
     border: none;
     border-radius: 5px;
@@ -117,6 +127,12 @@ button{
     color: white;
     font-weight: 600;
     margin-top: 12px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-image: linear-gradient(to bottom, #e225ff, #a902c7);
+    font-size: 12px;
 }
 
 .center{

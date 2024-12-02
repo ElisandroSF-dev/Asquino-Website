@@ -1,7 +1,8 @@
 /*''''''''''''''''''''''''*/
 
 
-/* Pré definições globais */
+/* Configurações CSS globais */
+/* Implementar esta parte CSS em todas as demais paginas CSS */
 
 @font-face {
     font-family: Inter;
@@ -71,11 +72,257 @@ img {
 
 /* Resto do css local */
 
+/* Css da Header: */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+.menu-burguer {
+    display: none;
+}
+
+.header-fixed {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 24;
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    left: -60px;
+    top: 4px;
+    background: url("../assets/imgs/logo.png") no-repeat;
+    background-size: 310px 100%;
+    background-position: left center;
+}
+.lineH {
+    height: 3px;
+    background-color: #fff;
+}
+
+nav div p {
+    font-family: Arial, Helvetica, sans-serif
+}
+.navH div p {
+    font-size: 15px;
+    font-weight: 550;
+    color: #fff;
+    margin: 0px !important;
+    align-content: center;
+    height: 100%;
+} 
+
+.navH div {
+    justify-content: center;
+    width: 80px;
+    height: auto;
+    text-align: center;
+    z-index: 10;
+    margin-top: -4px;
+    border-top: 4px solid #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navH div:hover{
+    border-top: 4px solid #D100F3 !important;
+    background-color: rgba(209,0,243,25%);
+}
+.navH {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    height: 40px;
+    width: 85vw;
+    justify-content: end;
+    border-top: 4px solid #fff;
+    z-index: 9;
+}
+.navH .detail {
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 16px;
+    margin: 0px 5px 0px 5px;
+}
+.banner-header {
+    background-image: url("../assets/imgs/bgHeader.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+    background-color: #0000009d;
+    background-blend-mode: multiply;
+    min-height: 750px;
+    top: 0;
+    position: relative;
+}
+.call-to-action-header {
+    color: #fff;
+    padding-bottom: 5px !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.call-to-action-header h3,a {
+    font-size: 20px;
+}
+.high-2 {
+    color: #e251f8;
+    font-family: 'Archivo Black' !important;
+}
+
+.whatsapp-icon-onheader {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    transform: translateY(50%);
+    margin: 0px 30px 5px 0px;
+    z-index: 900;
+}
+.whatsapp-icon-onheader svg {
+    background-color: hsl(147, 50%, 47%) !important;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+/* Fim do css da header */
+
+#info-subheader {
+    height: auto;
+    background-image: url('../assets/imgs/detail_subheader.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+    background-color: #000000ee;
+    background-blend-mode:luminosity;
+    filter: brightness(150%);
+    width: 100vw;
+    padding-top: 130px;
+}
+#info-subheader .text-items-info div h2, p {
+    margin: 0px !important;
+    color: #ffffff23;
+    font-size: 16px;
+}
+#info-subheader .text-items-info div h2 {
+    font-size: 42px;
+}
+#info-subheader .info-section span {
+    width: 3px;
+    display: block;
+    height: 75%;
+    background-color: #ffffff23;
+    position: relative;
+    top: 100px;
+}
+#info-subheader .icons-info {
+    margin: 35px 0px 10px 0px;
+}
+#info-subheader .info-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    row-gap: 75px;
+}
+#info-subheader .info-section div {
+    text-align: center;
+}
+#info-subheader .items-info p  {
+    color: #ffffff98;
+    font-size: 16px;
+}
+#info-subheader .text-items-info {
+    width: 200px;
+    height: auto;
+}
+#info-subheader h5, #info-subheader h4,
+#info-subheader h1, #info-subheader h2,
+#info-subheader h6, #info-subheader h3 {
+    color: #fff;
+}
+
+#info-subheader h1 {
+    font-size: 28px;
+    margin: 0px !important;
+}
+
+#info-subheader h5 {
+    font-size: 15px;
+    margin: 0px !important;
+}
+
+#info-subheader .contact-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 100px 0px 0px 0px
+}
+#info-subheader .contact-number div,
+#info-subheader .contact-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#info-subheader .contact-number div p {
+    color: #ffffff98 !important;
+}
+#info-subheader .contact-number {
+    margin: 15px 0px 25px 0px
+}
+#info-subheader .contact-number span {
+    display: block;
+    border: 1px solid #fff;
+    height: 40px;
+    margin: 0px 5px 0px 5px;
+}
+
+#info-subheader .contact-number div svg {
+    margin: 15px;
+}
+
+#info-subheader .call-to-action {
+    margin: 25px;
+}
+
+#info-subheader .call-to-action button {
+    background-color: #A60000;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    border: none !important;
+    box-shadow: 0px 3px 4px #000;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+#info-subheader .call-to-action button:hover {
+    background-color: #880000;
+}
+
+#info-subheader .call-to-action button p {
+    color: #fff !important;
+}
+
+
 /* Todo footer CSS Abaixo */
 /* \/ \/ \/ \/ \/ \/ \/ \/ */
 
 /* Definição de areas do grid footer */
-.footer {
+#footer-principal .footer {
     display: grid;
     grid-template-areas: 
     
@@ -92,84 +339,87 @@ img {
     gap: 0px;
     vertical-align: bottom;
 }
-.footer ul li {
-    font-size: 11.5px;
+#footer-principal a, #footer-principal li {
+    font-size: 13px;
     font-family: Inter;
     color: #ffffff66 !important;
 }
-.footer label {
+#footer-principal .footer label {
     font-size: 11.5px;
     font-family: 'Archivo Black';
     color: #ffffffbd !important;
 }
-.logo-footer {
+#footer-principal .logo-footer {
     grid-area: logof;
     width: 200px;
     height: auto;
     margin: 15px 0px 0px 10px;
 }
-.blank-space{
+#footer-principal .blank-space{
     grid-area: blank;
     width: 200px;
     height: 60px;
     margin: 15px;
     display: block;
 }
-.cont-f {
+#footer-principal .cont-f {
     grid-area: cont;
-    width: 250px;
-    max-height: 400px;
+    width: auto;
+    height: auto;
+    min-width: 235px;
     display: grid;
     grid-template-areas:
         'lab lab'
         'a b'
     ;
-    justify-content: space-between;
-    padding-inline-start: 0 !important;
+    column-gap: 5px;
+	padding-inline-start: 0 !important;
 }
-.cont-f label {
+#footer-principal .cont-f label {
     grid-area: lab;
     padding-inline-start: 0 !important;
 }
-.cont-f a {
+#footer-principal .cont-f a {
     grid-area: a;
-    padding-inline-start: 0 !important;
+	padding-inline-start: 0 !important;
+
 }
-.cont-f b {
+#footer-principal .cont-f b {
     grid-area: b;
-    padding-inline-start: 0 !important;
+	padding-inline-start: 0 !important;
+
 }
 
 
-.endereco-f {
+#footer-principal .endereco-f {
     grid-area: ender;
     padding-inline-start: 0 !important;
 }
-.poli-f {
+#footer-principal .poli-f {
     grid-area: poli;
     padding-inline-start: 0 !important;
 }
 
-.tel-f {
+#footer-principal .tel-f {
     grid-area: tel;
     padding-inline-start: 0 !important;
 }
-.paym-f {
+#footer-principal .paym-f {
     grid-area: paym;
     padding-inline-start: 0 !important;
 }
-.bottom-footer {
+#footer-principal .bottom-footer {
     grid-area: ff;
     padding-inline-start: 0 !important;
     margin-top: 60px;
 }
 
-.bottom-footer hr {
+#footer-principal .bottom-footer hr {
     border-color: rgba(255,255,255,.4);
     width: 85vw;
 }
 
-.ead {
+#footer-principal .ead {
     display: flex;
     flex-direction: row;
     flex-flow: row;
@@ -178,11 +428,11 @@ img {
     font-weight: 800;
     color: #ffffff66;
 }
-.ead div p a {
+#footer-principal .ead div p a {
     font-size: 12px !important;
     text-decoration: underline;
 }
-.icons-social {
+#footer-principal .icons-social {
     display: flex !important;
     flex-direction: row !important;
     flex-flow: row;
@@ -192,71 +442,32 @@ img {
     transform: translateX(115%);
 }
 
-.authoral-rights {
+#footer-principal .authoral-rights {
     text-align: center;
     font-family: 'Archivo Black';
     font-weight: 800;
     color: #ffffff66;
+    margin-bottom: 5px;
 }
-.authoral-rights p {
+#footer-principal .authoral-rights p {
     font-size: 12px;
     text-decoration: underline;
 }
 
-.footer ul {
+#footer-principal .footer ul {
     margin: 10px;
 }
 
 /* /\ /\ /\ /\ /\ /\ /\ /\ */
 /* Todo footer CSS Acima */
 /*-----------------------------------------------*/
-/* Css da Header: */
-/* \/ \/ \/ \/ \/ \/ \/ \/ */
-
-.logo-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-.logo {
-    width: 140px;
-}
-.banner-header {
-    background-image: url("../assets/imgs/headerbg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
-    background-position: center top;
-    background-color: #0000003a;
-    background-blend-mode:multiply;
-    position: relative;
-    top: 0;
-}
-.call-to-action-header {
-    color: #fff;
-    padding-bottom: 5px !important;
-}
-.high-2 {
-    color: #e251f8;
-    font-family: 'Archivo Black' !important;
-}
-
-.whatsapp-icon-onheader {
-    position: absolute;
-    right: 5px;
-    bottom: 0;
-    transform: translateY(50%);
-}
-.whatsapp-icon-onheader svg {
-    background-color: hsl(147, 50%, 47%) !important;
-    border-radius: 100px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 3px;
-}
 
 /* Css mobile */
+@media only screen and (max-width: 809px) {
+    .info-section span:nth-child(1)  {
+        display: none !important;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     
@@ -274,7 +485,9 @@ img {
        padding-right: 3px !important;
        border-radius: 2px;
     }
-    .footer {
+
+    /* Footer css mobile completo */
+    #footer-principal .footer {
         grid-template-areas: 
         'logof logof'
         'cont ender'
@@ -286,4 +499,14 @@ img {
         ;
         gap: 5px;
     }
+    #footer-principal .blank-space {
+        display: none !important;
+    }
+    #footer-principal .cont-f {
+        min-width: auto !important;
+        display: block !important;
+        padding-inline-start: 30px !important;
+
+    }
+    /* Fim footer css mobile completo */
 }

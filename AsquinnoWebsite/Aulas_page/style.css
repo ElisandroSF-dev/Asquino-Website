@@ -1,12 +1,72 @@
-* {
-	margin: unset;
-	padding: unset;
-	box-sizing: border-box;
+/* Pré definições globais */
+
+@font-face {
+    font-family: Inter;
+    src: url("../fontes/Inter/static/Inter_18pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Archivo Black';
+    src: url("../fontes/Archivo_Black/ArchivoBlack-Regular.ttf");
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 0px;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
+* {
+    text-decoration: none;
+    list-style: none;
+}
+th,
+tr,
+td {
+    font-size: 9px;
+    font-family: Inter;
+    text-align: center;
+}
+p {
+    font-size: 10px;
+    font-family: Inter;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 16px;
+    font-family: 'Archivo Black';
+}
+
+a {
+    text-decoration: none;
+    font-family: Inter;
+    color: unset;
+}
+
+h6,
+h5 {
+    font-size: 11px;
+    font-family: 'Archivo Black';
+}
+
+* {
+    max-width: 100vw;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Resto do css local */
 
 header {
 	position: absolute;
@@ -157,7 +217,7 @@ header .menu ul li a.active {
 	padding-left: 20px;
 }
 
-.hero h1 n {
+.hero h1 {
 	color: transparent;
 	-webkit-text-stroke: 4px #E39600;
 	text-shadow: none;
@@ -406,7 +466,7 @@ section.form form button img {
 	margin-bottom: 10px;
 }
 
-hr {
+.hr-a {
 	margin: 20px;
 	border-style: solid;
 	border-width: 2px;
@@ -455,137 +515,160 @@ section.contacts .infos hr {
 	border-color: #7c7c7c;
 }
 
-footer {
-	padding: 50px;
-	background: linear-gradient(to bottom, #323232 0%, #181818 100%);
-}
-
-footer .logo {
-	margin-bottom: 50px;
-}
-
-footer .logo img {
-	width: 100%;
-	max-width: 300px;
-}
-
-footer .navegacao {
-	display: flex;
-	gap: 20px;
-}
-
-footer .navegacao .col {
-	flex: 1;
-}
-
-footer .navegacao .col.wide {
-	flex: 2;
-}
-
-footer .navegacao .col > b {
-	display: block;
-	color: #D9D9D9;
-	margin-bottom: 20px;
-}
-
-footer .navegacao .col ul {
-	list-style: none;
-}
-
-footer .navegacao .col ul li a {
-	color: #969696;
-	text-decoration: none;
-}
-
-.dgrid2 {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
 .tabs {
 	display: flex;
 	gap: 40px;
 }
 
-.tabs ul {
-	list-style: none;
+
+
+/* Todo footer CSS Abaixo */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+
+/* Definição de areas do grid footer */
+#footer-principal .footer {
+    display: grid;
+    grid-template-areas: 
+    
+    'logof blank blank blank blank'
+    'logof cont cont ender poli'
+    'logof cont cont tel paym'
+    'logof cont cont tel paym'
+    'ff ff ff ff ff'
+    
+    ;
+    background-image: linear-gradient(180deg, #323232 1%, #181818 90%);
+    color: #fff !important;
+    height: auto;
+    gap: 0px;
+    vertical-align: bottom;
+}
+#footer-principal a, #footer-principal li {
+    font-size: 13px;
+    font-family: Inter;
+    color: #ffffff66 !important;
+}
+#footer-principal .footer label {
+    font-size: 11.5px;
+    font-family: 'Archivo Black';
+    color: #ffffffbd !important;
+}
+#footer-principal .logo-footer {
+    grid-area: logof;
+    width: 200px;
+    height: auto;
+    margin: 15px 0px 0px 10px;
+}
+#footer-principal .blank-space{
+    grid-area: blank;
+    width: 200px;
+    height: 60px;
+    margin: 15px;
+    display: block;
+}
+#footer-principal .cont-f {
+    grid-area: cont;
+    width: auto;
+    height: auto;
+    min-width: 235px;
+    display: grid;
+    grid-template-areas:
+        'lab lab'
+        'a b'
+    ;
+    column-gap: 5px;
+	padding-inline-start: 0 !important;
+}
+#footer-principal .cont-f label {
+    grid-area: lab;
+    padding-inline-start: 0 !important;
+}
+#footer-principal .cont-f a {
+    grid-area: a;
+	padding-inline-start: 0 !important;
+
+}
+#footer-principal .cont-f b {
+    grid-area: b;
+	padding-inline-start: 0 !important;
+
 }
 
-.tabs ul li {
-	width: 100%;
-	min-width: 230px;
-	font-size: 18px;
-	color: #AE00BA;
-	font-weight: bold;
-	padding: 30px 0;
-	border-right: 6px solid #D9D9D9;
-	border-bottom: 1px solid #E3E3E3;
-	cursor: pointer;
+
+#footer-principal .endereco-f {
+    grid-area: ender;
+    padding-inline-start: 0 !important;
+}
+#footer-principal .poli-f {
+    grid-area: poli;
+    padding-inline-start: 0 !important;
 }
 
-.tabs ul li.active {
-	border-right-color: #AE00BA;
+#footer-principal .tel-f {
+    grid-area: tel;
+    padding-inline-start: 0 !important;
+}
+#footer-principal .paym-f {
+    grid-area: paym;
+    padding-inline-start: 0 !important;
+}
+#footer-principal .bottom-footer {
+    grid-area: ff;
+    padding-inline-start: 0 !important;
+    margin-top: 60px;
 }
 
-.tabs ul li:last-child {
-	border-bottom: unset;
+#footer-principal .bottom-footer hr {
+    border-color: rgba(255,255,255,.4);
+    width: 85vw;
 }
 
-.tabs .content {
-	color: #000;
-	flex-grow: 1;
+#footer-principal .ead {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+#footer-principal .ead div p a {
+    font-size: 12px !important;
+    text-decoration: underline;
+}
+#footer-principal .icons-social {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 30vw;
+    transform: translateX(115%);
 }
 
-footer .navegacao .col p, footer .navegacao .col p a {
-	color: #969696;
-	line-height: 36px;
-	text-decoration: none;
+#footer-principal .authoral-rights {
+    text-align: center;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+    margin-bottom: 5px;
+}
+#footer-principal .authoral-rights p {
+    font-size: 12px;
+    text-decoration: underline;
 }
 
-footer .footLink {
-	margin-top: 50px;
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 50px;
-	border-bottom: 4px solid #3A3A3A;
+#footer-principal .footer ul {
+    margin: 10px;
 }
 
-footer .footLink a {
-	color: #3A3A3A;
-	font-weight: bold;
-}
+/* /\ /\ /\ /\ /\ /\ /\ /\ */
+/* Todo footer CSS Acima */
+/*-----------------------------------------------*/
+/* Css da Header: */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
 
-footer .footLink a:hover {
-	color: #E39600;
-	font-size: 15px;
-}
-
-footer .sociais {
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	margin: 30px 0;
-}
-
-footer .sociais i {
-	font-size: 30px;
-	height: 40px;
-	color: #3A3A3A;
-}
-
-footer .sociais i:hover {
-	color: #E39600;
-	font-size: 32px;
-}
-
-footer > p {
-	color: #3A3A3A;
-	font-weight: bold;
-	text-decoration: underline;
-	text-align: center;
-}
-
-@media (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 	header .logo img {
 		margin-left: -40px;
 	}
@@ -632,17 +715,29 @@ footer > p {
 	    flex-direction: column;
 	}
 
-	footer .navegacao {
-		flex-direction: column;
-	}
+	/* Footer css mobile completo */
+    .footer {
+        grid-template-areas: 
+        'logof logof'
+        'cont ender'
+        'cont paym'
+        'cont tel'
+        'cont poli'
+        'ff ff'
+        !important
+        ;
+        gap: 5px;
+    }
+    .blank-space {
+        display: none !important;
+    }
+    .cont-f {
+        min-width: auto !important;
+        display: block !important;
+        padding-inline-start: 30px !important;
 
-	.dgrid2 {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	footer .foot {
-		padding: 20px 0;
-	}
+    }
+    /* Fim footer css mobile completo */
 }
 
 #content1{

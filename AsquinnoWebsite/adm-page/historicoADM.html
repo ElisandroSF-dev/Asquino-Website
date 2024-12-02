@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="historicoADM_style.css">
+        <link rel="stylesheet" href="popup.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Histórico de Conteúdo</title>
     </head>
@@ -27,11 +28,11 @@
                 <section>
                     <div class="box">
                         <div class="name">
-                            <p>Guitarra</p>
+                            <p id="Aula_1">Guitarra</p>
                         </div>
                         <div class="options">
                             <p><i class='bx bxs-edit-alt' id="aulaEdit_1"></i></p>
-                            <p><i class='bx bx-show' id="aulaHidn_1"></i></p>
+                            <p><i class='bx bx-show' id="aulaHidn_1"></i> <i class='bx bx-hide' id="aulaVis_1"></i></p>
                             <p><i class='bx bxs-trash' id="aulaDel_1"></i></p>
                         </div>
                     </div>
@@ -164,6 +165,7 @@
                 </section>
             </div>
         </div>
+
         <!-- Pop-Up -->
         <section class="overlay" id="overlay">
             <div class="popup" id="popupAulaEdit_1">
@@ -177,20 +179,20 @@
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
                     <h2>AVISO</h2>
-                    <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será ocultado, até que você altere essa configuração.</div>
+                    <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
                 </div>
             </div>
 
             <div class="popup" id="popupAulaDel_1">
                 <div class="popupClose" id="popupClose">&times;</div>
-                <div class="iconAlert">A</div>
+                <div class="iconAlert"><i class='bx bxs-error'></i></div>
                 <div class="popUpContent">
                     <h2>ALERTA !!</h2>
                     <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
                     <div><b>Você tem certeza dessa ação??</b></div>
                     <form action="">
                         <label>
-                            <input type="password" placeholder="Digite sua senha" required>
+                            <input type="password" placeholder="  Digite sua senha*" required>
                         </label>
                         <div><b>Depois NÃO haverá volta</b></div>
                         <button>CONFIRMAR</button>
