@@ -121,6 +121,41 @@ const fileNameDisplay2 = document.getElementById('file-name2');
     fileNameDisplay2.textContent = fileName2;
 });
 
+const addBoxButton = document.getElementById("addBox");
+const boxContainer = document.getElementById("boxContainer");
+let boxCount = 1;
+
+// Função para criar uma nova caixa
+function createBox() {
+    if (boxCount >= 6) {
+        document.querySelector(".alertGalery").innerHTML = "<strong>Você atingiu o Limite Máximo!</strong>";
+        addBox.style.display = 'none';
+        return;
+    }
+
+    const box = document.createElement("div");
+    box.className = "box";
+    box.innerHTML = `
+        <label class="imgFile">Adicione uma <b>IMAGEM</b>
+            <input type="file" class="arquivo" required>
+        </label>
+        <span class="file-name">Nenhum arquivo escolhido</span>
+    `;
+
+    const inputFile = box.querySelector(".arquivo");
+    const fileNameSpan = box.querySelector(".file-name");
+
+    inputFile.addEventListener("change", () => {
+        const fileName = inputFile.files[0]?.name || "Nenhum arquivo escolhido";
+        fileNameSpan.textContent = fileName;
+    });
+
+    boxContainer.appendChild(box);
+    boxCount++;
+}
+
+addBoxButton.addEventListener("click", createBox);
+
 const inputFile3 = document.getElementById('arquivo3');
 const fileNameDisplay3 = document.getElementById('file-name3');
 
@@ -129,21 +164,29 @@ const fileNameDisplay3 = document.getElementById('file-name3');
     fileNameDisplay3.textContent = fileName3;
 });
 
-//PopUp
-const button = document.getElementById('button')
-const popupWrapper = document.querySelector('.popup-wrapper')
 
-button.addEventListener('click', () => {
-  popupWrapper.style.display = 'block'
-})
+//Pop Up
+const button = document.getElementById("popupOpen");
+const popUp = document.getElementById("addClass");
+const closePopupBtn = document.querySelector(".popupClose");
+const overlay = document.getElementById("overlay");
 
-popupWrapper.addEventListener('click', event => {
-  const classNameOfClickedElement = event.target.classList[0];
-  console.log(classNameOfClickedElement)
-  const classNames = ['popup-close', 'popup-wrapper']
-  const closePopup = classNames.some(className => className === classNameOfClickedElement)
+// Abrir o popup
+button.addEventListener("click", () => {
+    popUp.style.display = "block";
+    overlay.style.display = "block";
+});
 
-  if (closePopup) {
-    popupWrapper.style.display = 'none'
-  }
-})
+// Fechar o popup
+closePopupBtn.addEventListener("click", () => {
+    popUp.style.display = "none";
+    overlay.style.display = "none";
+});
+
+// Fechar o popup
+overlay.addEventListener("click", () => {
+    popUp.style.display = "none";
+    overlay.style.display = "none";
+});
+
+popUp.addEventListener("click", (event) => event.stopPropagation());

@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="gerenciamentoADM_style.css">
+        <link rel="stylesheet" href="popup.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Adiministração</title>
     </head>
@@ -41,6 +42,7 @@
                             <strong>| Tipo de Curso:</strong>
                         </div>
                         <select id="opcoes" name="opcoes" class="boxs">
+                            <option value="opcao0" selected disabled>Selecione o tipo de curso</option>
                             <option value="opcao1">Cordas</option>
                             <option value="opcao2">Percussão</option>
                             <option value="opcao3">Sopro</option>
@@ -50,7 +52,7 @@
                         </select>
                     </label>
 
-                    <input type="button" id="button" value="Adicionar um novo tipo curso">
+                    <input type="button" id="popupOpen" class="genericButton" value="Adicionar novo Curso">
                     
                     <label for="opcoes">
                         <div class="containerTitle">
@@ -85,13 +87,16 @@
                     </label>
 
                     <h4>Galeria de Fotos</h4>
-                    <div class="box">
-                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                            <input type="file" id="galery1" required>
-                        </label>
-                        <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                    <div id="boxContainer">
+                        <div class="box">
+                            <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                <input type="file" id="galery1" required>
+                            </label>
+                            <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                        </div>
                     </div>
-                    <p>Adicionar mais</p>
+                    <input type="button" id="addBox" class="genericButton" value="Adicionar mais Imagens">
+                    <div class="alertGalery"></div>
                     <hr>
                     
                     <label>
@@ -180,21 +185,22 @@
                 </form>
             </div>
         </div>
+        
         <!-- Pop-Up -->
-        <div class="popup-wrapper">
-            <div class="popup">
-                <div class="popup-close">&times;</div>
-                <div class="popUp_content">
-                    <h4>Adicionar uma nova Classe:</h4>
-                    <form action="">
-                        <label>
-                            <input type="text" placeholder="Adicione..." class="boxs" required>
-                        </label>
-                        <button>Finalizar</button>
+        <section class="overlay" id="overlay">
+            <div class="popup" id="addClass">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <h2>ADICIONE O NOVO CURSO:</h2>
+                    <form action="" class="addCourseForm">
+                        <label for="">
+                            <input type="text" placeholder="Nome do Curso" required>
+                        </label>   
+                        <button>Adicionar</button>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <a href="historicoADM.html"><button class="btnHis" alt="Acessar Histórico"><i class='bx bx-history'></i> ︱ HISTÓRICO</button></a>
