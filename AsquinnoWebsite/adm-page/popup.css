@@ -16,6 +16,10 @@
     display: none;
 }
 
+#popupAulaDel_1{
+    display: none;
+}
+
 .popUpContent h2{
     color: #c00000;
 }
@@ -25,7 +29,8 @@
     color: black;
 }
 
-#popupAulaDel_1 form{
+#popupAulaDel_1 form,
+#popupLojaDel_1 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,21 +38,25 @@
     width: 100%;
 }
 
-#popupAulaDel_1 form div{
+#popupAulaDel_1 form div,
+#popupLojaDel_1 form div{
     font-size: 12px;
 }
 
-#popupAulaDel_1 form label{
+#popupAulaDel_1 form label,
+#popupLojaDel_1 form label{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#popupAulaDel_1 form label input{
+#popupAulaDel_1 form label input, 
+#popupLojaDel_1 form label input{
     width: 100%;
 }
 
-#popupAulaDel_1 button{
+#popupAulaDel_1 button, 
+#popupLojaDel_1 button{
     background: linear-gradient(to top, #A60000, #ff0000);
     height: 30px;
     width: 25%;
@@ -57,7 +66,8 @@
     cursor: pointer;
 }
 
-#popupAulaDel_1 button:hover{
+#popupAulaDel_1 button:hover,
+#popupLojaDel_1 button:hover{
     font-size: 12px;
 }
 
@@ -141,6 +151,6 @@
     padding: 0px 30px;
 }
 
-#aulaVis_1{
+#aulaVis_1, #lojaVis_1{
     display: none;
 }
