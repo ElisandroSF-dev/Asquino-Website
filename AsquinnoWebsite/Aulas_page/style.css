@@ -651,3 +651,220 @@ footer > p {
 #content2, #content3, #content4{
 	display: none;
 }
+
+/* Todo footer CSS Abaixo */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+
+/* Definição de areas do grid footer */
+.footer {
+    display: grid;
+    grid-template-areas: 
+    
+    'logof blank blank blank blank'
+    'logof cont cont ender poli'
+    'logof cont cont tel paym'
+    'logof cont cont tel paym'
+    'ff ff ff ff ff'
+    
+    ;
+    background-image: linear-gradient(180deg, #323232 1%, #181818 90%);
+    color: #fff !important;
+    height: auto;
+    gap: 0px;
+    vertical-align: bottom;
+}
+.footer ul li {
+    font-size: 11.5px;
+    font-family: Inter;
+    color: #ffffff66 !important;
+}
+.footer label {
+    font-size: 11.5px;
+    font-family: 'Archivo Black';
+    color: #ffffffbd !important;
+}
+.logo-footer {
+    grid-area: logof;
+    width: 200px;
+    height: auto;
+    margin: 15px 0px 0px 10px;
+}
+.blank-space{
+    grid-area: blank;
+    width: 200px;
+    height: 60px;
+    margin: 15px;
+    display: block;
+}
+.cont-f {
+    grid-area: cont;
+    width: 250px;
+    max-height: 400px;
+    display: grid;
+    grid-template-areas:
+        'lab lab'
+        'a b'
+    ;
+    justify-content: space-between;
+    padding-inline-start: 0 !important;
+}
+.cont-f label {
+    grid-area: lab;
+    padding-inline-start: 0 !important;
+}
+.cont-f a {
+    grid-area: a;
+    padding-inline-start: 0 !important;
+}
+.cont-f b {
+    grid-area: b;
+    padding-inline-start: 0 !important;
+}
+
+
+.endereco-f {
+    grid-area: ender;
+    padding-inline-start: 0 !important;
+}
+.poli-f {
+    grid-area: poli;
+    padding-inline-start: 0 !important;
+}
+
+.tel-f {
+    grid-area: tel;
+    padding-inline-start: 0 !important;
+}
+.paym-f {
+    grid-area: paym;
+    padding-inline-start: 0 !important;
+}
+.bottom-footer {
+    grid-area: ff;
+    padding-inline-start: 0 !important;
+    margin-top: 60px;
+}
+
+.bottom-footer hr {
+    border-color: rgba(255,255,255,.4);
+    width: 85vw;
+}
+
+.ead {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+.ead div p a {
+    font-size: 12px !important;
+    text-decoration: underline;
+}
+.icons-social {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 30vw;
+    transform: translateX(115%);
+}
+
+.authoral-rights {
+    text-align: center;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+.authoral-rights p {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.footer ul {
+    margin: 10px;
+}
+
+/* /\ /\ /\ /\ /\ /\ /\ /\ */
+/* Todo footer CSS Acima */
+/*-----------------------------------------------*/
+/* Css da Header: */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+
+.logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 140px;
+}
+.banner-header {
+    background-image: url("../assets/imgs/headerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+    background-color: #0000003a;
+    background-blend-mode:multiply;
+    position: relative;
+    top: 0;
+}
+.call-to-action-header {
+    color: #fff;
+    padding-bottom: 5px !important;
+}
+.high-2 {
+    color: #e251f8;
+    font-family: 'Archivo Black' !important;
+}
+
+.whatsapp-icon-onheader {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.whatsapp-icon-onheader svg {
+    background-color: hsl(147, 50%, 47%) !important;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+}
+
+/* Css mobile */
+
+@media only screen and (max-width: 600px) {
+    
+    .call-to-action-header h3 {
+        text-align: center;
+        font-size: 13px !important;
+        margin: 0 !important;
+    }
+    .call-to-action-header h3 a:nth-child(1) {
+       background-color: #fff;
+       font-family: 'Archivo Black' !important;
+       mix-blend-mode: screen;
+       color: #000;
+       padding-left: 3px !important;
+       padding-right: 3px !important;
+       border-radius: 2px;
+    }
+    .footer {
+        grid-template-areas: 
+        'logof logof'
+        'cont ender'
+        'cont paym'
+        'cont tel'
+        'cont poli'
+        'ff ff'
+        !important
+        ;
+        gap: 5px;
+    }
+}
