@@ -91,34 +91,24 @@
                 <section>
                     <div class="box">
                         <div class="name">
-                            <p>Violão meteoro da paixão</p>
+                            <p id="evento_1">Noite de Natal</p>
                         </div>
                         <div class="options">
-                            <p><i class='bx bxs-edit-alt'></i></p>
-                            <p><i class='bx bx-show'></i></p>
-                            <p><i class='bx bxs-trash'></i></p>
+                            <p><i class='bx bxs-edit-alt' id="eventoEdit_1"></i></p>
+                            <p><i class='bx bx-show' id="eventoHidn_1"></i> <i class='bx bx-hide' id="eventoVis_1"></i></p>
+                            <p><i class='bx bxs-trash' id="eventoDel_1"></i></p>
                         </div>
                     </div>
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="name">
-                            <p>Guitarra NXZero</p>
+                            <p>Vazio</p>
                         </div>
                         <div class="options">
                             <p><i class='bx bxs-edit-alt'></i></p>
                             <p><i class='bx bx-show'></i></p>
                             <p><i class='bx bxs-trash'></i></p>
                         </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Baixo UNIOP</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt'></i></p>
-                            <p><i class='bx bx-show'></i></p>
-                            <p><i class='bx bxs-trash'></i></p>
-                        </div>
-                    </div>
+                    </div> -->
                 </section>
             </div>
             <hr>
@@ -171,7 +161,67 @@
             <div class="popup" id="popupAulaEdit_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
-                    
+                    <div id="editContent">
+                    <form>
+                        <div class="box">
+                            <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                <input type="file" id="arquivo1" required>
+                            </label>
+                            <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
+                        </div>
+                        <hr>
+                        <label>
+                            <input type="text" value="Guitarra" class="boxs" required>
+                        </label>
+                        <label>
+                            <div class="containerTitle"><strong>| Tipo de Curso:</strong></div>
+                            <select id="opcoes" name="opcoes" class="boxs">
+                                <option value="opcao0" disabled>Selecione o tipo de curso</option>
+                                <option value="opcao1" selected>Cordas</option>
+                                <option value="opcao2">Percussão</option>
+                                <option value="opcao3">Sopro</option>
+                                <option value="opcao4">Vocal</option>
+                                <option value="opcao5">Teclas</option>
+                                <option value="opcao6">Em Grupo</option>
+                            </select>
+                        </label>
+                        <label>
+                            <div class="containerTitle"><strong>| Classificação de Idade:</strong></div>
+                            <select id="opcoes" name="opcoes" class="boxs">
+                                <option value="opcao1">Regular</option>
+                                <option value="opcao2">Infantil</option>
+                            </select>
+                        </label>
+                        <hr>
+                        <h4>Descrição da Aula</h4>
+                        <label>
+                            <div class="containerTitle"><strong>| Sobre a Aula:</strong></div>
+                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                        </label>
+                        <label>
+                            <div class="containerTitle"><strong>| O que Oferecemos:</strong></div>
+                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                        </label>
+                        <label>
+                            <div class="containerTitle"><strong>| Diferenciais:</strong></div>
+                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                        </label>
+                        <h4>Galeria de Fotos</h4>
+                        <div id="boxContainer">
+                            <div class="box">
+                                <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                    <input type="file" id="galery1" required>
+                                </label>
+                                <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <label>
+                            <input type="checkbox" checked>Com primeira aula <b>gratuita</b>
+                        </label>
+                        <button>ATUALIZAR</button>
+                    </form>
+                </div>
                 </div>
             </div>
 
@@ -203,14 +253,49 @@
             <div class="popup" id="popupLojaEdit_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
-                    
+                    <div id="editContent">
+                        <form action="">
+                            <div class="box">
+                                <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                    <input type="file" id="arquivo3" required>
+                                </label>
+                                <span class="file-name" id="file-name3">Nenhum arquivo escolhido</span>
+                            </div>
+                            <hr>
+                            <label>
+                                <input type="text" value="Violão meteoro da paixão" class="boxs" required>
+                            </label>
+                            <label>
+                                <input type="text" value="Luan Santana Instrumentos" class="boxs" required>
+                            </label>
+                            <label>
+                                <div class="containerTitle"><strong>| Categoria:</strong></div>
+                                <select id="opcoes" name="opcoes" class="boxs">
+                                    <option value="opcao0" disabled>Selecione o tipo de curso</option>
+                                    <option value="opcao1" selected>Violão</option>
+                                    <option value="opcao2">Baixo</option>
+                                    <option value="opcao3">Guitarra</option>
+                                </select>
+                            </label>
+                            <label>
+                                <input type="text" value="R$ 100,00" class="boxs" required>
+                            </label>
+                            <label>
+                                <div class="containerTitle">
+                                    <strong>| Descrição do Produto:</strong>
+                                </div>
+                                <textarea name="mensagem" placeholder="..." required></textarea>
+                            </label>
+                            <button>ATUALIZAR</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
             <div class="popup" id="popupLojaHidn_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
-                    <h2>AVISO 2</h2>
+                    <h2>AVISO</h2>
                     <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
                 </div>
             </div>
@@ -221,6 +306,70 @@
                 <div class="popUpContent">
                     <h2>ALERTA !!</h2>
                     <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
+                    <div><b>Você tem certeza dessa ação??</b></div>
+                    <form action="">
+                        <label>
+                            <input type="password" placeholder="  Digite sua senha*" required>
+                        </label>
+                        <div><b>Depois NÃO haverá volta</b></div>
+                        <button>CONFIRMAR</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="popup" id="popupEventoEdit_1">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <div id="editContent">
+                        <form action="">
+                            <div class="box">
+                                <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                    <input type="file" id="arquivo2" required>
+                                </label>
+                                <span class="file-name" id="file-name2">Nenhum arquivo escolhido</span>
+                            </div>
+                            <hr>
+                            <label>
+                                <input type="text" value="Noite de Natal" class="boxs" required>
+                            </label>
+        
+                            <label>
+                                <input type="text" value="Null" class="boxs" required>
+                            </label>
+        
+                            
+                            <label>
+                                <div class="containerTitle">
+                                    <strong>| Data:</strong>
+                                </div>
+                                <input type="date" class="boxs" value="2024-12-01" required>
+                            </label>
+                            <label>
+                                <div class="containerTitle">
+                                    <strong>| Descrição do Evento:</strong>
+                                </div>
+                                <textarea name="mensagem" placeholder="..." required></textarea>
+                            </label>
+                            <button>ATUALIZAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popupEventoHidn_1">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <h2>AVISO</h2>
+                    <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
+                </div>
+            </div>
+
+            <div class="popup" id="popupEventoDel_1">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="iconAlert"><i class='bx bxs-error'></i></div>
+                <div class="popUpContent">
+                    <h2>ALERTA !!</h2>
+                    <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
                     <div><b>Você tem certeza dessa ação??</b></div>
                     <form action="">
                         <label>

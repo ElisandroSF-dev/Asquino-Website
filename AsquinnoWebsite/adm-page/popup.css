@@ -6,18 +6,7 @@
     top: 0;
     left: 0;
     position: fixed;
-}
-
-#popupAulaEdit_1{
-    display: none;
-}
-
-#popupAulaHidn_1{
-    display: none;
-}
-
-#popupAulaDel_1{
-    display: none;
+    overflow-y: auto;
 }
 
 .popUpContent h2{
@@ -30,7 +19,8 @@
 }
 
 #popupAulaDel_1 form,
-#popupLojaDel_1 form{
+#popupLojaDel_1 form,
+#popupEventoDel_1 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,27 +29,32 @@
 }
 
 #popupAulaDel_1 form div,
-#popupLojaDel_1 form div{
+#popupLojaDel_1 form div,
+#popupEventoDel_1 form div{
     font-size: 12px;
 }
 
 #popupAulaDel_1 form label,
-#popupLojaDel_1 form label{
+#popupLojaDel_1 form label,
+#popupEventoDel_1 form label{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 #popupAulaDel_1 form label input, 
-#popupLojaDel_1 form label input{
+#popupLojaDel_1 form label input,
+#popupEventoDel_1 form label input{
     width: 100%;
 }
 
 #popupAulaDel_1 button, 
-#popupLojaDel_1 button{
+#popupLojaDel_1 button,
+#popupEventoDel_1 button{
     background: linear-gradient(to top, #A60000, #ff0000);
     height: 30px;
     width: 25%;
+    min-width: 100px;
     border: none;
     border-radius: 5px;
     color: white;
@@ -67,7 +62,8 @@
 }
 
 #popupAulaDel_1 button:hover,
-#popupLojaDel_1 button:hover{
+#popupLojaDel_1 button:hover,
+#popupEventoDel_1 button:hover{
     font-size: 12px;
 }
 
@@ -121,6 +117,8 @@
     color: #555;
     border-radius: 10px;
     border: 1px solid #555;
+    display: none;
+
 }
 
 .popupClose {
@@ -151,6 +149,145 @@
     padding: 0px 30px;
 }
 
-#aulaVis_1, #lojaVis_1{
+#aulaVis_1, #lojaVis_1, #eventoVis_1{
     display: none;
+}
+
+.popUpContent #editContent form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.popUpContent #editContent button{
+    margin: 80px 0 50px 0;
+    background: linear-gradient(to top, #A60000, #ff0000);
+    height: 30px;
+    width: 80%;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popUpContent #editContent button:hover{
+    font-size: 17px;
+    box-shadow: 0px 0px 5px 5px #ffcaca;
+}
+
+.popUpContent #editContent .btnColapse{
+    width: 60%;
+    min-width: 350px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popUpContent #editContent input[type="file"] {
+    display: none;
+}
+
+.popUpContent #editContent form .box{
+    margin-top: 30px;
+    width: 350px;
+    height: 150px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUpContent #editContent form .imgFile {
+    padding: 10px 10px;
+    width: 150px;
+    background-color: #DFDFDF;
+    color: #969696;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popUpContent #editContent .genericButton{
+    width: 30%;
+    min-width: 150px;
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    border: 1.5px solid gray;
+    cursor: pointer;
+    color: rgb(76, 77, 77);
+}
+.popUpContent #editContent .genericButton:last-of-type{
+    margin-top: 10px;
+}
+
+.popUpContent #editContent .genericButton:hover{
+    box-shadow: 0px 2px 5px 2px #bcbcbc8a;
+}
+
+.popUpContent #editContent .file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.popUpContent #editContent .boxs{
+    width: 250px;
+    height: 35px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+}
+
+.popUpContent #editContent textarea{
+    width: 250px;
+    height: 135px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+}
+
+.popUpContent #editContent h4{
+    text-transform: uppercase;
+}
+
+.popUpContent #editContent .containerTitle{
+    width: 250px;
+}
+
+.popUpContent #editContent .containerTitle strong{
+    color: #5a5a5a;
+    font-size: 14px;
+}
+
+.popUpContent #editContent input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+}
+
+.popUpContent #editContent strong{
+    text-transform: capitalize;
+}
+
+.popUpContent #editContent div{
+    margin-bottom: 0px;
+}
+
+.popUpContent #editContent label{
+    margin: 12px 0px;
+}
+
+
+#addClass h2, #addCateg h2{
+   color: black; 
 }
