@@ -77,8 +77,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  height: 400px;
-  max-height: 400px;
+  height: 450px;
+  max-height: 450px;
   width: 100%;
   z-index: 9999;
 }
@@ -147,26 +147,26 @@ header .menu ul li a.active {
 
 
 header .loja-titulo {
-  text-align: left;
-  font-size: 5rem;
-  margin-top: 5px;
-  margin-left: 20px;
-  letter-spacing: -5px;
+  display: flex;   
+  font-family: 'Vina Sans', sans-serif;
+  font-size: 8rem; 
+  letter-spacing: -0.1em;    
+  align-items: center;    
+  justify-content: start; 
+  height: 300px;
+  margin-left:10px;
+
 }
 
 header .loja-titulo .lo {
- 
-  display: flex;
-  height: 350px;
+  
   color: #ffffff;
-  margin-right: 10px;
+  
 }
 
 header .loja-titulo .ja {
-  display: flex;
-  height: 350px;
+  
   color: #5e1cec;
-  /* Cor roxa mais clara para "JA" */
 }
 
 /* Barra de pesquisa */
@@ -176,7 +176,7 @@ header .loja-titulo .ja {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:380px;
+  margin-top: 430px;
 }
 
 .search-container input[type="text"] {
@@ -295,7 +295,8 @@ header .loja-titulo .ja {
 
 /* Grade de produtos */
 .product-grid {
-  
+  margin-top: 10px;
+  margin-block-end: 10x;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -313,7 +314,7 @@ header .loja-titulo .ja {
 .product-card img {
   max-width: 100%;
   max-height: 250px;
-  max-width:200px;
+  max-width: 200px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -325,7 +326,7 @@ header .loja-titulo .ja {
 }
 
 .product-card h3 {
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 1.125rem;
 }
 
