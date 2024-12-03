@@ -72,6 +72,10 @@ img {
 
 /* Resto do css local */
 
+.carousel div {
+    visibility: visible !important;
+}
+
 /* Css da Header: */
 /* \/ \/ \/ \/ \/ \/ \/ \/ */
 .menu-burguer {
