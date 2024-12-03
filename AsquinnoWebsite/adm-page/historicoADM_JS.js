@@ -97,6 +97,11 @@ function toggleColapse_loja() {
 }
 
 //Pop Up
+const closePopupBtns = document.querySelectorAll(".popupClose");
+const overlay = document.getElementById("overlay");
+
+
+//Pop Up AULA
 const aulaEdit_1 = document.getElementById("aulaEdit_1");
 const popupAulaEdit_1 = document.getElementById("popupAulaEdit_1");
 
@@ -106,9 +111,6 @@ const aulaVis_1 = document.getElementById("aulaVis_1");
 
 const aulaDel_1 = document.getElementById("aulaDel_1");
 const popupAulaDel_1 = document.getElementById("popupAulaDel_1");
-
-const closePopupBtns = document.querySelectorAll(".popupClose");
-const overlay = document.getElementById("overlay");
 
 const aula_1 = document.getElementById("Aula_1");
 
@@ -165,3 +167,71 @@ overlay.addEventListener("click", () => {
 popupAulaEdit_1.addEventListener("click", (event) => event.stopPropagation());
 popupAulaHidn_1.addEventListener("click", (event) => event.stopPropagation());
 popupAulaDel_1.addEventListener("click", (event) => event.stopPropagation());
+
+
+//Pop Up AULA
+const lojaEdit_1 = document.getElementById("lojaEdit_1");
+const popupLojaEdit_1 = document.getElementById("popupLojaEdit_1");
+
+const lojaHidn_1 = document.getElementById("lojaHidn_1");
+const popupLojaHidn_1 = document.getElementById("popupLojaHidn_1");
+const lojaVis_1 = document.getElementById("lojaVis_1");
+
+const lojaDel_1 = document.getElementById("lojaDel_1");
+const popupLojaDel_1 = document.getElementById("popupLojaDel_1");
+
+const prod_1 = document.getElementById("Prod_1");
+
+// Abrir o popup
+lojaEdit_1.addEventListener("click", () => {
+    popupLojaEdit_1.style.display = "block";
+    popupLojaHidn_1.style.display = "none";
+    popupLojaDel_1.style.display = "none";
+    overlay.style.display = "block";
+});
+
+lojaHidn_1.addEventListener("click", () => {
+    popupLojaEdit_1.style.display = "none";
+    popupLojaHidn_1.style.display = "block";
+    popupLojaDel_1.style.display = "none";
+    overlay.style.display = "block";
+
+    lojaVis_1.style.display = "block";
+    prod_1.style.color = "gray";
+    lojaHidn_1.style.display = "none";
+});
+
+lojaVis_1.addEventListener("click", () => {
+    lojaVis_1.style.display = "none";
+    prod_1.style.color = "black";
+    lojaHidn_1.style.display = "block";
+});
+
+lojaDel_1.addEventListener("click", () => {
+    popupLojaHidn_1.style.display = "none";
+    popupLojaEdit_1.style.display = "none";
+    popupLojaDel_1.style.display = "block";
+    overlay.style.display = "block";
+});
+
+// Fechar o popup
+closePopupBtns.forEach(button => {
+    button.addEventListener("click", () => {
+        popupLojaEdit_1.style.display = "none";
+        popupLojaHidn_1.style.display = "none";
+        popupLojaDel_1.style.display = "none";
+        overlay.style.display = "none";
+    });
+});
+
+// Fechar o popup
+overlay.addEventListener("click", () => {
+    popupLojaEdit_1.style.display = "none";
+    popupLojaHidn_1.style.display = "none";
+    popupLojaDel_1.style.display = "none";
+    overlay.style.display = "none";
+});
+
+popupLojaEdit_1.addEventListener("click", (event) => event.stopPropagation());
+popupLojaHidn_1.addEventListener("click", (event) => event.stopPropagation());
+popupLojaDel_1.addEventListener("click", (event) => event.stopPropagation());
