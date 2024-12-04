@@ -9,104 +9,6 @@
     overflow-y: auto;
 }
 
-.popUpContent h2{
-    color: #c00000;
-}
-
-.popUpContent strong{
-    text-transform: uppercase;
-    color: black;
-}
-
-#popupAulaDel_1 form,
-#popupLojaDel_1 form,
-#popupEventoDel_1 form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#popupAulaDel_1 form div,
-#popupLojaDel_1 form div,
-#popupEventoDel_1 form div{
-    font-size: 12px;
-}
-
-#popupAulaDel_1 form label,
-#popupLojaDel_1 form label,
-#popupEventoDel_1 form label{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#popupAulaDel_1 form label input, 
-#popupLojaDel_1 form label input,
-#popupEventoDel_1 form label input{
-    width: 100%;
-}
-
-#popupAulaDel_1 button, 
-#popupLojaDel_1 button,
-#popupEventoDel_1 button{
-    background: linear-gradient(to top, #A60000, #ff0000);
-    height: 30px;
-    width: 25%;
-    min-width: 100px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-}
-
-#popupAulaDel_1 button:hover,
-#popupLojaDel_1 button:hover,
-#popupEventoDel_1 button:hover{
-    font-size: 12px;
-}
-
-#addClass{
-    display: none;
-}
-
-.popUpContent div{
-    margin-bottom: 15px;
-}
-
-.popUpContent input{
-    width: 250px;
-    height: 35px;
-    background-color: #F9F9F9;
-    border-radius: 10px;
-    border: #C2C2C2 solid 1px;
-}
-
-.popUpContent .addCourseForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.popUpContent .addCourseForm button{
-    width: 65%;
-    height: 25px;
-    background-color: #2ade36;
-    border: 1.5px solid #119200;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.popUpContent .addCourseForm button:hover{
-    transform: scale(0.9);
-    transition: transform 0.2s ease;
-}
-
 .popup {
     width: 80%;
     max-width: 500px;
@@ -290,4 +192,102 @@
 
 #addClass h2, #addCateg h2{
    color: black; 
+}
+
+.popUpContent h2{
+    color: #c00000;
+}
+
+.popUpContent strong{
+    text-transform: uppercase;
+    color: black;
+}
+
+#popupAulaDel_1 form,
+#popupLojaDel_1 form,
+#popupEventoDel_1 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#popupAulaDel_1 form div,
+#popupLojaDel_1 form div,
+#popupEventoDel_1 form div{
+    font-size: 12px;
+}
+
+#popupAulaDel_1 form label,
+#popupLojaDel_1 form label,
+#popupEventoDel_1 form label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#popupAulaDel_1 form label input, 
+#popupLojaDel_1 form label input,
+#popupEventoDel_1 form label input{
+    width: 100%;
+}
+
+#popupAulaDel_1 button, 
+#popupLojaDel_1 button,
+#popupEventoDel_1 button{
+    background: linear-gradient(to top, #A60000, #ff0000);
+    height: 30px;
+    width: 25%;
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#popupAulaDel_1 button:hover,
+#popupLojaDel_1 button:hover,
+#popupEventoDel_1 button:hover{
+    font-size: 12px;
+}
+
+#addClass{
+    display: none;
+}
+
+.popUpContent div{
+    margin-bottom: 15px;
+}
+
+.popUpContent input{
+    width: 250px;
+    height: 35px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: #C2C2C2 solid 1px;
+}
+
+.popUpContent .addCourseForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popUpContent .addCourseForm button{
+    width: 65%;
+    height: 25px;
+    background-color: #2ade36;
+    border: 1.5px solid #119200;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popUpContent .addCourseForm button:hover{
+    transform: scale(0.9);
+    transition: transform 0.2s ease;
 }

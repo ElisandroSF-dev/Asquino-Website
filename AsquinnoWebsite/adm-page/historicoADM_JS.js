@@ -1,3 +1,4 @@
+// AULA
 function toggleColapse_aula() {
     const conteudo1 = document.getElementById('conteudo1');
     const style1 = document.getElementById('btnColapse1');
@@ -96,12 +97,12 @@ function toggleColapse_loja() {
     }
 }
 
-//Pop Up
+// POP UP
 const closePopupBtns = document.querySelectorAll(".popupClose");
 const overlay = document.getElementById("overlay");
 
 
-//Pop Up AULA
+// Pop Up AULA
 const aulaEdit_1 = document.getElementById("aulaEdit_1");
 const popupAulaEdit_1 = document.getElementById("popupAulaEdit_1");
 
@@ -114,7 +115,7 @@ const popupAulaDel_1 = document.getElementById("popupAulaDel_1");
 
 const aula_1 = document.getElementById("Aula_1");
 
-// Abrir o popup
+
 aulaEdit_1.addEventListener("click", () => {
     popupAulaEdit_1.style.display = "block";
     popupAulaHidn_1.style.display = "none";
@@ -135,7 +136,7 @@ aulaHidn_1.addEventListener("click", () => {
 
 aulaVis_1.addEventListener("click", () => {
     aulaVis_1.style.display = "none";
-    aula_1.style.color = "black";
+    aula_1.style.color = "#353535";
     aulaHidn_1.style.display = "block";
 });
 
@@ -146,7 +147,6 @@ aulaDel_1.addEventListener("click", () => {
     overlay.style.display = "block";
 });
 
-// Fechar o popup
 closePopupBtns.forEach(button => {
     button.addEventListener("click", () => {
         popupAulaEdit_1.style.display = "none";
@@ -156,7 +156,6 @@ closePopupBtns.forEach(button => {
     });
 });
 
-// Fechar o popup
 overlay.addEventListener("click", () => {
     popupAulaEdit_1.style.display = "none";
     popupAulaHidn_1.style.display = "none";
@@ -169,7 +168,7 @@ popupAulaHidn_1.addEventListener("click", (event) => event.stopPropagation());
 popupAulaDel_1.addEventListener("click", (event) => event.stopPropagation());
 
 
-//Pop Up LOJA
+// Pop Up LOJA
 const lojaEdit_1 = document.getElementById("lojaEdit_1");
 const popupLojaEdit_1 = document.getElementById("popupLojaEdit_1");
 
@@ -182,7 +181,7 @@ const popupLojaDel_1 = document.getElementById("popupLojaDel_1");
 
 const prod_1 = document.getElementById("Prod_1");
 
-// Abrir o popup
+
 lojaEdit_1.addEventListener("click", () => {
     popupLojaEdit_1.style.display = "block";
     popupLojaHidn_1.style.display = "none";
@@ -203,7 +202,7 @@ lojaHidn_1.addEventListener("click", () => {
 
 lojaVis_1.addEventListener("click", () => {
     lojaVis_1.style.display = "none";
-    prod_1.style.color = "black";
+    prod_1.style.color = "#353535";
     lojaHidn_1.style.display = "block";
 });
 
@@ -214,7 +213,6 @@ lojaDel_1.addEventListener("click", () => {
     overlay.style.display = "block";
 });
 
-// Fechar o popup
 closePopupBtns.forEach(button => {
     button.addEventListener("click", () => {
         popupLojaEdit_1.style.display = "none";
@@ -224,7 +222,6 @@ closePopupBtns.forEach(button => {
     });
 });
 
-// Fechar o popup
 overlay.addEventListener("click", () => {
     popupLojaEdit_1.style.display = "none";
     popupLojaHidn_1.style.display = "none";
@@ -237,8 +234,7 @@ popupLojaHidn_1.addEventListener("click", (event) => event.stopPropagation());
 popupLojaDel_1.addEventListener("click", (event) => event.stopPropagation());
 
 
-
-//Pop Up EVENTO
+// Pop Up EVENTO
 const eventoEdit_1 = document.getElementById("eventoEdit_1");
 const popupEventoEdit_1 = document.getElementById("popupEventoEdit_1");
 
@@ -251,7 +247,7 @@ const popupEventoDel_1 = document.getElementById("popupEventoDel_1");
 
 const evento_1 = document.getElementById("evento_1");
 
-// Abrir o popup
+
 eventoEdit_1.addEventListener("click", () => {
     popupEventoEdit_1.style.display = "block";
     popupEventoHidn_1.style.display = "none";
@@ -272,7 +268,7 @@ eventoHidn_1.addEventListener("click", () => {
 
 eventoVis_1.addEventListener("click", () => {
     eventoVis_1.style.display = "none";
-    evento_1.style.color = "black";
+    evento_1.style.color = "#353535";
     eventoHidn_1.style.display = "block";
 });
 
@@ -283,7 +279,6 @@ eventoDel_1.addEventListener("click", () => {
     overlay.style.display = "block";
 });
 
-// Fechar o popup
 closePopupBtns.forEach(button => {
     button.addEventListener("click", () => {
         popupEventoEdit_1.style.display = "none";
@@ -293,7 +288,6 @@ closePopupBtns.forEach(button => {
     });
 });
 
-// Fechar o popup
 overlay.addEventListener("click", () => {
     popupEventoEdit_1.style.display = "none";
     popupEventoHidn_1.style.display = "none";
@@ -304,3 +298,9 @@ overlay.addEventListener("click", () => {
 popupEventoEdit_1.addEventListener("click", (event) => event.stopPropagation());
 popupEventoHidn_1.addEventListener("click", (event) => event.stopPropagation());
 popupEventoDel_1.addEventListener("click", (event) => event.stopPropagation());
+
+
+// Botão VISUALIZAR
+function showAlert() {
+    alert("Opção inválida! Por falta do banco de dados.");
+}

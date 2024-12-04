@@ -19,7 +19,7 @@
             <!-- AULAS -->
             <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
                 <div class="divColapse">
-                    <p>︱ AULAS</p>
+                    <p>︱ AULA</p>
                     <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
                 </div>
             </button>
@@ -32,11 +32,9 @@
                         <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
                     </div>
                     <hr>
-
                     <label>
                         <input type="text" placeholder="Nome do Curso" class="boxs" required>
                     </label>
-
                     <label for="opcoes">
                         <div class="containerTitle">
                             <strong>| Tipo de Curso:</strong>
@@ -51,9 +49,7 @@
                             <option value="opcao6">Em Grupo</option>
                         </select>
                     </label>
-
                     <input type="button" id="popupOpen_1" class="genericButton" value="Adicionar novo Curso">
-                    
                     <label for="opcoes">
                         <div class="containerTitle">
                             <strong>| Classificação de Idade:</strong>
@@ -64,8 +60,6 @@
                         </select>
                     </label>
                     <hr>
-
-
                     <h4>Descrição da Aula</h4>
                     <label>
                         <div class="containerTitle">
@@ -107,11 +101,9 @@
                 </form>
             </div>
             <hr>
-
-            <!-- EVENTO -->
             <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
                 <div class="divColapse">
-                    <p>︱ EVENTOS</p>
+                    <p>︱ EVENTO</p>
                     <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
                 </div>
             </button>
@@ -131,8 +123,6 @@
                     <label>
                         <input type="text" placeholder="Subtítulo do Evento" class="boxs" required>
                     </label>
-
-                    
                     <label>
                         <div class="containerTitle">
                             <strong>| Data:</strong>
@@ -149,11 +139,9 @@
                 </form>
             </div>
             <hr>
-
-            <!-- LOJA -->
             <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
                 <div class="divColapse">
-                    <p>︱ LOJA</p>
+                    <p>︱ PRODUTO</p>
                     <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
                 </div> 
             </button>
@@ -175,7 +163,7 @@
                     <label>
                         <div class="containerTitle"><strong>| Categoria:</strong></div>
                         <select id="opcoes" name="opcoes" class="boxs">
-                            <option value="opcao0" selected disabled>Selecione o tipo de curso</option>
+                            <option value="opcao0" selected disabled>Selecione o tipo de categoria</option>
                             <option value="opcao1">Violão</option>
                             <option value="opcao2">Baixo</option>
                             <option value="opcao3">Guitarra</option>
@@ -195,8 +183,6 @@
                 </form>
             </div>
         </div>
-        
-        <!-- Pop-Up -->
         <section class="overlay" id="overlay">
             <div class="popup" id="addClass">
                 <div class="popupClose" id="popupClose">&times;</div>
@@ -216,7 +202,7 @@
                     <h2>ADICIONE A NOVA CATEGORIA:</h2>
                     <form action="" class="addCourseForm">
                         <label for="">
-                            <input type="text" placeholder="Nome da" required>
+                            <input type="text" placeholder="Nome da Categoria" required>
                         </label>   
                         <button>Adicionar</button>
                     </form>
@@ -226,8 +212,8 @@
     </main>
     <footer>
         <a href="historicoADM.html"><button class="btnHis" alt="Acessar Histórico"><i class='bx bx-history'></i> ︱ HISTÓRICO</button></a>
-        <button class="btnVis" alt="Visualizar Alterações">VISUALIZAR <b>➟</b></button>
+        <button class="btnVis" alt="Visualizar Alterações" onclick="showAlert()">VISUALIZAR <b>➟</b></button>
     </footer>
-    <script src="gerenciamentoJS.js"></script>
+    <script src="gerenciamentoADM_JS.js"></script>
 </body>
 </html>

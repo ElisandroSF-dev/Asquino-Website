@@ -29,7 +29,7 @@ header .exit:hover{
 }
 
 header .return{
-    color: #969696;
+    color: #666666;
     display: flex;
     align-items: baseline;
     gap: 5px;
@@ -49,6 +49,10 @@ main{
     align-items: center;
 }
 
+.title{
+    margin-bottom: 50px;
+}
+
 .title h1{
     color: #969696;
     text-transform: uppercase;
@@ -59,6 +63,27 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.btnColapse{
+    width: 60%;
+    min-width: 350px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btnColapse1{
+    background: linear-gradient(to right, #232323, #434343);
+}
+
+#btnColapse2{
+    background: linear-gradient(to right, #232323, #434343);
+}
+
+#btnColapse3{
+    background: linear-gradient(to right, #232323, #434343);
 }
 
 .divColapse{
@@ -121,27 +146,6 @@ section .options{
     cursor: pointer;
 }
 
-.btnColapse{
-    width: 60%;
-    min-width: 350px;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-#btnColapse1{
-    background: linear-gradient(to right, #232323, #434343);
-}
-
-#btnColapse2{
-    background: linear-gradient(to right, #232323, #434343);
-}
-
-#btnColapse3{
-    background: linear-gradient(to right, #232323, #434343);
-}
-
 hr{
     height: 2px;
     width: 55%;
@@ -166,13 +170,6 @@ footer button{
     flex-direction: row;
     justify-content: center;
     cursor: pointer;
-}
-
-.btnHis{
-    background: linear-gradient(to top, #121B3A, #1F3379);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .btnVis{

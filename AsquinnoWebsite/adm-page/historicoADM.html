@@ -17,7 +17,6 @@
             <h1><i class='bx bx-history'></i> ︱ HISTÓRICO</h1>
         </div>
         <div class="content">
-            <!-- AULAS -->
             <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
                 <div class="divColapse">
                     <p>︱ AULAS</p>
@@ -79,8 +78,6 @@
                 </section>
             </div>
             <hr>
-
-            <!-- EVENTO -->
             <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
                 <div class="divColapse">
                     <p>︱ EVENTOS</p>
@@ -99,24 +96,22 @@
                             <p><i class='bx bxs-trash' id="eventoDel_1"></i></p>
                         </div>
                     </div>
-                    <!-- <div class="box">
+                    <div class="box">
                         <div class="name">
-                            <p>Vazio</p>
+                            <p>Show de Rock</p>
                         </div>
                         <div class="options">
                             <p><i class='bx bxs-edit-alt'></i></p>
                             <p><i class='bx bx-show'></i></p>
                             <p><i class='bx bxs-trash'></i></p>
                         </div>
-                    </div> -->
+                    </div>
                 </section>
             </div>
             <hr>
-
-            <!-- LOJA -->
             <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
                 <div class="divColapse">
-                    <p>︱ LOJA</p>
+                    <p>︱ PRODUTOS</p>
                     <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
                 </div>
             </button>
@@ -155,8 +150,6 @@
                 </section>
             </div>
         </div>
-
-        <!-- Pop-Up -->
         <section class="overlay" id="overlay">
             <div class="popup" id="popupAulaEdit_1">
                 <div class="popupClose" id="popupClose">&times;</div>
@@ -224,7 +217,6 @@
                 </div>
                 </div>
             </div>
-
             <div class="popup" id="popupAulaHidn_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
@@ -232,7 +224,6 @@
                     <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
                 </div>
             </div>
-
             <div class="popup" id="popupAulaDel_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="iconAlert"><i class='bx bxs-error'></i></div>
@@ -249,11 +240,11 @@
                     </form>
                 </div>
             </div>
-
             <div class="popup" id="popupLojaEdit_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
                     <div id="editContent">
+                        <h2>Editar</h2>
                         <form action="">
                             <div class="box">
                                 <label class="imgFile">Adicione uma <b>IMAGEM</b>
@@ -291,7 +282,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="popup" id="popupLojaHidn_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
@@ -299,7 +289,6 @@
                     <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
                 </div>
             </div>
-
             <div class="popup" id="popupLojaDel_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="iconAlert"><i class='bx bxs-error'></i></div>
@@ -316,7 +305,6 @@
                     </form>
                 </div>
             </div>
-
             <div class="popup" id="popupEventoEdit_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
@@ -336,8 +324,6 @@
                             <label>
                                 <input type="text" value="Null" class="boxs" required>
                             </label>
-        
-                            
                             <label>
                                 <div class="containerTitle">
                                     <strong>| Data:</strong>
@@ -355,7 +341,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="popup" id="popupEventoHidn_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="popUpContent">
@@ -363,7 +348,6 @@
                     <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
                 </div>
             </div>
-
             <div class="popup" id="popupEventoDel_1">
                 <div class="popupClose" id="popupClose">&times;</div>
                 <div class="iconAlert"><i class='bx bxs-error'></i></div>
@@ -373,7 +357,7 @@
                     <div><b>Você tem certeza dessa ação??</b></div>
                     <form action="">
                         <label>
-                            <input type="password" placeholder="  Digite sua senha*" required>
+                            <input type="password" placeholder="Digite sua senha*" required>
                         </label>
                         <div><b>Depois NÃO haverá volta</b></div>
                         <button>CONFIRMAR</button>
@@ -383,7 +367,7 @@
         </section>
     </main>
     <footer>
-        <button class="btnVis" alt="Visualizar Alterações">VISUALIZAR <b>➟</b></button>
+        <button class="btnVis" alt="Visualizar Alterações" onclick="showAlert()">VISUALIZAR <b>➟</b></button>
     </footer>
     <script src="historicoADM_JS.js"></script>
 </body>

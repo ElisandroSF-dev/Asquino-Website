@@ -97,6 +97,8 @@ function toggleColapse_loja() {
     }
 }
 
+
+// Input File
 const inputFile1 = document.getElementById('arquivo1');
 const fileNameDisplay1 = document.getElementById('file-name1');
 
@@ -125,11 +127,10 @@ const addBoxButton = document.getElementById("addBox");
 const boxContainer = document.getElementById("boxContainer");
 let boxCount = 1;
 
-// Função para criar uma nova caixa
 function createBox() {
     if (boxCount >= 6) {
+        addBoxButton.style.display = 'none';
         document.querySelector(".alertGalery").innerHTML = "<strong>Você atingiu o Limite Máximo!</strong>";
-        addBox.style.display = 'none';
         return;
     }
 
@@ -165,7 +166,7 @@ const fileNameDisplay3 = document.getElementById('file-name3');
 });
 
 
-//Pop Up
+// POP UP
 const closePopupBtns = document.querySelectorAll(".popupClose");
 const overlay = document.getElementById("overlay");
 
@@ -175,7 +176,6 @@ const addClass = document.getElementById("addClass");
 const popupOpen_2 = document.getElementById("popupOpen_2");
 const addCateg = document.getElementById("addCateg");
 
-// Abrir o popup
 popupOpen_1.addEventListener("click", () => {
     addClass.style.display = "block";
     addCateg.style.display = "none";
@@ -188,7 +188,6 @@ popupOpen_2.addEventListener("click", () => {
     overlay.style.display = "block";
 });
 
-// Fechar o popup
 closePopupBtns.forEach(button => {
     button.addEventListener("click", () => {
         addClass.style.display = "none";
@@ -197,7 +196,6 @@ closePopupBtns.forEach(button => {
     });
 });
 
-// Fechar o popup
 overlay.addEventListener("click", () => {
     addClass.style.display = "none";
     addCateg.style.display = "none";
@@ -206,3 +204,9 @@ overlay.addEventListener("click", () => {
 
 addClass.addEventListener("click", (event) => event.stopPropagation());
 addCateg.addEventListener("click", (event) => event.stopPropagation());
+
+
+// Botão VISUALIZAR
+function showAlert() {
+    alert("Opção inválida! Por falta do banco de dados.");
+}
