@@ -8,364 +8,368 @@
         <title>Histórico de Conteúdo</title>
     </head>
 <body>
-    <header>
-        <a href="gerenciamentoADM.html" class="return"><b>➜</b> RETORNAR</a>
-        <a href="../home/index.html" class="exit">SAIR ︱<i class='bx bx-x bx-sm'></i></a>
-    </header>
-    <main>
-        <div class="title">
-            <h1><i class='bx bx-history'></i> ︱ HISTÓRICO</h1>
-        </div>
-        <div class="content">
-            <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
-                <div class="divColapse">
-                    <p>︱ AULAS</p>
-                    <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
-                </div>
-            </button>
-            <div id="conteudo1" class="conteudo-colapsado">
-                <section>
-                    <div class="box">
-                        <div class="name">
-                            <p id="Aula_1">Guitarra</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="aulaEdit_1"></i></p>
-                            <p><i class='bx bx-show' id="aulaHidn_1"></i> <i class='bx bx-hide' id="aulaVis_1"></i></p>
-                            <p><i class='bx bxs-trash' id="aulaDel_1"></i></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Bateria</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="aulaEdit_2"></i></p>
-                            <p><i class='bx bx-show' id="aulaHidn_2"></i></p>
-                            <p><i class='bx bxs-trash' id="aulaDel_2"></i></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Saxofone</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="aulaEdit_3"></i></p>
-                            <p><i class='bx bx-show' id="aulaHidn_3"></i></p>
-                            <p><i class='bx bxs-trash' id="aulaDel_3"></i></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Vocal</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="aulaEdit_4"></i></p>
-                            <p><i class='bx bx-show' id="aulaHidn_4"></i></p>
-                            <p><i class='bx bxs-trash' id="aulaDel_4"></i></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Desenho em Grupo</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="aulaEdit_5"></i></p>
-                            <p><i class='bx bx-show' id="aulaHidn_5"></i></p>
-                            <p><i class='bx bxs-trash' id="aulaDel_5"></i></p>
-                        </div>
-                    </div>
-                </section>
+    <div class="layout-container">
+        <header>
+            <a href="gerenciamentoADM.html" class="return"><b>➜</b> RETORNAR</a>
+            <a href="../home/index.html" class="exit">SAIR ︱<i class='bx bx-x bx-sm'></i></a>
+        </header>
+        <main>
+            <div class="title">
+                <h1><i class='bx bx-history'></i> ︱ HISTÓRICO</h1>
             </div>
-            <hr>
-            <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
-                <div class="divColapse">
-                    <p>︱ EVENTOS</p>
-                    <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
-                </div>
-            </button>
-            <div id="conteudo2" class="conteudo-colapsado">
-                <section>
-                    <div class="box">
-                        <div class="name">
-                            <p id="evento_1">Noite de Natal</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="eventoEdit_1"></i></p>
-                            <p><i class='bx bx-show' id="eventoHidn_1"></i> <i class='bx bx-hide' id="eventoVis_1"></i></p>
-                            <p><i class='bx bxs-trash' id="eventoDel_1"></i></p>
-                        </div>
+            <div class="content">
+                <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
+                    <div class="divColapse">
+                        <p>︱ AULAS</p>
+                        <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
                     </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Show de Rock</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt'></i></p>
-                            <p><i class='bx bx-show'></i></p>
-                            <p><i class='bx bxs-trash'></i></p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <hr>
-            <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
-                <div class="divColapse">
-                    <p>︱ PRODUTOS</p>
-                    <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
-                </div>
-            </button>
-            <div id="conteudo3" class="conteudo-colapsado">
-                <section>
-                    <div class="box">
-                        <div class="name">
-                            <p id="Prod_1">Violão meteoro da paixão</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt' id="lojaEdit_1"></i></p>
-                            <p><i class='bx bx-show' id="lojaHidn_1"></i> <i class='bx bx-hide' id="lojaVis_1"></i></p>
-                            <p><i class='bx bxs-trash' id="lojaDel_1"></i></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Guitarra NXZero</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt'></i></p>
-                            <p><i class='bx bx-show'></i></p>
-                            <p><i class='bx bxs-trash'></i></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="name">
-                            <p>Baixo UNIOP</p>
-                        </div>
-                        <div class="options">
-                            <p><i class='bx bxs-edit-alt'></i></p>
-                            <p><i class='bx bx-show'></i></p>
-                            <p><i class='bx bxs-trash'></i></p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <section class="overlay" id="overlay">
-            <div class="popup" id="popupAulaEdit_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <div id="editContent">
-                    <form>
+                </button>
+                <div id="conteudo1" class="conteudo-colapsado">
+                    <section>
                         <div class="box">
-                            <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                                <input type="file" id="arquivo1" required>
-                            </label>
-                            <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
-                        </div>
-                        <hr>
-                        <label>
-                            <input type="text" value="Guitarra" class="boxs" required>
-                        </label>
-                        <label>
-                            <div class="containerTitle"><strong>| Tipo de Curso:</strong></div>
-                            <select id="opcoes" name="opcoes" class="boxs">
-                                <option value="opcao0" disabled>Selecione o tipo de curso</option>
-                                <option value="opcao1" selected>Cordas</option>
-                                <option value="opcao2">Percussão</option>
-                                <option value="opcao3">Sopro</option>
-                                <option value="opcao4">Vocal</option>
-                                <option value="opcao5">Teclas</option>
-                                <option value="opcao6">Em Grupo</option>
-                            </select>
-                        </label>
-                        <label>
-                            <div class="containerTitle"><strong>| Classificação de Idade:</strong></div>
-                            <select id="opcoes" name="opcoes" class="boxs">
-                                <option value="opcao1">Regular</option>
-                                <option value="opcao2">Infantil</option>
-                            </select>
-                        </label>
-                        <hr>
-                        <h4>Descrição da Aula</h4>
-                        <label>
-                            <div class="containerTitle"><strong>| Sobre a Aula:</strong></div>
-                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
-                        </label>
-                        <label>
-                            <div class="containerTitle"><strong>| O que Oferecemos:</strong></div>
-                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
-                        </label>
-                        <label>
-                            <div class="containerTitle"><strong>| Diferenciais:</strong></div>
-                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
-                        </label>
-                        <h4>Galeria de Fotos</h4>
-                        <div id="boxContainer">
-                            <div class="box">
-                                <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                                    <input type="file" id="galery1" required>
-                                </label>
-                                <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                            <div class="name">
+                                <p id="Aula_1">Guitarra</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="aulaEdit_1"></i></p>
+                                <p><i class='bx bx-show' id="aulaHidn_1"></i> <i class='bx bx-hide' id="aulaVis_1"></i></p>
+                                <p><i class='bx bxs-trash' id="aulaDel_1"></i></p>
                             </div>
                         </div>
-                        <hr>
-                        <label>
-                            <input type="checkbox" checked>Com primeira aula <b>gratuita</b>
-                        </label>
-                        <button>ATUALIZAR</button>
-                    </form>
+                        <div class="box">
+                            <div class="name">
+                                <p>Bateria</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="aulaEdit_2"></i></p>
+                                <p><i class='bx bx-show' id="aulaHidn_2"></i></p>
+                                <p><i class='bx bxs-trash' id="aulaDel_2"></i></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="name">
+                                <p>Saxofone</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="aulaEdit_3"></i></p>
+                                <p><i class='bx bx-show' id="aulaHidn_3"></i></p>
+                                <p><i class='bx bxs-trash' id="aulaDel_3"></i></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="name">
+                                <p>Vocal</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="aulaEdit_4"></i></p>
+                                <p><i class='bx bx-show' id="aulaHidn_4"></i></p>
+                                <p><i class='bx bxs-trash' id="aulaDel_4"></i></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="name">
+                                <p>Desenho em Grupo</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="aulaEdit_5"></i></p>
+                                <p><i class='bx bx-show' id="aulaHidn_5"></i></p>
+                                <p><i class='bx bxs-trash' id="aulaDel_5"></i></p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+                <hr>
+                <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
+                    <div class="divColapse">
+                        <p>︱ EVENTOS</p>
+                        <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
+                    </div>
+                </button>
+                <div id="conteudo2" class="conteudo-colapsado">
+                    <section>
+                        <div class="box">
+                            <div class="name">
+                                <p id="evento_1">Noite de Natal</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="eventoEdit_1"></i></p>
+                                <p><i class='bx bx-show' id="eventoHidn_1"></i> <i class='bx bx-hide' id="eventoVis_1"></i></p>
+                                <p><i class='bx bxs-trash' id="eventoDel_1"></i></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="name">
+                                <p>Show de Rock</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt'></i></p>
+                                <p><i class='bx bx-show'></i></p>
+                                <p><i class='bx bxs-trash'></i></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <hr>
+                <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
+                    <div class="divColapse">
+                        <p>︱ PRODUTOS</p>
+                        <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
+                    </div>
+                </button>
+                <div id="conteudo3" class="conteudo-colapsado">
+                    <section>
+                        <div class="box">
+                            <div class="name">
+                                <p id="Prod_1">Violão meteoro da paixão</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt' id="lojaEdit_1"></i></p>
+                                <p><i class='bx bx-show' id="lojaHidn_1"></i> <i class='bx bx-hide' id="lojaVis_1"></i></p>
+                                <p><i class='bx bxs-trash' id="lojaDel_1"></i></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="name">
+                                <p>Guitarra NXZero</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt'></i></p>
+                                <p><i class='bx bx-show'></i></p>
+                                <p><i class='bx bxs-trash'></i></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="name">
+                                <p>Baixo UNIOP</p>
+                            </div>
+                            <div class="options">
+                                <p><i class='bx bxs-edit-alt'></i></p>
+                                <p><i class='bx bx-show'></i></p>
+                                <p><i class='bx bxs-trash'></i></p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="popup" id="popupAulaHidn_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <h2>AVISO</h2>
-                    <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
-                </div>
-            </div>
-            <div class="popup" id="popupAulaDel_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="iconAlert"><i class='bx bxs-error'></i></div>
-                <div class="popUpContent">
-                    <h2>ALERTA !!</h2>
-                    <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
-                    <div><b>Você tem certeza dessa ação??</b></div>
-                    <form action="">
-                        <label>
-                            <input type="password" placeholder="  Digite sua senha*" required>
-                        </label>
-                        <div><b>Depois NÃO haverá volta</b></div>
-                        <button>CONFIRMAR</button>
-                    </form>
-                </div>
-            </div>
-            <div class="popup" id="popupLojaEdit_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <div id="editContent">
-                        <h2>Editar</h2>
-                        <form action="">
+            <section class="overlay" id="overlay">
+                <div class="popup" id="popupAulaEdit_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <div id="editContent">
+                        <form>
                             <div class="box">
                                 <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                                    <input type="file" id="arquivo3" required>
+                                    <input type="file" id="arquivo1" required>
                                 </label>
-                                <span class="file-name" id="file-name3">Nenhum arquivo escolhido</span>
+                                <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
                             </div>
                             <hr>
                             <label>
-                                <input type="text" value="Violão meteoro da paixão" class="boxs" required>
+                                <input type="text" value="Guitarra" class="boxs" required>
                             </label>
                             <label>
-                                <input type="text" value="Luan Santana Instrumentos" class="boxs" required>
-                            </label>
-                            <label>
-                                <div class="containerTitle"><strong>| Categoria:</strong></div>
+                                <div class="containerTitle"><strong>| Tipo de Curso:</strong></div>
                                 <select id="opcoes" name="opcoes" class="boxs">
                                     <option value="opcao0" disabled>Selecione o tipo de curso</option>
-                                    <option value="opcao1" selected>Violão</option>
-                                    <option value="opcao2">Baixo</option>
-                                    <option value="opcao3">Guitarra</option>
+                                    <option value="opcao1" selected>Cordas</option>
+                                    <option value="opcao2">Percussão</option>
+                                    <option value="opcao3">Sopro</option>
+                                    <option value="opcao4">Vocal</option>
+                                    <option value="opcao5">Teclas</option>
+                                    <option value="opcao6">Em Grupo</option>
                                 </select>
                             </label>
                             <label>
-                                <input type="text" value="R$ 100,00" class="boxs" required>
+                                <div class="containerTitle"><strong>| Classificação de Idade:</strong></div>
+                                <select id="opcoes" name="opcoes" class="boxs">
+                                    <option value="opcao1">Regular</option>
+                                    <option value="opcao2">Infantil</option>
+                                </select>
+                            </label>
+                            <hr>
+                            <h4>Descrição da Aula</h4>
+                            <label>
+                                <div class="containerTitle"><strong>| Sobre a Aula:</strong></div>
+                                <textarea name="mensagem" placeholder="Descrição..." required>A aula de guitarra...</textarea>
                             </label>
                             <label>
-                                <div class="containerTitle">
-                                    <strong>| Descrição do Produto:</strong>
-                                </div>
-                                <textarea name="mensagem" placeholder="..." required></textarea>
+                                <div class="containerTitle"><strong>| O que Oferecemos:</strong></div>
+                                <textarea name="mensagem" placeholder="Descrição..." required>Oferecemos na aula de guitarra...</textarea>
                             </label>
-                            <button>ATUALIZAR</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popupLojaHidn_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <h2>AVISO</h2>
-                    <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
-                </div>
-            </div>
-            <div class="popup" id="popupLojaDel_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="iconAlert"><i class='bx bxs-error'></i></div>
-                <div class="popUpContent">
-                    <h2>ALERTA !!</h2>
-                    <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
-                    <div><b>Você tem certeza dessa ação??</b></div>
-                    <form action="">
-                        <label>
-                            <input type="password" placeholder="  Digite sua senha*" required>
-                        </label>
-                        <div><b>Depois NÃO haverá volta</b></div>
-                        <button>CONFIRMAR</button>
-                    </form>
-                </div>
-            </div>
-            <div class="popup" id="popupEventoEdit_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <div id="editContent">
-                        <form action="">
-                            <div class="box">
-                                <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                                    <input type="file" id="arquivo2" required>
-                                </label>
-                                <span class="file-name" id="file-name2">Nenhum arquivo escolhido</span>
+                            <label>
+                                <div class="containerTitle"><strong>| Diferenciais:</strong></div>
+                                <textarea name="mensagem" placeholder="Descrição..." required>Diferenciais da aula de guitarra...</textarea>
+                            </label>
+                            <h4>Galeria de Fotos</h4>
+                            <div id="boxContainer">
+                                <div class="box">
+                                    <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                        <input type="file" id="galery1" required>
+                                    </label>
+                                    <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                                </div>
                             </div>
                             <hr>
                             <label>
-                                <input type="text" value="Noite de Natal" class="boxs" required>
-                            </label>
-        
-                            <label>
-                                <input type="text" value="Null" class="boxs" required>
-                            </label>
-                            <label>
-                                <div class="containerTitle">
-                                    <strong>| Data:</strong>
-                                </div>
-                                <input type="date" class="boxs" value="2024-12-01" required>
-                            </label>
-                            <label>
-                                <div class="containerTitle">
-                                    <strong>| Descrição do Evento:</strong>
-                                </div>
-                                <textarea name="mensagem" placeholder="..." required></textarea>
+                                <input type="checkbox" checked>Com primeira aula <b>gratuita</b>
                             </label>
                             <button>ATUALIZAR</button>
+                            <input type="reset" value="RESTAURAR">
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <div class="popup" id="popupAulaHidn_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <h2>AVISO</h2>
+                        <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
+                    </div>
+                </div>
+                <div class="popup" id="popupAulaDel_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="iconAlert"><i class='bx bxs-error'></i></div>
+                    <div class="popUpContent">
+                        <h2>ALERTA !!</h2>
+                        <div>Todo o conteúdo relacionado a <strong>aulas - guitarra</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
+                        <div><b>Você tem certeza dessa ação??</b></div>
+                        <form action="">
+                            <label>
+                                <input type="password" placeholder="  Digite sua senha*" required>
+                            </label>
+                            <div><b>Depois NÃO haverá volta</b></div>
+                            <button>CONFIRMAR</button>
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="popup" id="popupEventoHidn_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <h2>AVISO</h2>
-                    <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
+                <div class="popup" id="popupLojaEdit_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <div id="editContent">
+                            <form action="">
+                                <div class="box">
+                                    <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                        <input type="file" id="arquivo3" required>
+                                    </label>
+                                    <span class="file-name" id="file-name3">Nenhum arquivo escolhido</span>
+                                </div>
+                                <hr>
+                                <label>
+                                    <input type="text" value="Violão meteoro da paixão" placeholder="Nome do Produto" class="boxs" required>
+                                </label>
+                                <label>
+                                    <input type="text" value="Luan Santana Instrumentos" placeholder="Marca do Produto" class="boxs" required>
+                                </label>
+                                <label>
+                                    <div class="containerTitle"><strong>| Categoria:</strong></div>
+                                    <select id="opcoes" name="opcoes" class="boxs">
+                                        <option value="opcao0" disabled>Selecione o tipo de curso</option>
+                                        <option value="opcao1" selected>Violão</option>
+                                        <option value="opcao2">Baixo</option>
+                                        <option value="opcao3">Guitarra</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <input type="text" value="R$ 100,00" class="boxs" required>
+                                </label>
+                                <label>
+                                    <div class="containerTitle">
+                                        <strong>| Descrição do Produto:</strong>
+                                    </div>
+                                    <textarea name="mensagem" placeholder="..." required>Descrição do violão meteoro da paixão.</textarea>
+                                </label>
+                                <button>ATUALIZAR</button>
+                                <input type="reset" value="RESTAURAR">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="popup" id="popupEventoDel_1">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="iconAlert"><i class='bx bxs-error'></i></div>
-                <div class="popUpContent">
-                    <h2>ALERTA !!</h2>
-                    <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
-                    <div><b>Você tem certeza dessa ação??</b></div>
-                    <form action="">
-                        <label>
-                            <input type="password" placeholder="Digite sua senha*" required>
-                        </label>
-                        <div><b>Depois NÃO haverá volta</b></div>
-                        <button>CONFIRMAR</button>
-                    </form>
+                <div class="popup" id="popupLojaHidn_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <h2>AVISO</h2>
+                        <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="popup" id="popupLojaDel_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="iconAlert"><i class='bx bxs-error'></i></div>
+                    <div class="popUpContent">
+                        <h2>ALERTA !!</h2>
+                        <div>Todo o conteúdo relacionado a <strong>violão meteoro da paixão</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
+                        <div><b>Você tem certeza dessa ação??</b></div>
+                        <form action="">
+                            <label>
+                                <input type="password" placeholder="  Digite sua senha*" required>
+                            </label>
+                            <div><b>Depois NÃO haverá volta</b></div>
+                            <button>CONFIRMAR</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="popup" id="popupEventoEdit_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <div id="editContent">
+                            <form action="">
+                                <div class="box">
+                                    <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                        <input type="file" id="arquivo2" required>
+                                    </label>
+                                    <span class="file-name" id="file-name2">Nenhum arquivo escolhido</span>
+                                </div>
+                                <hr>
+                                <label>
+                                    <input type="text" value="Recital de Natal" placeholder="Título do Evento" class="boxs" required>
+                                </label>
+            
+                                <label>
+                                    <input type="text" value="Venha celebrar o Natal conosco!" placeholder="Subtítulo do Evento" class="boxs" required>
+                                </label>
+                                <label>
+                                    <div class="containerTitle">
+                                        <strong>| Data:</strong>
+                                    </div>
+                                    <input type="date" class="boxs" value="2024-12-15" required>
+                                </label>
+                                <label>
+                                    <div class="containerTitle">
+                                        <strong>| Descrição do Evento:</strong>
+                                    </div>
+                                    <textarea name="mensagem" placeholder="..." required>Descrição do recital de Natal...</textarea>
+                                </label>
+                                <button>ATUALIZAR</button>
+                                <input type="reset" value="RESTAURAR">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popupEventoHidn_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <h2>AVISO</h2>
+                        <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>ocultado</b>, até que você altere essa configuração.</div>
+                    </div>
+                </div>
+                <div class="popup" id="popupEventoDel_1">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="iconAlert"><i class='bx bxs-error'></i></div>
+                    <div class="popUpContent">
+                        <h2>ALERTA !!</h2>
+                        <div>Todo o conteúdo relacionado a <strong>noite de Natal</strong> será <b>EXCLUÍDO PERMANENTEMENTE.</b></div>
+                        <div><b>Você tem certeza dessa ação??</b></div>
+                        <form action="">
+                            <label>
+                                <input type="password" placeholder="Digite sua senha*" required>
+                            </label>
+                            <div><b>Depois NÃO haverá volta</b></div>
+                            <button>CONFIRMAR</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
     <footer>
         <button class="btnVis" alt="Visualizar Alterações" onclick="showAlert()">VISUALIZAR <b>➟</b></button>
     </footer>
