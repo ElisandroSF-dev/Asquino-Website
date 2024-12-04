@@ -193,7 +193,7 @@ form .imgFile {
 
 .genericButton{
     width: 30%;
-    min-width: 150px;
+    min-width: 160px;
     height: 25px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -290,7 +290,6 @@ form .imgFile {
 label{
     margin: 12px 0px;
 }
-
 
 .alertGalery{
     margin-top: 8px;

@@ -166,27 +166,43 @@ const fileNameDisplay3 = document.getElementById('file-name3');
 
 
 //Pop Up
-const button = document.getElementById("popupOpen");
-const popUp = document.getElementById("addClass");
-const closePopupBtn = document.querySelector(".popupClose");
+const closePopupBtns = document.querySelectorAll(".popupClose");
 const overlay = document.getElementById("overlay");
 
+const popupOpen_1 = document.getElementById("popupOpen_1");
+const addClass = document.getElementById("addClass");
+
+const popupOpen_2 = document.getElementById("popupOpen_2");
+const addCateg = document.getElementById("addCateg");
+
 // Abrir o popup
-button.addEventListener("click", () => {
-    popUp.style.display = "block";
+popupOpen_1.addEventListener("click", () => {
+    addClass.style.display = "block";
+    addCateg.style.display = "none";
+    overlay.style.display = "block";
+});
+
+popupOpen_2.addEventListener("click", () => {
+    addClass.style.display = "none";
+    addCateg.style.display = "block";
     overlay.style.display = "block";
 });
 
 // Fechar o popup
-closePopupBtn.addEventListener("click", () => {
-    popUp.style.display = "none";
-    overlay.style.display = "none";
+closePopupBtns.forEach(button => {
+    button.addEventListener("click", () => {
+        addClass.style.display = "none";
+        addCateg.style.display = "none";
+        overlay.style.display = "none";
+    });
 });
 
 // Fechar o popup
 overlay.addEventListener("click", () => {
-    popUp.style.display = "none";
+    addClass.style.display = "none";
+    addCateg.style.display = "none";
     overlay.style.display = "none";
 });
 
-popUp.addEventListener("click", (event) => event.stopPropagation());
+addClass.addEventListener("click", (event) => event.stopPropagation());
+addCateg.addEventListener("click", (event) => event.stopPropagation());

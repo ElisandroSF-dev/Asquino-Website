@@ -169,7 +169,7 @@ popupAulaHidn_1.addEventListener("click", (event) => event.stopPropagation());
 popupAulaDel_1.addEventListener("click", (event) => event.stopPropagation());
 
 
-//Pop Up AULA
+//Pop Up LOJA
 const lojaEdit_1 = document.getElementById("lojaEdit_1");
 const popupLojaEdit_1 = document.getElementById("popupLojaEdit_1");
 
@@ -235,3 +235,72 @@ overlay.addEventListener("click", () => {
 popupLojaEdit_1.addEventListener("click", (event) => event.stopPropagation());
 popupLojaHidn_1.addEventListener("click", (event) => event.stopPropagation());
 popupLojaDel_1.addEventListener("click", (event) => event.stopPropagation());
+
+
+
+//Pop Up EVENTO
+const eventoEdit_1 = document.getElementById("eventoEdit_1");
+const popupEventoEdit_1 = document.getElementById("popupEventoEdit_1");
+
+const eventoHidn_1 = document.getElementById("eventoHidn_1");
+const popupEventoHidn_1 = document.getElementById("popupEventoHidn_1");
+const eventoVis_1 = document.getElementById("eventoVis_1");
+
+const eventoDel_1 = document.getElementById("eventoDel_1");
+const popupEventoDel_1 = document.getElementById("popupEventoDel_1");
+
+const evento_1 = document.getElementById("evento_1");
+
+// Abrir o popup
+eventoEdit_1.addEventListener("click", () => {
+    popupEventoEdit_1.style.display = "block";
+    popupEventoHidn_1.style.display = "none";
+    popupEventoDel_1.style.display = "none";
+    overlay.style.display = "block";
+});
+
+eventoHidn_1.addEventListener("click", () => {
+    popupEventoEdit_1.style.display = "none";
+    popupEventoHidn_1.style.display = "block";
+    popupEventoDel_1.style.display = "none";
+    overlay.style.display = "block";
+
+    eventoVis_1.style.display = "block";
+    evento_1.style.color = "gray";
+    eventoHidn_1.style.display = "none";
+});
+
+eventoVis_1.addEventListener("click", () => {
+    eventoVis_1.style.display = "none";
+    evento_1.style.color = "black";
+    eventoHidn_1.style.display = "block";
+});
+
+eventoDel_1.addEventListener("click", () => {
+    popupEventoHidn_1.style.display = "none";
+    popupEventoEdit_1.style.display = "none";
+    popupEventoDel_1.style.display = "block";
+    overlay.style.display = "block";
+});
+
+// Fechar o popup
+closePopupBtns.forEach(button => {
+    button.addEventListener("click", () => {
+        popupEventoEdit_1.style.display = "none";
+        popupEventoHidn_1.style.display = "none";
+        popupEventoDel_1.style.display = "none";
+        overlay.style.display = "none";
+    });
+});
+
+// Fechar o popup
+overlay.addEventListener("click", () => {
+    popupEventoEdit_1.style.display = "none";
+    popupEventoHidn_1.style.display = "none";
+    popupEventoDel_1.style.display = "none";
+    overlay.style.display = "none";
+});
+
+popupEventoEdit_1.addEventListener("click", (event) => event.stopPropagation());
+popupEventoHidn_1.addEventListener("click", (event) => event.stopPropagation());
+popupEventoDel_1.addEventListener("click", (event) => event.stopPropagation());

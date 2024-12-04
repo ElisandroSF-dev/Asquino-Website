@@ -52,7 +52,7 @@
                         </select>
                     </label>
 
-                    <input type="button" id="popupOpen" class="genericButton" value="Adicionar novo Curso">
+                    <input type="button" id="popupOpen_1" class="genericButton" value="Adicionar novo Curso">
                     
                     <label for="opcoes">
                         <div class="containerTitle">
@@ -173,7 +173,17 @@
                         <input type="text" placeholder="Marca do Produto" class="boxs" required>
                     </label>
                     <label>
-                        <input type="text" placeholder="Código do Produto" class="boxs" required>
+                        <div class="containerTitle"><strong>| Categoria:</strong></div>
+                        <select id="opcoes" name="opcoes" class="boxs">
+                            <option value="opcao0" selected disabled>Selecione o tipo de curso</option>
+                            <option value="opcao1">Violão</option>
+                            <option value="opcao2">Baixo</option>
+                            <option value="opcao3">Guitarra</option>
+                        </select>
+                    </label>
+                    <input type="button" id="popupOpen_2" class="genericButton" value="Adicionar nova Categoria">
+                    <label>
+                        <input type="text" placeholder="Valor do Produto" class="boxs" required>
                     </label>
                     <label>
                         <div class="containerTitle">
@@ -195,6 +205,18 @@
                     <form action="" class="addCourseForm">
                         <label for="">
                             <input type="text" placeholder="Nome do Curso" required>
+                        </label>   
+                        <button>Adicionar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="popup" id="addCateg">
+                <div class="popupClose" id="popupClose">&times;</div>
+                <div class="popUpContent">
+                    <h2>ADICIONE A NOVA CATEGORIA:</h2>
+                    <form action="" class="addCourseForm">
+                        <label for="">
+                            <input type="text" placeholder="Nome da" required>
                         </label>   
                         <button>Adicionar</button>
                     </form>
