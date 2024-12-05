@@ -165,8 +165,7 @@ header .loja-titulo .lo {
 }
 
 header .loja-titulo .ja {
-  
-  color: #5e1cec;
+  color: #B500D3;
 }
 
 /* Barra de pesquisa */
@@ -327,7 +326,7 @@ header .loja-titulo .ja {
 
 .product-card h3 {
   margin-top: 10px;
-  font-size: 1.125rem;
+  font-size: 1.15rem;
 }
 
 .product-card .price {

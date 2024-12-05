@@ -8,226 +8,214 @@
         <title>Adiministração</title>
     </head>
 <body>
-    <header>
-        <a href="../home/index.html">SAIR ︱<i class='bx bx-x bx-sm'></i></a>
-    </header>
-    <main>
-        <div class="title">
-            <h1>ADMINISTRAÇÃO</h1>
-        </div>
-        <div class="content">
-            <!-- AULAS -->
-            <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
-                <div class="divColapse">
-                    <p>︱ AULAS</p>
-                    <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
-                </div>
-            </button>
-            <div id="conteudo1" class="conteudo-colapsado">
-                <form action="">
-                    <div class="box">
-                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                            <input type="file" id="arquivo1" required>
-                        </label>
-                        <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
+    <div class="layout-container">
+        <header>
+            <a href="../home/index.html">SAIR ︱<i class='bx bx-x bx-sm'></i></a>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ADMINISTRAÇÃO</h1>
+            </div>
+            <div class="content">
+                <!-- AULAS -->
+                <button id="btnColapse1" class="btnColapse" onclick="toggleColapse_aula()">
+                    <div class="divColapse">
+                        <p>︱ AULA</p>
+                        <p id="icon1"><i class='bx bxs-down-arrow'></i></p>
                     </div>
-                    <hr>
-
-                    <label>
-                        <input type="text" placeholder="Nome do Curso" class="boxs" required>
-                    </label>
-
-                    <label for="opcoes">
-                        <div class="containerTitle">
-                            <strong>| Tipo de Curso:</strong>
-                        </div>
-                        <select id="opcoes" name="opcoes" class="boxs">
-                            <option value="opcao0" selected disabled>Selecione o tipo de curso</option>
-                            <option value="opcao1">Cordas</option>
-                            <option value="opcao2">Percussão</option>
-                            <option value="opcao3">Sopro</option>
-                            <option value="opcao4">Vocal</option>
-                            <option value="opcao5">Teclas</option>
-                            <option value="opcao6">Em Grupo</option>
-                        </select>
-                    </label>
-
-                    <input type="button" id="popupOpen_1" class="genericButton" value="Adicionar novo Curso">
-                    
-                    <label for="opcoes">
-                        <div class="containerTitle">
-                            <strong>| Classificação de Idade:</strong>
-                        </div>
-                        <select id="opcoes" name="opcoes" class="boxs">
-                            <option value="opcao1">Regular</option>
-                            <option value="opcao2">Infantil</option>
-                        </select>
-                    </label>
-                    <hr>
-
-
-                    <h4>Descrição da Aula</h4>
-                    <label>
-                        <div class="containerTitle">
-                            <strong>| Sobre a Aula:</strong>
-                        </div>
-                        <textarea name="mensagem" placeholder="Descrição..." required></textarea>
-                    </label>
-                    <label>
-                        <div class="containerTitle">
-                            <strong>| O que Oferecemos:</strong>
-                        </div>
-                        <textarea name="mensagem" placeholder="Descrição..." required></textarea>
-                    </label>
-                    <label>
-                        <div class="containerTitle">
-                            <strong>| Diferenciais:</strong>
-                        </div>
-                        <textarea name="mensagem" placeholder="Descrição..." required></textarea>
-                    </label>
-
-                    <h4>Galeria de Fotos</h4>
-                    <div id="boxContainer">
+                </button>
+                <div id="conteudo1" class="conteudo-colapsado">
+                    <form action="">
                         <div class="box">
                             <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                                <input type="file" id="galery1" required>
+                                <input type="file" id="arquivo1" required>
                             </label>
-                            <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                            <span class="file-name" id="file-name1">Nenhum arquivo escolhido</span>
                         </div>
-                    </div>
-                    <input type="button" id="addBox" class="genericButton" value="Adicionar mais Imagens">
-                    <div class="alertGalery"></div>
-                    <hr>
-                    
-                    <label>
-                        <input type="checkbox">Com primeira aula <b>gratuita</b>
-                    </label>
+                        <hr>
+                        <label>
+                            <input type="text" placeholder="Nome do Curso" class="boxs" required>
+                        </label>
+                        <label for="opcoes">
+                            <div class="containerTitle">
+                                <strong>| Tipo de Curso:</strong>
+                            </div>
+                            <select id="opcoes" name="opcoes" class="boxs">
+                                <option value="opcao0" selected disabled>Selecione o tipo de curso</option>
+                                <option value="opcao1">Cordas</option>
+                                <option value="opcao2">Percussão</option>
+                                <option value="opcao3">Sopro</option>
+                                <option value="opcao4">Vocal</option>
+                                <option value="opcao5">Teclas</option>
+                                <option value="opcao6">Em Grupo</option>
+                            </select>
+                        </label>
+                        <input type="button" id="popupOpen_1" class="genericButton" value="Adicionar novo Curso">
+                        <label for="opcoes">
+                            <div class="containerTitle">
+                                <strong>| Classificação de Idade:</strong>
+                            </div>
+                            <select id="opcoes" name="opcoes" class="boxs">
+                                <option value="opcao1">Regular</option>
+                                <option value="opcao2">Infantil</option>
+                            </select>
+                        </label>
+                        <hr>
+                        <h4>Descrição da Aula</h4>
+                        <label>
+                            <div class="containerTitle">
+                                <strong>| Sobre a Aula:</strong>
+                            </div>
+                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                        </label>
+                        <label>
+                            <div class="containerTitle">
+                                <strong>| O que Oferecemos:</strong>
+                            </div>
+                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                        </label>
+                        <label>
+                            <div class="containerTitle">
+                                <strong>| Diferenciais:</strong>
+                            </div>
+                            <textarea name="mensagem" placeholder="Descrição..." required></textarea>
+                        </label>
 
-                    <button>REGISTRAR</button>
-                </form>
-            </div>
-            <hr>
+                        <h4>Galeria de Fotos</h4>
+                        <div id="boxContainer">
+                            <div class="box">
+                                <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                    <input type="file" id="galery1" required>
+                                </label>
+                                <span class="file-name" id="fileGalery-name1">Nenhum arquivo escolhido</span>
+                            </div>
+                        </div>
+                        <input type="button" id="addBox" class="genericButton" value="Adicionar mais Imagens">
+                        <div class="alertGalery"></div>
+                        <hr>
+                        
+                        <label>
+                            <input type="checkbox">Com primeira aula <b>gratuita</b>
+                        </label>
 
-            <!-- EVENTO -->
-            <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
-                <div class="divColapse">
-                    <p>︱ EVENTOS</p>
-                    <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
+                        <button>REGISTRAR</button>
+                    </form>
                 </div>
-            </button>
-            <div id="conteudo2" class="conteudo-colapsado">
-                <form action="">
-                    <div class="box">
-                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                            <input type="file" id="arquivo2" required>
-                        </label>
-                        <span class="file-name" id="file-name2">Nenhum arquivo escolhido</span>
+                <hr>
+                <button id="btnColapse2" class="btnColapse" onclick="toggleColapse_evento()">
+                    <div class="divColapse">
+                        <p>︱ EVENTO</p>
+                        <p id="icon2"><i class='bx bxs-down-arrow'></i></p>
                     </div>
-                    <hr>
-                    <label>
-                        <input type="text" placeholder="Título do Evento" class="boxs" required>
-                    </label>
-
-                    <label>
-                        <input type="text" placeholder="Subtítulo do Evento" class="boxs" required>
-                    </label>
-
-                    
-                    <label>
-                        <div class="containerTitle">
-                            <strong>| Data:</strong>
+                </button>
+                <div id="conteudo2" class="conteudo-colapsado">
+                    <form action="">
+                        <div class="box">
+                            <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                <input type="file" id="arquivo2" required>
+                            </label>
+                            <span class="file-name" id="file-name2">Nenhum arquivo escolhido</span>
                         </div>
-                        <input type="date" class="boxs" required>
-                    </label>
-                    <label>
-                        <div class="containerTitle">
-                            <strong>| Descrição do Evento:</strong>
-                        </div>
-                        <textarea name="mensagem" placeholder="..." required></textarea>
-                    </label>
-                    <button>REGISTRAR</button>
-                </form>
-            </div>
-            <hr>
-
-            <!-- LOJA -->
-            <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
-                <div class="divColapse">
-                    <p>︱ LOJA</p>
-                    <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
-                </div> 
-            </button>
-            <div id="conteudo3" class="conteudo-colapsado">
-                <form action="">
-                    <div class="box">
-                        <label class="imgFile">Adicione uma <b>IMAGEM</b>
-                            <input type="file" id="arquivo3" required>
+                        <hr>
+                        <label>
+                            <input type="text" placeholder="Título do Evento" class="boxs" required>
                         </label>
-                        <span class="file-name" id="file-name3">Nenhum arquivo escolhido</span>
-                    </div>
-                    <hr>
-                    <label>
-                        <input type="text" placeholder="Nome do Produto" class="boxs" required>
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Marca do Produto" class="boxs" required>
-                    </label>
-                    <label>
-                        <div class="containerTitle"><strong>| Categoria:</strong></div>
-                        <select id="opcoes" name="opcoes" class="boxs">
-                            <option value="opcao0" selected disabled>Selecione o tipo de curso</option>
-                            <option value="opcao1">Violão</option>
-                            <option value="opcao2">Baixo</option>
-                            <option value="opcao3">Guitarra</option>
-                        </select>
-                    </label>
-                    <input type="button" id="popupOpen_2" class="genericButton" value="Adicionar nova Categoria">
-                    <label>
-                        <input type="text" placeholder="Valor do Produto" class="boxs" required>
-                    </label>
-                    <label>
-                        <div class="containerTitle">
-                            <strong>| Descrição do Produto:</strong>
+
+                        <label>
+                            <input type="text" placeholder="Subtítulo do Evento" class="boxs" required>
+                        </label>
+                        <label>
+                            <div class="containerTitle">
+                                <strong>| Data:</strong>
+                            </div>
+                            <input type="date" class="boxs" required>
+                        </label>
+                        <label>
+                            <div class="containerTitle">
+                                <strong>| Descrição do Evento:</strong>
+                            </div>
+                            <textarea name="mensagem" placeholder="..." required></textarea>
+                        </label>
+                        <button>REGISTRAR</button>
+                    </form>
+                </div>
+                <hr>
+                <button id="btnColapse3" class="btnColapse" onclick="toggleColapse_loja()">
+                    <div class="divColapse">
+                        <p>︱ PRODUTO</p>
+                        <p id="icon3"><i class='bx bxs-down-arrow'></i></p>
+                    </div> 
+                </button>
+                <div id="conteudo3" class="conteudo-colapsado">
+                    <form action="">
+                        <div class="box">
+                            <label class="imgFile">Adicione uma <b>IMAGEM</b>
+                                <input type="file" id="arquivo3" required>
+                            </label>
+                            <span class="file-name" id="file-name3">Nenhum arquivo escolhido</span>
                         </div>
-                        <textarea name="mensagem" placeholder="..." required></textarea>
-                    </label>
-                    <button>REGISTRAR</button>
-                </form>
-            </div>
-        </div>
-        
-        <!-- Pop-Up -->
-        <section class="overlay" id="overlay">
-            <div class="popup" id="addClass">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <h2>ADICIONE O NOVO CURSO:</h2>
-                    <form action="" class="addCourseForm">
-                        <label for="">
-                            <input type="text" placeholder="Nome do Curso" required>
-                        </label>   
-                        <button>Adicionar</button>
+                        <hr>
+                        <label>
+                            <input type="text" placeholder="Nome do Produto" class="boxs" required>
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Marca do Produto" class="boxs" required>
+                        </label>
+                        <label>
+                            <div class="containerTitle"><strong>| Categoria:</strong></div>
+                            <select id="opcoes" name="opcoes" class="boxs">
+                                <option value="opcao0" selected disabled>Selecione o tipo de categoria</option>
+                                <option value="opcao1">Violão</option>
+                                <option value="opcao2">Baixo</option>
+                                <option value="opcao3">Guitarra</option>
+                            </select>
+                        </label>
+                        <input type="button" id="popupOpen_2" class="genericButton" value="Adicionar nova Categoria">
+                        <label>
+                            <input type="text" placeholder="Valor do Produto" class="boxs" required>
+                        </label>
+                        <label>
+                            <div class="containerTitle">
+                                <strong>| Descrição do Produto:</strong>
+                            </div>
+                            <textarea name="mensagem" placeholder="..." required></textarea>
+                        </label>
+                        <button>REGISTRAR</button>
                     </form>
                 </div>
             </div>
-            <div class="popup" id="addCateg">
-                <div class="popupClose" id="popupClose">&times;</div>
-                <div class="popUpContent">
-                    <h2>ADICIONE A NOVA CATEGORIA:</h2>
-                    <form action="" class="addCourseForm">
-                        <label for="">
-                            <input type="text" placeholder="Nome da" required>
-                        </label>   
-                        <button>Adicionar</button>
-                    </form>
+            <section class="overlay" id="overlay">
+                <div class="popup" id="addClass">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <h2>ADICIONE O NOVO CURSO:</h2>
+                        <form action="" class="addCourseForm">
+                            <label for="">
+                                <input type="text" placeholder="Nome do Curso" required>
+                            </label>   
+                            <button>Adicionar</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="popup" id="addCateg">
+                    <div class="popupClose" id="popupClose">&times;</div>
+                    <div class="popUpContent">
+                        <h2>ADICIONE A NOVA CATEGORIA:</h2>
+                        <form action="" class="addCourseForm">
+                            <label for="">
+                                <input type="text" placeholder="Nome da Categoria" required>
+                            </label>   
+                            <button>Adicionar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
     <footer>
         <a href="historicoADM.html"><button class="btnHis" alt="Acessar Histórico"><i class='bx bx-history'></i> ︱ HISTÓRICO</button></a>
-        <button class="btnVis" alt="Visualizar Alterações">VISUALIZAR <b>➟</b></button>
+        <button class="btnVis" alt="Visualizar Alterações" onclick="showAlert()">VISUALIZAR <b>➟</b></button>
     </footer>
-    <script src="gerenciamentoJS.js"></script>
+    <script src="gerenciamentoADM_JS.js"></script>
 </body>
 </html>
