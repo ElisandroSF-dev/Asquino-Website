@@ -25,9 +25,16 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
 }
+
 * {
     text-decoration: none;
     list-style: none;
+}
+section {
+    width: 100vw;
+}
+section h1 {
+    font-size: 38px;
 }
 th,
 tr,
@@ -36,6 +43,7 @@ td {
     font-family: Inter;
     text-align: center;
 }
+
 p {
     font-size: 10px;
     font-family: Inter;
@@ -90,7 +98,7 @@ img {
     z-index: 24;
 }
 
-.logo{
+.logo {
     position: relative;
     width: 100%;
     height: 100px;
@@ -100,6 +108,7 @@ img {
     background-size: 310px 100%;
     background-position: left center;
 }
+
 .lineH {
     height: 3px;
     background-color: #fff;
@@ -108,6 +117,7 @@ img {
 nav div p {
     font-family: Arial, Helvetica, sans-serif
 }
+
 .navH div p {
     font-size: 15px;
     font-weight: 550;
@@ -115,11 +125,11 @@ nav div p {
     margin: 0px !important;
     align-content: center;
     height: 100%;
-} 
+}
 
 .navH div {
     justify-content: center;
-    width: 80px;
+    width: auto;
     height: auto;
     text-align: center;
     z-index: 10;
@@ -128,10 +138,12 @@ nav div p {
     padding-left: 15px;
     padding-right: 15px;
 }
-.navH div:hover{
+
+.navH div:hover {
     border-top: 4px solid #D100F3 !important;
-    background-color: rgba(209,0,243,25%);
+    background-color: rgba(209, 0, 243, 25%);
 }
+
 .navH {
     position: relative;
     top: 0px;
@@ -147,6 +159,7 @@ nav div p {
     border-top: 4px solid #fff;
     z-index: 9;
 }
+
 .navH .detail {
     width: 3px;
     height: 10px;
@@ -155,6 +168,7 @@ nav div p {
     top: 16px;
     margin: 0px 5px 0px 5px;
 }
+
 .banner-header {
     background-image: url("../assets/imgs/bgHeader.jpeg");
     background-repeat: no-repeat;
@@ -166,6 +180,7 @@ nav div p {
     top: 0;
     position: relative;
 }
+
 .call-to-action-header {
     color: #fff;
     padding-bottom: 5px !important;
@@ -174,9 +189,12 @@ nav div p {
     width: 100%;
     text-align: center;
 }
-.call-to-action-header h3,a {
+
+.call-to-action-header h3,
+a {
     font-size: 20px;
 }
+
 .high-2 {
     color: #e251f8;
     font-family: 'Archivo Black' !important;
@@ -190,6 +208,7 @@ nav div p {
     margin: 0px 30px 5px 0px;
     z-index: 900;
 }
+
 .whatsapp-icon-onheader svg {
     background-color: hsl(147, 50%, 47%) !important;
     border-radius: 100px;
@@ -198,6 +217,7 @@ nav div p {
     text-align: center;
     padding: 5px;
 }
+
 /* Fim do css da header */
 
 #info-subheader {
@@ -207,19 +227,23 @@ nav div p {
     background-size: 100% 100%;
     background-position: left top;
     background-color: #000000ee;
-    background-blend-mode:luminosity;
+    background-blend-mode: luminosity;
     filter: brightness(150%);
     width: 100vw;
     padding-top: 130px;
 }
-#info-subheader .text-items-info div h2, p {
+
+#info-subheader .text-items-info div h2,
+p {
     margin: 0px !important;
     color: #ffffff23;
     font-size: 16px;
 }
+
 #info-subheader .text-items-info div h2 {
     font-size: 42px;
 }
+
 #info-subheader .info-section span {
     width: 3px;
     display: block;
@@ -228,9 +252,11 @@ nav div p {
     position: relative;
     top: 100px;
 }
+
 #info-subheader .icons-info {
     margin: 35px 0px 10px 0px;
 }
+
 #info-subheader .info-section {
     display: flex;
     flex-direction: row;
@@ -241,20 +267,27 @@ nav div p {
     flex-flow: wrap;
     row-gap: 75px;
 }
+
 #info-subheader .info-section div {
     text-align: center;
 }
-#info-subheader .items-info p  {
+
+#info-subheader .items-info p {
     color: #ffffff98;
     font-size: 16px;
 }
+
 #info-subheader .text-items-info {
     width: 200px;
     height: auto;
 }
-#info-subheader h5, #info-subheader h4,
-#info-subheader h1, #info-subheader h2,
-#info-subheader h6, #info-subheader h3 {
+
+#info-subheader h5,
+#info-subheader h4,
+#info-subheader h1,
+#info-subheader h2,
+#info-subheader h6,
+#info-subheader h3 {
     color: #fff;
 }
 
@@ -277,18 +310,22 @@ nav div p {
     text-align: center;
     margin: 100px 0px 0px 0px
 }
+
 #info-subheader .contact-number div,
 #info-subheader .contact-number {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 #info-subheader .contact-number div p {
     color: #ffffff98 !important;
 }
+
 #info-subheader .contact-number {
     margin: 15px 0px 25px 0px
 }
+
 #info-subheader .contact-number span {
     display: block;
     border: 1px solid #fff;
@@ -313,6 +350,7 @@ nav div p {
     transition: all ease-in-out .1s;
     cursor: pointer;
 }
+
 #info-subheader .call-to-action button:hover {
     background-color: #880000;
 }
@@ -328,14 +366,14 @@ nav div p {
 /* Definição de areas do grid footer */
 #footer-principal .footer {
     display: grid;
-    grid-template-areas: 
-    
-    'logof blank blank blank blank'
-    'logof cont cont ender poli'
-    'logof cont cont tel paym'
-    'logof cont cont tel paym'
-    'ff ff ff ff ff'
-    
+    grid-template-areas:
+
+        'logof blank blank blank blank'
+        'logof cont cont ender poli'
+        'logof cont cont tel paym'
+        'logof cont cont tel paym'
+        'ff ff ff ff ff'
+
     ;
     background-image: linear-gradient(180deg, #323232 1%, #181818 90%);
     color: #fff !important;
@@ -343,29 +381,35 @@ nav div p {
     gap: 0px;
     vertical-align: bottom;
 }
-#footer-principal a, #footer-principal li {
+
+#footer-principal a,
+#footer-principal li {
     font-size: 13px;
     font-family: Inter;
     color: #ffffff66 !important;
 }
+
 #footer-principal .footer label {
     font-size: 11.5px;
     font-family: 'Archivo Black';
     color: #ffffffbd !important;
 }
+
 #footer-principal .logo-footer {
     grid-area: logof;
     width: 200px;
     height: auto;
     margin: 15px 0px 0px 10px;
 }
-#footer-principal .blank-space{
+
+#footer-principal .blank-space {
     grid-area: blank;
     width: 200px;
     height: 60px;
     margin: 15px;
     display: block;
 }
+
 #footer-principal .cont-f {
     grid-area: cont;
     width: auto;
@@ -377,20 +421,23 @@ nav div p {
         'a b'
     ;
     column-gap: 5px;
-	padding-inline-start: 0 !important;
+    padding-inline-start: 0 !important;
 }
+
 #footer-principal .cont-f label {
     grid-area: lab;
     padding-inline-start: 0 !important;
 }
+
 #footer-principal .cont-f a {
     grid-area: a;
-	padding-inline-start: 0 !important;
+    padding-inline-start: 0 !important;
 
 }
+
 #footer-principal .cont-f b {
     grid-area: b;
-	padding-inline-start: 0 !important;
+    padding-inline-start: 0 !important;
 
 }
 
@@ -399,6 +446,7 @@ nav div p {
     grid-area: ender;
     padding-inline-start: 0 !important;
 }
+
 #footer-principal .poli-f {
     grid-area: poli;
     padding-inline-start: 0 !important;
@@ -408,10 +456,12 @@ nav div p {
     grid-area: tel;
     padding-inline-start: 0 !important;
 }
+
 #footer-principal .paym-f {
     grid-area: paym;
     padding-inline-start: 0 !important;
 }
+
 #footer-principal .bottom-footer {
     grid-area: ff;
     padding-inline-start: 0 !important;
@@ -419,7 +469,7 @@ nav div p {
 }
 
 #footer-principal .bottom-footer hr {
-    border-color: rgba(255,255,255,.4);
+    border-color: rgba(255, 255, 255, .4);
     width: 85vw;
 }
 
@@ -432,10 +482,12 @@ nav div p {
     font-weight: 800;
     color: #ffffff66;
 }
+
 #footer-principal .ead div p a {
     font-size: 12px !important;
     text-decoration: underline;
 }
+
 #footer-principal .icons-social {
     display: flex !important;
     flex-direction: row !important;
@@ -453,6 +505,7 @@ nav div p {
     color: #ffffff66;
     margin-bottom: 5px;
 }
+
 #footer-principal .authoral-rights p {
     font-size: 12px;
     text-decoration: underline;
@@ -466,51 +519,228 @@ nav div p {
 /* Todo footer CSS Acima */
 /*-----------------------------------------------*/
 
+/* Calendar Section */
+.calendar-section {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#calendario {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100vw;
+    border-bottom: 3px solid #00000080;
+    padding-bottom: 25px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+#calendario .calendar-table {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#calendario td {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 15px;
+    font-family: Inter !important;
+}
+
+#calendario th {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#calendario tr {
+    justify-content: space-evenly;
+}
+
+#calendario table {
+    width: 100%;
+}
+
+#calendario h3 {
+    margin: unset !important;
+    color: #fff;
+    font-family: Inter !important;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#calendario .title-calendar {
+    background-color: #323232;
+    padding: 10px;
+    width: 10rem;
+    justify-items: center;
+    height: auto;
+    border-radius: 13px;
+    transform: translateY(-35%);
+}
+
+/* sobre nos */
+
+#about, .about {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+#about h6 {
+    margin: unset !important;
+}
+
+#about h1 {
+    margin-bottom: unset !important;
+}
+
+#about .video-about {
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#about video {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+/* Carrosel */
+.eventos {
+    width: 100vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.carrossel {
+    position: relative;
+    width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagens img {
+    width: 100%;
+    height: auto;
+}
+
+.imagens img.main {
+    transform: scale(1.2);
+    z-index: 2;
+    opacity: 1;
+}
+
+.imagens img:not(.main) {
+    transform: scale(0.8);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#carou button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    /* Ajuste para controlar o tamanho do botão */
+    height: 50px;
+    /* Ajuste para controlar o tamanho do botão */
+    border-radius: 50%;
+    /* Para tornar o botão redondo */
+    z-index: 10;
+}
+
+#carou button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 /* Css mobile */
 @media only screen and (max-width: 809px) {
-    .info-section span:nth-child(1)  {
+    .info-section span:nth-child(1) {
         display: none !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 20px !important;
+    }
+
     .call-to-action-header h3 {
         text-align: center;
         font-size: 13px !important;
         margin: 0 !important;
     }
+
     .call-to-action-header h3 a:nth-child(1) {
-       background-color: #fff;
-       font-family: 'Archivo Black' !important;
-       mix-blend-mode: screen;
-       color: #000;
-       padding-left: 3px !important;
-       padding-right: 3px !important;
-       border-radius: 2px;
+        background-color: #fff;
+        font-family: 'Archivo Black' !important;
+        mix-blend-mode: screen;
+        color: #000;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        border-radius: 2px;
     }
 
     /* Footer css mobile completo */
     #footer-principal .footer {
-        grid-template-areas: 
-        'logof logof'
-        'cont ender'
-        'cont paym'
-        'cont tel'
-        'cont poli'
-        'ff ff'
-        !important
+        grid-template-areas:
+            'logof logof'
+            'cont ender'
+            'cont paym'
+            'cont tel'
+            'cont poli'
+            'ff ff'
+            !important
         ;
         gap: 5px;
     }
+
     #footer-principal .blank-space {
         display: none !important;
     }
+
     #footer-principal .cont-f {
         min-width: auto !important;
         display: block !important;
         padding-inline-start: 30px !important;
 
     }
+
     /* Fim footer css mobile completo */
 }
