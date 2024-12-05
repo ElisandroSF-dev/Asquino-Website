@@ -1,0 +1,383 @@
+@font-face {
+    font-family: Inter;
+    src: url("../fontes/Inter/static/Inter_18pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Archivo Black';
+    src: url("../fontes/Archivo_Black/ArchivoBlack-Regular.ttf");
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 0px;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+* {
+    text-decoration: none;
+    list-style: none;
+}
+th,
+tr,
+td {
+    font-size: 9px;
+    font-family: Inter;
+    text-align: center;
+}
+p {
+    
+    font-size: 10px;
+    font-family: Inter;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 16px;
+    font-family: 'Archivo Black';
+    width: 95%;
+    margin: 10PX;
+	
+}
+
+
+a {
+    text-decoration: none;
+    font-family: Inter;
+    color: unset;
+}
+
+h6,
+h5 {
+    font-size: 11px;
+    font-family: 'Archivo Black';
+}
+
+* {
+    max-width: 100vw;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Resto do css local */
+
+/* Css da Header: */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+.menu-burguer {
+    display: none;
+}
+
+.header-fixed {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 24;
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    left: -60px;
+    top: 4px;
+    background: url("../assets/imgs/logo.png") no-repeat;
+    background-size: 310px 100%;
+    background-position: left center;
+}
+.lineH {
+    height: 3px;
+    background-color: #fff;
+}
+
+nav div p {
+    font-family: Arial, Helvetica, sans-serif
+}
+.navH div p {
+    font-size: 15px;
+    font-weight: 550;
+    color: #fff;
+    margin: 0px !important;
+    align-content: center;
+    height: 100%;
+} 
+
+.navH div {
+    justify-content: center;
+    width: 80px;
+    height: auto;
+    text-align: center;
+    z-index: 10;
+    margin-top: -4px;
+    border-top: 4px solid #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navH div:hover{
+    border-top: 4px solid #D100F3 !important;
+    background-color: rgba(209,0,243,25%);
+}
+.navH {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    height: 40px;
+    width: 85vw;
+    justify-content: end;
+    border-top: 4px solid #fff;
+    z-index: 9;
+}
+.navH .detail {
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 16px;
+    margin: 0px 5px 0px 5px;
+}
+.banner-header {
+    background-image: url("../assets/imgs/bgHeader.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+    background-color: #0000009d;
+    background-blend-mode: multiply;
+    min-height: 750px;
+    top: 0;
+    position: relative;
+}
+.call-to-action-header {
+    color: #fff;
+    padding-bottom: 5px !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align:start;
+    margin: 0%;
+}
+
+.container {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    display: flex;
+    font-size: 5rem; /* Ajuste conforme necessário */
+    font-weight: bold;
+    width: 50%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: scaleY(1.2);
+  }
+  
+  .text {
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .highlight {
+    color: transparent;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .highlight::before {
+    content: "VAC";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+    z-index: 1;
+  }
+  
+  .highlight::after {
+    content: "VAC";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-text-stroke: 2px #e81aff; /* Contorno */
+    text-shadow: 2px #e81aff;
+    z-index: 0;
+  }
+
+.whatsapp-icon-onheader {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    transform: translateY(50%);
+    margin: 0px 30px 5px 0px;
+    z-index: 900;
+}
+.whatsapp-icon-onheader svg {
+    background-color: hsl(147, 50%, 47%) !important;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+.style-conteudo section {
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.conteudo-politica {
+    color: #D100F3;
+}
+/* Fim do css da header */
+
+
+/* Todo footer CSS Abaixo */
+/* \/ \/ \/ \/ \/ \/ \/ \/ */
+
+/* Definição de areas do grid footer */
+.footer {
+    display: grid;
+    grid-template-areas: 
+    
+    'logof blank blank blank blank'
+    'logof cont cont ender poli'
+    'logof cont cont tel paym'
+    'logof cont cont tel paym'
+    'ff ff ff ff ff'
+    
+    ;
+    background-image: linear-gradient(180deg, #323232 1%, #181818 90%);
+    color: #fff !important;
+    height: auto;
+    gap: 0px;
+    vertical-align: bottom;
+}
+.footer ul li {
+    font-size: 11.5px;
+    font-family: Inter;
+    color: #ffffff66 !important;
+}
+.footer label {
+    font-size: 11.5px;
+    font-family: 'Archivo Black';
+    color: #ffffffbd !important;
+}
+.logo-footer {
+    grid-area: logof;
+    width: 200px;
+    height: auto;
+    margin: 15px 0px 0px 10px;
+}
+.blank-space{
+    grid-area: blank;
+    width: 200px;
+    height: 60px;
+    margin: 15px;
+    display: block;
+}
+.cont-f {
+    grid-area: cont;
+    width: auto;
+    height: auto;
+    min-width: 235px;
+    display: grid;
+    grid-template-areas:
+        'lab lab'
+        'a b'
+    ;
+    column-gap: 5px;
+	padding-inline-start: 0 !important;
+}
+.cont-f label {
+    grid-area: lab;
+    padding-inline-start: 0 !important;
+}
+.cont-f a {
+    grid-area: a;
+	padding-inline-start: 0 !important;
+
+}
+.cont-f b {
+    grid-area: b;
+	padding-inline-start: 0 !important;
+
+}
+
+
+.endereco-f {
+    grid-area: ender;
+    padding-inline-start: 0 !important;
+}
+.poli-f {
+    grid-area: poli;
+    padding-inline-start: 0 !important;
+}
+
+.tel-f {
+    grid-area: tel;
+    padding-inline-start: 0 !important;
+}
+.paym-f {
+    grid-area: paym;
+    padding-inline-start: 0 !important;
+}
+.bottom-footer {
+    grid-area: ff;
+    padding-inline-start: 0 !important;
+    margin-top: 60px;
+}
+
+.bottom-footer hr {
+    border-color: rgba(255,255,255,.4);
+    width: 85vw;
+}
+
+.ead {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+.ead div p a {
+    font-size: 12px !important;
+    text-decoration: underline;
+}
+.icons-social {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 30vw;
+    transform: translateX(115%);
+}
+
+.authoral-rights {
+    text-align: center;
+    font-family: 'Archivo Black';
+    font-weight: 800;
+    color: #ffffff66;
+}
+.authoral-rights p {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.footer ul {
+    margin: 10px;
+}
+
+/* /\ /\ /\ /\ /\ /\ /\ /\ */
+/* Todo footer CSS Acima */
