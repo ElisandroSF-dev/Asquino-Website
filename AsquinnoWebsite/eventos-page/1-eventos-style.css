@@ -169,6 +169,14 @@ main{
     background-color: #D9D9D9;
     border-radius: 8px;
 }
+.eventosPrincipais .boxLeft img{
+    width:360px; 
+    height:330px;
+}
+.eventosPrincipais .boxsRight img{
+    width:350px; 
+    height:160px;
+}
 .eventosPrincipais .boxsRight div{
     width: 350px;
     height: 160px;
@@ -228,6 +236,16 @@ main img{
 .description{
     display: none;
     padding: 0px 20px;
+}
+.description .secIMG{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container video{
+	width: 80%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 5px #00000018;
 }
 /* Todo footer CSS Abaixo */
 /* \/ \/ \/ \/ \/ \/ \/ \/ */
